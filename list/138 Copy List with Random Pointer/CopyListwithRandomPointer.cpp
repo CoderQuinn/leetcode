@@ -1,5 +1,5 @@
 //
-//  CopyListwithRandomPointer.cpp
+//  Copy List with Random Pointer.cpp
 //  Leetcode
 //
 //  Created by Quinn on 2020/7/15.

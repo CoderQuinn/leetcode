@@ -1,5 +1,5 @@
 //
-//  RemoveNthNodeFromEndofList.cpp
+//  Remove Nth Node From End of List.cpp
 //  Leetcode
 //
 //  Created by Quinn on 2020/7/13.

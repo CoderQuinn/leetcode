@@ -1,5 +1,5 @@
 //
-//  RemoveDuplicatesfromSortedList.cpp
+//  Remove Duplicates from Sorted List.cpp
 //  Leetcode
 //
 //  Created by Quinn on 2020/7/17.
