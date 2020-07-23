@@ -28,6 +28,7 @@
 		E45BF7E824BD89D30051A649 /* MergeTwoSortedLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7E724BD89D30051A649 /* MergeTwoSortedLists.cpp */; };
 		E45BF7EB24BDA0AC0051A649 /* AddTwoNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EA24BDA0AC0051A649 /* AddTwoNumbers.cpp */; };
 		E45BF7ED24BDDE0E0051A649 /* RotateList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EC24BDDE0E0051A649 /* RotateList.cpp */; };
+		E4C4530A24C98B7100E3C956 /* SwapNodesinPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4530924C98B7100E3C956 /* SwapNodesinPairs.cpp */; };
 		E4EF837524BF34F200D42D2C /* PartitionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4EF837424BF34F200D42D2C /* PartitionList.cpp */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		E45BF7E724BD89D30051A649 /* MergeTwoSortedLists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeTwoSortedLists.cpp; sourceTree = "<group>"; };
 		E45BF7EA24BDA0AC0051A649 /* AddTwoNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AddTwoNumbers.cpp; sourceTree = "<group>"; };
 		E45BF7EC24BDDE0E0051A649 /* RotateList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RotateList.cpp; sourceTree = "<group>"; };
+		E4C4530924C98B7100E3C956 /* SwapNodesinPairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SwapNodesinPairs.cpp; sourceTree = "<group>"; };
 		E4EF837424BF34F200D42D2C /* PartitionList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartitionList.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,9 +198,10 @@
 				E45BF7E924BDA07B0051A649 /* 2 Add Two Numbers */,
 				E45BF7D724BC52730051A649 /* 19 Remove Nth Node From End of List */,
 				E45BF7E624BD89B80051A649 /* 21 Merge Two Sorted Lists */,
+				E4C4530824C9892100E3C956 /* 24 Swap Nodes in Pairs */,
 				E45BF7EE24BDDE1B0051A649 /* 61 Rotate List */,
 				E44664E724C0EEF60008DCEE /* 83 Remove Duplicates from Sorted List */,
-				E4EF837324BF34D000D42D2C /* 86 分隔链表 */,
+				E4EF837324BF34D000D42D2C /* 86 Partition List */,
 				E45BF78F24B98EB80051A649 /* 92 Reverse Linked List II */,
 				E4553CD224BEFD36002A69D3 /* 138 Copy List with Random Pointer */,
 				E45BF7CE24BB69BB0051A649 /* 141 Linked List Cycle */,
@@ -303,12 +306,20 @@
 			path = "61 Rotate List";
 			sourceTree = "<group>";
 		};
-		E4EF837324BF34D000D42D2C /* 86 分隔链表 */ = {
+		E4C4530824C9892100E3C956 /* 24 Swap Nodes in Pairs */ = {
+			isa = PBXGroup;
+			children = (
+				E4C4530924C98B7100E3C956 /* SwapNodesinPairs.cpp */,
+			);
+			path = "24 Swap Nodes in Pairs";
+			sourceTree = "<group>";
+		};
+		E4EF837324BF34D000D42D2C /* 86 Partition List */ = {
 			isa = PBXGroup;
 			children = (
 				E4EF837424BF34F200D42D2C /* PartitionList.cpp */,
 			);
-			path = "86 分隔链表";
+			path = "86 Partition List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +386,7 @@
 				E40E360524C2BCC8001DC2E2 /* MyStack.cpp in Sources */,
 				E4553CD424BEFD62002A69D3 /* CopyListwithRandomPointer.cpp in Sources */,
 				E45BF7E824BD89D30051A649 /* MergeTwoSortedLists.cpp in Sources */,
+				E4C4530A24C98B7100E3C956 /* SwapNodesinPairs.cpp in Sources */,
 				E45BF7DF24BC76A60051A649 /* OddEvenLinkedList.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* LinkedListCycle.cpp in Sources */,
 				E45BF7DC24BC636B0051A649 /* RemoveLinkedListElements.cpp in Sources */,
