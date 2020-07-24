@@ -29,6 +29,9 @@
 		E45BF7EB24BDA0AC0051A649 /* AddTwoNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EA24BDA0AC0051A649 /* AddTwoNumbers.cpp */; };
 		E45BF7ED24BDDE0E0051A649 /* RotateList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EC24BDDE0E0051A649 /* RotateList.cpp */; };
 		E4C4530A24C98B7100E3C956 /* SwapNodesinPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4530924C98B7100E3C956 /* SwapNodesinPairs.cpp */; };
+		E4C4530E24C9AC9600E3C956 /* ValidateStackSequences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4530D24C9AC9600E3C956 /* ValidateStackSequences.cpp */; };
+		E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */; };
+		E4C4531624CA094D00E3C956 /* EvaluateReversePolishNotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */; };
 		E4EF837524BF34F200D42D2C /* PartitionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4EF837424BF34F200D42D2C /* PartitionList.cpp */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,9 @@
 		E45BF7EA24BDA0AC0051A649 /* AddTwoNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AddTwoNumbers.cpp; sourceTree = "<group>"; };
 		E45BF7EC24BDDE0E0051A649 /* RotateList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RotateList.cpp; sourceTree = "<group>"; };
 		E4C4530924C98B7100E3C956 /* SwapNodesinPairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SwapNodesinPairs.cpp; sourceTree = "<group>"; };
+		E4C4530D24C9AC9600E3C956 /* ValidateStackSequences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ValidateStackSequences.cpp; sourceTree = "<group>"; };
+		E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicCalculator.cpp; sourceTree = "<group>"; };
+		E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EvaluateReversePolishNotation.cpp; sourceTree = "<group>"; };
 		E4EF837424BF34F200D42D2C /* PartitionList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartitionList.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,30 +89,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E40E360324C2BCA6001DC2E2 /* 225 用队列实现栈 */ = {
+		E40E360324C2BCA6001DC2E2 /* 225 Implement Stack using Queues */ = {
 			isa = PBXGroup;
 			children = (
 				E40E360424C2BCC8001DC2E2 /* MyStack.cpp */,
 			);
-			path = "225 用队列实现栈";
+			path = "225 Implement Stack using Queues";
 			sourceTree = "<group>";
 		};
-		E40E360624C2E0C1001DC2E2 /* stack queue heap */ = {
+		E40E360624C2E0C1001DC2E2 /* stack and queue */ = {
 			isa = PBXGroup;
 			children = (
-				E40E360724C2E14C001DC2E2 /* 155 最小栈 */,
-				E44664ED24C204240008DCEE /* 232 用两个栈实现队列 */,
-				E40E360324C2BCA6001DC2E2 /* 225 用队列实现栈 */,
+				E4C4531424CA092500E3C956 /* 150 Evaluate Reverse Polish Notation */,
+				E40E360724C2E14C001DC2E2 /* 155 Min Stack */,
+				E44664ED24C204240008DCEE /* 232 Implement Queue using Stacks */,
+				E4C4531124C9B67500E3C956 /* 224 Basic Calculator */,
+				E40E360324C2BCA6001DC2E2 /* 225 Implement Stack using Queues */,
+				E4C4530C24C9AC6200E3C956 /* 946 Validate Stack Sequences */,
 			);
-			path = "stack queue heap";
+			path = "stack and queue";
 			sourceTree = "<group>";
 		};
-		E40E360724C2E14C001DC2E2 /* 155 最小栈 */ = {
+		E40E360724C2E14C001DC2E2 /* 155 Min Stack */ = {
 			isa = PBXGroup;
 			children = (
 				E40E360824C2E16B001DC2E2 /* MinStack.cpp */,
 			);
-			path = "155 最小栈";
+			path = "155 Min Stack";
 			sourceTree = "<group>";
 		};
 		E414D4F624C711CC00DD41F3 /* 445 Add Two Numbers II */ = {
@@ -125,12 +134,12 @@
 			path = "83 Remove Duplicates from Sorted List";
 			sourceTree = "<group>";
 		};
-		E44664ED24C204240008DCEE /* 232 用两个栈实现队列 */ = {
+		E44664ED24C204240008DCEE /* 232 Implement Queue using Stacks */ = {
 			isa = PBXGroup;
 			children = (
 				E44664EE24C20CAB0008DCEE /* MyQueue.cpp */,
 			);
-			path = "232 用两个栈实现队列";
+			path = "232 Implement Queue using Stacks";
 			sourceTree = "<group>";
 		};
 		E4553CCF24BEDC9B002A69D3 /* 430 Flattena Multilevel Doubly Linked List */ = {
@@ -153,7 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				E45BF79324B9912B0051A649 /* list */,
-				E40E360624C2E0C1001DC2E2 /* stack queue heap */,
+				E40E360624C2E0C1001DC2E2 /* stack and queue */,
+				E4C4530B24C99F2B00E3C956 /* heap */,
+				E4C4531024C9B57F00E3C956 /* greedy */,
 				E45BF78324B9857D0051A649 /* Leetcode */,
 				E45BF78224B9857D0051A649 /* Products */,
 			);
@@ -314,6 +325,52 @@
 			path = "24 Swap Nodes in Pairs";
 			sourceTree = "<group>";
 		};
+		E4C4530B24C99F2B00E3C956 /* heap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = heap;
+			sourceTree = "<group>";
+		};
+		E4C4530C24C9AC6200E3C956 /* 946 Validate Stack Sequences */ = {
+			isa = PBXGroup;
+			children = (
+				E4C4530D24C9AC9600E3C956 /* ValidateStackSequences.cpp */,
+			);
+			path = "946 Validate Stack Sequences";
+			sourceTree = "<group>";
+		};
+		E4C4530F24C9B47F00E3C956 /* 402 Remove K Digits */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "402 Remove K Digits";
+			sourceTree = "<group>";
+		};
+		E4C4531024C9B57F00E3C956 /* greedy */ = {
+			isa = PBXGroup;
+			children = (
+				E4C4530F24C9B47F00E3C956 /* 402 Remove K Digits */,
+			);
+			path = greedy;
+			sourceTree = "<group>";
+		};
+		E4C4531124C9B67500E3C956 /* 224 Basic Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */,
+			);
+			path = "224 Basic Calculator";
+			sourceTree = "<group>";
+		};
+		E4C4531424CA092500E3C956 /* 150 Evaluate Reverse Polish Notation */ = {
+			isa = PBXGroup;
+			children = (
+				E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */,
+			);
+			path = "150 Evaluate Reverse Polish Notation";
+			sourceTree = "<group>";
+		};
 		E4EF837324BF34D000D42D2C /* 86 Partition List */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,9 +442,12 @@
 				E45BF7ED24BDDE0E0051A649 /* RotateList.cpp in Sources */,
 				E40E360524C2BCC8001DC2E2 /* MyStack.cpp in Sources */,
 				E4553CD424BEFD62002A69D3 /* CopyListwithRandomPointer.cpp in Sources */,
+				E4C4531624CA094D00E3C956 /* EvaluateReversePolishNotation.cpp in Sources */,
 				E45BF7E824BD89D30051A649 /* MergeTwoSortedLists.cpp in Sources */,
+				E4C4530E24C9AC9600E3C956 /* ValidateStackSequences.cpp in Sources */,
 				E4C4530A24C98B7100E3C956 /* SwapNodesinPairs.cpp in Sources */,
 				E45BF7DF24BC76A60051A649 /* OddEvenLinkedList.cpp in Sources */,
+				E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* LinkedListCycle.cpp in Sources */,
 				E45BF7DC24BC636B0051A649 /* RemoveLinkedListElements.cpp in Sources */,
 				E45BF79624B9AAC30051A649 /* Intersection of Two Linked Lists.cpp in Sources */,
