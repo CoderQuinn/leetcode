@@ -33,6 +33,9 @@
 		E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */; };
 		E4C4531624CA094D00E3C956 /* EvaluateReversePolishNotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */; };
 		E4EF837524BF34F200D42D2C /* PartitionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4EF837424BF34F200D42D2C /* PartitionList.cpp */; };
+		E4F5471A24CAE1310079E871 /* DesignCircularQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */; };
+		E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */; };
+		E4F5472024CB2EB60079E871 /* FindMedianFromDataStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471F24CB2EB60079E871 /* FindMedianFromDataStream.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +79,9 @@
 		E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicCalculator.cpp; sourceTree = "<group>"; };
 		E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EvaluateReversePolishNotation.cpp; sourceTree = "<group>"; };
 		E4EF837424BF34F200D42D2C /* PartitionList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartitionList.cpp; sourceTree = "<group>"; };
+		E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DesignCircularQueue.cpp; sourceTree = "<group>"; };
+		E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = KthLargestElementinanArray.cpp; path = heap/KthLargestElementinanArray.cpp; sourceTree = SOURCE_ROOT; };
+		E4F5471F24CB2EB60079E871 /* FindMedianFromDataStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindMedianFromDataStream.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				E44664ED24C204240008DCEE /* 232 Implement Queue using Stacks */,
 				E4C4531124C9B67500E3C956 /* 224 Basic Calculator */,
 				E40E360324C2BCA6001DC2E2 /* 225 Implement Stack using Queues */,
+				E4F5471824CAE0F30079E871 /* 622 Design Circular Queue */,
 				E4C4530C24C9AC6200E3C956 /* 946 Validate Stack Sequences */,
 			);
 			path = "stack and queue";
@@ -328,6 +335,8 @@
 		E4C4530B24C99F2B00E3C956 /* heap */ = {
 			isa = PBXGroup;
 			children = (
+				E4F5471E24CB2E560079E871 /* 295 Find Median from Data Stream */,
+				E4F5471B24CB13040079E871 /* 215 Kth Largest Element in an Array */,
 			);
 			path = heap;
 			sourceTree = "<group>";
@@ -377,6 +386,30 @@
 				E4EF837424BF34F200D42D2C /* PartitionList.cpp */,
 			);
 			path = "86 Partition List";
+			sourceTree = "<group>";
+		};
+		E4F5471824CAE0F30079E871 /* 622 Design Circular Queue */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */,
+			);
+			path = "622 Design Circular Queue";
+			sourceTree = "<group>";
+		};
+		E4F5471B24CB13040079E871 /* 215 Kth Largest Element in an Array */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */,
+			);
+			path = "215 Kth Largest Element in an Array";
+			sourceTree = "<group>";
+		};
+		E4F5471E24CB2E560079E871 /* 295 Find Median from Data Stream */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5471F24CB2EB60079E871 /* FindMedianFromDataStream.cpp */,
+			);
+			path = "295 Find Median from Data Stream";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +479,8 @@
 				E45BF7E824BD89D30051A649 /* MergeTwoSortedLists.cpp in Sources */,
 				E4C4530E24C9AC9600E3C956 /* ValidateStackSequences.cpp in Sources */,
 				E4C4530A24C98B7100E3C956 /* SwapNodesinPairs.cpp in Sources */,
+				E4F5471A24CAE1310079E871 /* DesignCircularQueue.cpp in Sources */,
+				E4F5472024CB2EB60079E871 /* FindMedianFromDataStream.cpp in Sources */,
 				E45BF7DF24BC76A60051A649 /* OddEvenLinkedList.cpp in Sources */,
 				E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* LinkedListCycle.cpp in Sources */,
@@ -462,6 +497,7 @@
 				E40E360924C2E16B001DC2E2 /* MinStack.cpp in Sources */,
 				E45BF79224B9903E0051A649 /* Reverse Linked List II.cpp in Sources */,
 				E4553CD124BEDD41002A69D3 /* FlattenaMultilevelDoublyLinkedList.cpp in Sources */,
+				E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
