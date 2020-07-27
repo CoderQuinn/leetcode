@@ -20,7 +20,7 @@ public:
             ListNode *curr = ptr;
             ptr = ptr->next;
             
-            if (++count % 2) { // odd
+            if (++count & 1) { // odd
                 curr->next = nullptr;
                 tail->next = curr;
                 tail = curr;
@@ -36,3 +36,18 @@ public:
         return result;
     }
 };
+
+class Solution1 {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        if (!head || !head->next) return head;
+        
+        ListNode *temp = head->next->next;
+        ListNode *next = head->next;
+        next->next = head;
+        head->next = swapPairs(temp);
+        
+        return next;
+    }
+};
+

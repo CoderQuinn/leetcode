@@ -49,7 +49,6 @@ public:
                 curr = curr->left;
             }
             
-            
             if (!node_stack.empty()) {
                 curr = node_stack.top();
                 result_vec.push_back(curr->val);
