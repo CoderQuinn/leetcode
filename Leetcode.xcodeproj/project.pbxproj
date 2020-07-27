@@ -20,6 +20,7 @@
 		E45322B024CE011E00067CC4 /* MaximumDepthofBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322AF24CE011E00067CC4 /* MaximumDepthofBinaryTree.cpp */; };
 		E45322B324CE116700067CC4 /* MinimumDepthofBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322B224CE116700067CC4 /* MinimumDepthofBinaryTree.cpp */; };
 		E45322B624CEC35500067CC4 /* SymmetricTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322B524CEC35500067CC4 /* SymmetricTree.cpp */; };
+		E45322B924CED49300067CC4 /* PathSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322B824CED49300067CC4 /* PathSum.cpp */; };
 		E4553CD124BEDD41002A69D3 /* FlattenaMultilevelDoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4553CD024BEDD41002A69D3 /* FlattenaMultilevelDoublyLinkedList.cpp */; };
 		E4553CD424BEFD62002A69D3 /* CopyListwithRandomPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4553CD324BEFD62002A69D3 /* CopyListwithRandomPointer.cpp */; };
 		E45BF78524B9857D0051A649 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF78424B9857D0051A649 /* main.cpp */; };
@@ -74,6 +75,7 @@
 		E45322AF24CE011E00067CC4 /* MaximumDepthofBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaximumDepthofBinaryTree.cpp; sourceTree = "<group>"; };
 		E45322B224CE116700067CC4 /* MinimumDepthofBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MinimumDepthofBinaryTree.cpp; sourceTree = "<group>"; };
 		E45322B524CEC35500067CC4 /* SymmetricTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SymmetricTree.cpp; sourceTree = "<group>"; };
+		E45322B824CED49300067CC4 /* PathSum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PathSum.cpp; sourceTree = "<group>"; };
 		E4553CD024BEDD41002A69D3 /* FlattenaMultilevelDoublyLinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlattenaMultilevelDoublyLinkedList.cpp; sourceTree = "<group>"; };
 		E4553CD324BEFD62002A69D3 /* CopyListwithRandomPointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CopyListwithRandomPointer.cpp; sourceTree = "<group>"; };
 		E45BF78124B9857D0051A649 /* Leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,12 +182,12 @@
 			isa = PBXGroup;
 			children = (
 				E45322A424CD0D2E00067CC4 /* TreeNode.h */,
-				E45322B724CED3F000067CC4 /* 112 Path Sum */,
 				E45322A524CD1B8E00067CC4 /* 94 Binary Tree Inorder Traversal */,
 				E45322B424CEC1FB00067CC4 /* 101 Symmetric Tree */,
 				E45322AB24CD616600067CC4 /* 102 BinaryTreeLevelOrderTraversal */,
 				E45322AE24CE00C300067CC4 /* 104 Maximum Depth of Binary Tree */,
 				E45322B124CE114A00067CC4 /* 111 Minimum Depth of Binary Tree */,
+				E45322B724CED3F000067CC4 /* 112 Path Sum */,
 				E45322A324CD0CB200067CC4 /* 144 Binary Tree Preorder Traversal */,
 				E45322A824CD1FD900067CC4 /* 145 Binary Tree Postorder Traversal */,
 			);
@@ -251,6 +253,7 @@
 		E45322B724CED3F000067CC4 /* 112 Path Sum */ = {
 			isa = PBXGroup;
 			children = (
+				E45322B824CED49300067CC4 /* PathSum.cpp */,
 			);
 			path = "112 Path Sum";
 			sourceTree = "<group>";
@@ -631,6 +634,7 @@
 				E415BD1724CC96CA003D4899 /* ReverseString.cpp in Sources */,
 				E4553CD124BEDD41002A69D3 /* FlattenaMultilevelDoublyLinkedList.cpp in Sources */,
 				E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */,
+				E45322B924CED49300067CC4 /* PathSum.cpp in Sources */,
 				E45322B624CEC35500067CC4 /* SymmetricTree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
