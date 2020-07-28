@@ -11,6 +11,11 @@
 		E40E360924C2E16B001DC2E2 /* MinStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E40E360824C2E16B001DC2E2 /* MinStack.cpp */; };
 		E414D4F924C7187C00DD41F3 /* AddTwoNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E414D4F824C7187C00DD41F3 /* AddTwoNumbers.cpp */; };
 		E415BD1724CC96CA003D4899 /* ReverseString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E415BD1624CC96CA003D4899 /* ReverseString.cpp */; };
+		E42C8F3324CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3224CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp */; };
+		E42C8F3624CFED05009979EE /* ConstructBinaryTreefromInorderandPostorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3524CFED05009979EE /* ConstructBinaryTreefromInorderandPostorderTraversal.cpp */; };
+		E42C8F3924D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3824D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp */; };
+		E42C8F3C24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3B24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp */; };
+		E42C8F3F24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3E24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp */; };
 		E44664E924C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* MyQueue.cpp */; };
 		E45322A224CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322A124CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp */; };
@@ -65,6 +70,11 @@
 		E40E360824C2E16B001DC2E2 /* MinStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MinStack.cpp; sourceTree = "<group>"; };
 		E414D4F824C7187C00DD41F3 /* AddTwoNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AddTwoNumbers.cpp; sourceTree = "<group>"; };
 		E415BD1624CC96CA003D4899 /* ReverseString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseString.cpp; sourceTree = "<group>"; };
+		E42C8F3224CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeLevelOrderTraversalII.cpp; sourceTree = "<group>"; };
+		E42C8F3524CFED05009979EE /* ConstructBinaryTreefromInorderandPostorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConstructBinaryTreefromInorderandPostorderTraversal.cpp; sourceTree = "<group>"; };
+		E42C8F3824D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConstructBinaryTreefromPreorderandInorderTraversal.cpp; sourceTree = "<group>"; };
+		E42C8F3B24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PopulatingNextRightPointersinEachNode.cpp; sourceTree = "<group>"; };
+		E42C8F3E24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PopulatingNextRightPointersinEachNodeII.cpp; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicatesfromSortedList.cpp; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyQueue.cpp; sourceTree = "<group>"; };
 		E45322A124CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreePreorderTraversal.cpp; sourceTree = "<group>"; };
@@ -162,6 +172,46 @@
 			path = "344 Reverse String";
 			sourceTree = "<group>";
 		};
+		E42C8F3124CFE52E009979EE /* 107 Binary Tree Level Order Traversal II */ = {
+			isa = PBXGroup;
+			children = (
+				E42C8F3224CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp */,
+			);
+			path = "107 Binary Tree Level Order Traversal II";
+			sourceTree = "<group>";
+		};
+		E42C8F3424CFECC2009979EE /* 106 Construct Binary Tree from Inorder and Postorder Traversal */ = {
+			isa = PBXGroup;
+			children = (
+				E42C8F3524CFED05009979EE /* ConstructBinaryTreefromInorderandPostorderTraversal.cpp */,
+			);
+			path = "106 Construct Binary Tree from Inorder and Postorder Traversal";
+			sourceTree = "<group>";
+		};
+		E42C8F3724D00A9D009979EE /* 105 Construct Binary Tree from Preorder and Inorder Traversal */ = {
+			isa = PBXGroup;
+			children = (
+				E42C8F3824D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp */,
+			);
+			path = "105 Construct Binary Tree from Preorder and Inorder Traversal";
+			sourceTree = "<group>";
+		};
+		E42C8F3A24D019FB009979EE /* 116 Populating Next Right Pointers in Each Node */ = {
+			isa = PBXGroup;
+			children = (
+				E42C8F3B24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp */,
+			);
+			path = "116 Populating Next Right Pointers in Each Node";
+			sourceTree = "<group>";
+		};
+		E42C8F3D24D03349009979EE /* 117 Populating Next Right Pointers in Each Node II */ = {
+			isa = PBXGroup;
+			children = (
+				E42C8F3E24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp */,
+			);
+			path = "117 Populating Next Right Pointers in Each Node II";
+			sourceTree = "<group>";
+		};
 		E44664E724C0EEF60008DCEE /* 83 Remove Duplicates from Sorted List */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +236,13 @@
 				E45322B424CEC1FB00067CC4 /* 101 Symmetric Tree */,
 				E45322AB24CD616600067CC4 /* 102 BinaryTreeLevelOrderTraversal */,
 				E45322AE24CE00C300067CC4 /* 104 Maximum Depth of Binary Tree */,
+				E42C8F3724D00A9D009979EE /* 105 Construct Binary Tree from Preorder and Inorder Traversal */,
+				E42C8F3424CFECC2009979EE /* 106 Construct Binary Tree from Inorder and Postorder Traversal */,
+				E42C8F3124CFE52E009979EE /* 107 Binary Tree Level Order Traversal II */,
 				E45322B124CE114A00067CC4 /* 111 Minimum Depth of Binary Tree */,
 				E45322B724CED3F000067CC4 /* 112 Path Sum */,
+				E42C8F3A24D019FB009979EE /* 116 Populating Next Right Pointers in Each Node */,
+				E42C8F3D24D03349009979EE /* 117 Populating Next Right Pointers in Each Node II */,
 				E45322A324CD0CB200067CC4 /* 144 Binary Tree Preorder Traversal */,
 				E45322A824CD1FD900067CC4 /* 145 Binary Tree Postorder Traversal */,
 			);
@@ -616,9 +671,12 @@
 				E45BF7DF24BC76A60051A649 /* OddEvenLinkedList.cpp in Sources */,
 				E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* LinkedListCycle.cpp in Sources */,
+				E42C8F3324CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp in Sources */,
+				E42C8F3924D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */,
 				E45BF7DC24BC636B0051A649 /* RemoveLinkedListElements.cpp in Sources */,
 				E45322AD24CD619800067CC4 /* BinaryTreeLevelOrderTraversal.cpp in Sources */,
 				E45BF79624B9AAC30051A649 /* Intersection of Two Linked Lists.cpp in Sources */,
+				E42C8F3F24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp in Sources */,
 				E4EF837524BF34F200D42D2C /* PartitionList.cpp in Sources */,
 				E45BF78E24B985C50051A649 /* ReverseLinkedList.cpp in Sources */,
 				E414D4F924C7187C00DD41F3 /* AddTwoNumbers.cpp in Sources */,
@@ -632,8 +690,10 @@
 				E45BF79224B9903E0051A649 /* Reverse Linked List II.cpp in Sources */,
 				E45322A224CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp in Sources */,
 				E415BD1724CC96CA003D4899 /* ReverseString.cpp in Sources */,
+				E42C8F3624CFED05009979EE /* ConstructBinaryTreefromInorderandPostorderTraversal.cpp in Sources */,
 				E4553CD124BEDD41002A69D3 /* FlattenaMultilevelDoublyLinkedList.cpp in Sources */,
 				E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */,
+				E42C8F3C24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp in Sources */,
 				E45322B924CED49300067CC4 /* PathSum.cpp in Sources */,
 				E45322B624CEC35500067CC4 /* SymmetricTree.cpp in Sources */,
 			);

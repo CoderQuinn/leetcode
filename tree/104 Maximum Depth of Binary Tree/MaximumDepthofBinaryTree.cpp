@@ -37,20 +37,24 @@ using namespace::std;
 */
 class Solution0 {
 public:
+    public:
     int maxDepth(TreeNode* root) {
-        int answer = 0;
-        maximum_depth(root, 1, answer);
-        return answer;
+        int result = 0;
+        max_depth_core(root, 1, result);
+        return result;
     }
-    
 
-    void maximum_depth(TreeNode* root, int depth, int &answer) {
+    void max_depth_core(TreeNode *root, int depth, int &answer) {
         if (!root) return;
+        
+        if (!root->left && !root->right)
+        {
+            /* code */
+            answer = max(answer, depth);
+        }
 
-        if (!root->left && !root->right) answer = max(answer, depth);
- 
-        maximum_depth(root->left, depth + 1, answer);
-        maximum_depth(root->right, depth + 1, answer);
+        max_depth_core(root->left, depth + 1, answer);
+        max_depth_core(root->right, depth + 1, answer);
     }
 };
 
