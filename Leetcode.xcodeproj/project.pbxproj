@@ -16,6 +16,7 @@
 		E42C8F3924D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3824D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp */; };
 		E42C8F3C24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3B24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp */; };
 		E42C8F3F24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3E24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp */; };
+		E42C8F4224D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F4124D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp */; };
 		E44664E924C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* MyQueue.cpp */; };
 		E45322A224CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322A124CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp */; };
@@ -75,6 +76,7 @@
 		E42C8F3824D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConstructBinaryTreefromPreorderandInorderTraversal.cpp; sourceTree = "<group>"; };
 		E42C8F3B24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PopulatingNextRightPointersinEachNode.cpp; sourceTree = "<group>"; };
 		E42C8F3E24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PopulatingNextRightPointersinEachNodeII.cpp; sourceTree = "<group>"; };
+		E42C8F4124D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LowestCommonAncestorofaBinaryTree.cpp; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicatesfromSortedList.cpp; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyQueue.cpp; sourceTree = "<group>"; };
 		E45322A124CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreePreorderTraversal.cpp; sourceTree = "<group>"; };
@@ -212,6 +214,14 @@
 			path = "117 Populating Next Right Pointers in Each Node II";
 			sourceTree = "<group>";
 		};
+		E42C8F4024D05E05009979EE /* 236 Lowest Common Ancestor of a Binary Tree */ = {
+			isa = PBXGroup;
+			children = (
+				E42C8F4124D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp */,
+			);
+			path = "236 Lowest Common Ancestor of a Binary Tree";
+			sourceTree = "<group>";
+		};
 		E44664E724C0EEF60008DCEE /* 83 Remove Duplicates from Sorted List */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +255,7 @@
 				E42C8F3D24D03349009979EE /* 117 Populating Next Right Pointers in Each Node II */,
 				E45322A324CD0CB200067CC4 /* 144 Binary Tree Preorder Traversal */,
 				E45322A824CD1FD900067CC4 /* 145 Binary Tree Postorder Traversal */,
+				E42C8F4024D05E05009979EE /* 236 Lowest Common Ancestor of a Binary Tree */,
 			);
 			path = tree;
 			sourceTree = "<group>";
@@ -671,6 +682,7 @@
 				E45BF7DF24BC76A60051A649 /* OddEvenLinkedList.cpp in Sources */,
 				E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* LinkedListCycle.cpp in Sources */,
+				E42C8F4224D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp in Sources */,
 				E42C8F3324CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp in Sources */,
 				E42C8F3924D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */,
 				E45BF7DC24BC636B0051A649 /* RemoveLinkedListElements.cpp in Sources */,
