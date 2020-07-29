@@ -7,8 +7,7 @@
 //
 
 #include "TreeNode.h"
-#include <vector>
-#include <stack>
+#include <unordered_map>
 using namespace::std;
 
 /**
@@ -29,7 +28,7 @@ using namespace::std;
  3. q为祖先，p在其左子树或右子树上
  4. root的左右子树均不包含pq,与题意不符
  */
-// 递归
+// 1.递归
 class Solution0 {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
@@ -46,12 +45,43 @@ public:
     }
 };
 
-// 迭代
+// 2.迭代
 class Solution1 {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         if (!root || q == root || p == root) return root;
-        // todo:
+        
+        unordered_map<int, TreeNode*> traversal_map;
+        traversal_map[root->val] = nullptr;
+        DFS(root, traversal_map);
+        
+        unordered_map<TreeNode*, bool> visited_map;
+        TreeNode *curr = p;
+        while (curr) {
+            visited_map[curr] = true;
+            curr = traversal_map[curr->val];
+        }
+        
+        curr = q;
+        while (curr) {
+            if (visited_map[curr]) {
+                return curr;
+            }
+            curr = traversal_map[curr->val];
+        }
+        
         return root;
+    }
+    
+    void DFS(TreeNode* root, unordered_map<int, TreeNode*> &map){
+        if (root->left) {
+            map[root->left->val] = root;
+            DFS(root->left, map);
+        }
+        
+        if (root->right) {
+            map[root->right->val] = root;
+            DFS(root->right, map);
+        }
     }
 };
