@@ -47,6 +47,7 @@
 		E4C4530E24C9AC9600E3C956 /* ValidateStackSequences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4530D24C9AC9600E3C956 /* ValidateStackSequences.cpp */; };
 		E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */; };
 		E4C4531624CA094D00E3C956 /* EvaluateReversePolishNotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */; };
+		E4ECFDB724D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4ECFDB624D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp */; };
 		E4EF837524BF34F200D42D2C /* PartitionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4EF837424BF34F200D42D2C /* PartitionList.cpp */; };
 		E4F5471A24CAE1310079E871 /* DesignCircularQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */; };
 		E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */; };
@@ -110,6 +111,7 @@
 		E4C4530D24C9AC9600E3C956 /* ValidateStackSequences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ValidateStackSequences.cpp; sourceTree = "<group>"; };
 		E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicCalculator.cpp; sourceTree = "<group>"; };
 		E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EvaluateReversePolishNotation.cpp; sourceTree = "<group>"; };
+		E4ECFDB624D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SerializeandDeserializeBinaryTree.cpp; sourceTree = "<group>"; };
 		E4EF837424BF34F200D42D2C /* PartitionList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartitionList.cpp; sourceTree = "<group>"; };
 		E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DesignCircularQueue.cpp; sourceTree = "<group>"; };
 		E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = KthLargestElementinanArray.cpp; path = heap/KthLargestElementinanArray.cpp; sourceTree = SOURCE_ROOT; };
@@ -256,6 +258,7 @@
 				E45322A324CD0CB200067CC4 /* 144 Binary Tree Preorder Traversal */,
 				E45322A824CD1FD900067CC4 /* 145 Binary Tree Postorder Traversal */,
 				E42C8F4024D05E05009979EE /* 236 Lowest Common Ancestor of a Binary Tree */,
+				E4ECFDB524D1C49A0035C59A /* 297 Serialize and Deserialize Binary Tree */,
 			);
 			path = tree;
 			sourceTree = "<group>";
@@ -558,6 +561,14 @@
 			path = "150 Evaluate Reverse Polish Notation";
 			sourceTree = "<group>";
 		};
+		E4ECFDB524D1C49A0035C59A /* 297 Serialize and Deserialize Binary Tree */ = {
+			isa = PBXGroup;
+			children = (
+				E4ECFDB624D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp */,
+			);
+			path = "297 Serialize and Deserialize Binary Tree";
+			sourceTree = "<group>";
+		};
 		E4EE5EB124CC299A00C6F04E /* recursion */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,6 +681,7 @@
 				E45BF7ED24BDDE0E0051A649 /* RotateList.cpp in Sources */,
 				E40E360524C2BCC8001DC2E2 /* MyStack.cpp in Sources */,
 				E4553CD424BEFD62002A69D3 /* CopyListwithRandomPointer.cpp in Sources */,
+				E4ECFDB724D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp in Sources */,
 				E4C4531624CA094D00E3C956 /* EvaluateReversePolishNotation.cpp in Sources */,
 				E45BF7E824BD89D30051A649 /* MergeTwoSortedLists.cpp in Sources */,
 				E4C4530E24C9AC9600E3C956 /* ValidateStackSequences.cpp in Sources */,

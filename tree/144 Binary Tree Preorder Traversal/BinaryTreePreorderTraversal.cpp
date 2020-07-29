@@ -59,10 +59,7 @@ public:
                 node_stack.pop();
                 curr = curr->right;
             }
-            
-            
         }
-        
         return result_vector;
     }
 };
