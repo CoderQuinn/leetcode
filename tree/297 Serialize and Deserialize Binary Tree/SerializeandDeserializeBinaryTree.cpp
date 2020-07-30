@@ -24,7 +24,7 @@ using namespace::std;
 class Codec {
 public:
     // Encodes a tree to a single string.
-    const string NULL_NODE_STR = "null";
+    const string NULL_STR = "null";
     const char *SEPTARTER_STR = ",";
     string serialize(TreeNode *root) {
         std::string data;
@@ -48,7 +48,7 @@ public:
                     data += SEPTARTER_STR;
                     node_quque.push(curr->left);
                 } else {
-                    data += NULL_NODE_STR;
+                    data += NULL_STR;
                     data += SEPTARTER_STR;
                 }
                 
@@ -57,7 +57,7 @@ public:
                     data += SEPTARTER_STR;
                     node_quque.push(curr->right);
                 } else {
-                    data += NULL_NODE_STR;
+                    data += NULL_STR;
                     data += SEPTARTER_STR;
                 }
                 
@@ -92,14 +92,14 @@ public:
                 curr = node_quque.front();
                 node_quque.pop();
                 
-                if (node_vec[i] != NULL_NODE_STR) {
+                if (node_vec[i] != NULL_STR) {
                     int val = std::atoi(node_vec[i].c_str());
                     curr->left = new TreeNode(val);
                     node_quque.push(curr->left);
                 }
                 i++;
                 
-                if (node_vec[i] != NULL_NODE_STR) {
+                if (node_vec[i] != NULL_STR) {
                     int val = std::atoi(node_vec[i].c_str());
                     curr->right = new TreeNode(val);
                     node_quque.push(curr->right);
@@ -132,11 +132,11 @@ public:
 // 前序遍历，递归
 class Codec1 {
 public:
-    const string NULL_NODE_STR = "null";
+    const string NULL_STR = "null";
     const char *SEPTARTER_STR = ",";
     // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
-        if (!root) return NULL_NODE_STR + SEPTARTER_STR;
+        if (!root) return NULL_STR + SEPTARTER_STR;
 
         string s = to_string(root->val);
         s += SEPTARTER_STR;
@@ -155,7 +155,7 @@ public:
     
     TreeNode* deserialize_core(vector<string> &data_vec, int &index) {
         string curr_str = data_vec[index];
-        if (curr_str == NULL_NODE_STR) return nullptr;
+        if (curr_str == NULL_STR) return nullptr;
         
         TreeNode *root = new TreeNode(stoi(curr_str));
         root->left = deserialize_core(data_vec, ++index);

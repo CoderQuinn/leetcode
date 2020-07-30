@@ -49,6 +49,8 @@
 		E4C4531624CA094D00E3C956 /* EvaluateReversePolishNotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */; };
 		E4ECFDB724D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4ECFDB624D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp */; };
 		E4EF837524BF34F200D42D2C /* PartitionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4EF837424BF34F200D42D2C /* PartitionList.cpp */; };
+		E4F027F024D3062D00039E02 /* IntegerBreak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F027EF24D3062D00039E02 /* IntegerBreak.cpp */; };
+		E4F0280824D34AB500039E02 /* Valid Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F0280724D34AB500039E02 /* Valid Parentheses.cpp */; };
 		E4F5471A24CAE1310079E871 /* DesignCircularQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */; };
 		E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */; };
 		E4F5472024CB2EB60079E871 /* FindMedianFromDataStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471F24CB2EB60079E871 /* FindMedianFromDataStream.cpp */; };
@@ -113,8 +115,10 @@
 		E4C4531524CA094D00E3C956 /* EvaluateReversePolishNotation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EvaluateReversePolishNotation.cpp; sourceTree = "<group>"; };
 		E4ECFDB624D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SerializeandDeserializeBinaryTree.cpp; sourceTree = "<group>"; };
 		E4EF837424BF34F200D42D2C /* PartitionList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartitionList.cpp; sourceTree = "<group>"; };
+		E4F027EF24D3062D00039E02 /* IntegerBreak.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerBreak.cpp; sourceTree = "<group>"; };
+		E4F0280724D34AB500039E02 /* Valid Parentheses.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Valid Parentheses.cpp"; sourceTree = "<group>"; };
 		E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DesignCircularQueue.cpp; sourceTree = "<group>"; };
-		E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = KthLargestElementinanArray.cpp; path = heap/KthLargestElementinanArray.cpp; sourceTree = SOURCE_ROOT; };
+		E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = KthLargestElementinanArray.cpp; path = "heap/215 Kth Largest Element in an Array/KthLargestElementinanArray.cpp"; sourceTree = SOURCE_ROOT; };
 		E4F5471F24CB2EB60079E871 /* FindMedianFromDataStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindMedianFromDataStream.cpp; sourceTree = "<group>"; };
 		E4F5472224CB379F0079E871 /* AssignCookies.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssignCookies.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +145,7 @@
 		E40E360624C2E0C1001DC2E2 /* stack and queue */ = {
 			isa = PBXGroup;
 			children = (
+				E4F0280924D34AB900039E02 /* 20 Valid Parentheses */,
 				E4C4531424CA092500E3C956 /* 150 Evaluate Reverse Polish Notation */,
 				E40E360724C2E14C001DC2E2 /* 155 Min Stack */,
 				E44664ED24C204240008DCEE /* 232 Implement Queue using Stacks */,
@@ -346,6 +351,8 @@
 		E45BF77824B9857D0051A649 = {
 			isa = PBXGroup;
 			children = (
+				E4F0280624D3432C00039E02 /* hash map */,
+				E4F027EE24D3059300039E02 /* dynamic programming */,
 				E45322A024CD0C4A00067CC4 /* tree */,
 				E4EE5EB124CC299A00C6F04E /* recursion */,
 				E45BF79324B9912B0051A649 /* list */,
@@ -515,8 +522,8 @@
 		E4C4530B24C99F2B00E3C956 /* heap */ = {
 			isa = PBXGroup;
 			children = (
-				E4F5471E24CB2E560079E871 /* 295 Find Median from Data Stream */,
 				E4F5471B24CB13040079E871 /* 215 Kth Largest Element in an Array */,
+				E4F5471E24CB2E560079E871 /* 295 Find Median from Data Stream */,
 			);
 			path = heap;
 			sourceTree = "<group>";
@@ -539,8 +546,8 @@
 		E4C4531024C9B57F00E3C956 /* greedy */ = {
 			isa = PBXGroup;
 			children = (
-				E4F5472124CB37730079E871 /* 455 AssignCookies */,
 				E4C4530F24C9B47F00E3C956 /* 402 Remove K Digits */,
+				E4F5472124CB37730079E871 /* 455 AssignCookies */,
 			);
 			path = greedy;
 			sourceTree = "<group>";
@@ -583,6 +590,37 @@
 				E4EF837424BF34F200D42D2C /* PartitionList.cpp */,
 			);
 			path = "86 Partition List";
+			sourceTree = "<group>";
+		};
+		E4F027ED24D3056000039E02 /* 343 Integer Break */ = {
+			isa = PBXGroup;
+			children = (
+				E4F027EF24D3062D00039E02 /* IntegerBreak.cpp */,
+			);
+			path = "343 Integer Break";
+			sourceTree = "<group>";
+		};
+		E4F027EE24D3059300039E02 /* dynamic programming */ = {
+			isa = PBXGroup;
+			children = (
+				E4F027ED24D3056000039E02 /* 343 Integer Break */,
+			);
+			path = "dynamic programming";
+			sourceTree = "<group>";
+		};
+		E4F0280624D3432C00039E02 /* hash map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "hash map";
+			sourceTree = "<group>";
+		};
+		E4F0280924D34AB900039E02 /* 20 Valid Parentheses */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0280724D34AB500039E02 /* Valid Parentheses.cpp */,
+			);
+			path = "20 Valid Parentheses";
 			sourceTree = "<group>";
 		};
 		E4F5471824CAE0F30079E871 /* 622 Design Circular Queue */ = {
@@ -676,6 +714,7 @@
 			files = (
 				E45BF78524B9857D0051A649 /* main.cpp in Sources */,
 				E45BF7D624BB6F600051A649 /* LinkedListCycleII.cpp in Sources */,
+				E4F027F024D3062D00039E02 /* IntegerBreak.cpp in Sources */,
 				E4F5472324CB379F0079E871 /* AssignCookies.cpp in Sources */,
 				E44664EF24C20CAB0008DCEE /* MyQueue.cpp in Sources */,
 				E45BF7ED24BDDE0E0051A649 /* RotateList.cpp in Sources */,
@@ -697,6 +736,7 @@
 				E42C8F4224D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp in Sources */,
 				E42C8F3324CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp in Sources */,
 				E42C8F3924D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */,
+				E4F0280824D34AB500039E02 /* Valid Parentheses.cpp in Sources */,
 				E45BF7DC24BC636B0051A649 /* RemoveLinkedListElements.cpp in Sources */,
 				E45322AD24CD619800067CC4 /* BinaryTreeLevelOrderTraversal.cpp in Sources */,
 				E45BF79624B9AAC30051A649 /* Intersection of Two Linked Lists.cpp in Sources */,
