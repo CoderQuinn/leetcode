@@ -51,6 +51,7 @@
 		E4EF837524BF34F200D42D2C /* PartitionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4EF837424BF34F200D42D2C /* PartitionList.cpp */; };
 		E4F027F024D3062D00039E02 /* IntegerBreak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F027EF24D3062D00039E02 /* IntegerBreak.cpp */; };
 		E4F0280824D34AB500039E02 /* Valid Parentheses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F0280724D34AB500039E02 /* Valid Parentheses.cpp */; };
+		E4F0280C24D3578100039E02 /* DailyTemperatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F0280B24D3578100039E02 /* DailyTemperatures.cpp */; };
 		E4F5471A24CAE1310079E871 /* DesignCircularQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */; };
 		E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */; };
 		E4F5472024CB2EB60079E871 /* FindMedianFromDataStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4F5471F24CB2EB60079E871 /* FindMedianFromDataStream.cpp */; };
@@ -117,6 +118,7 @@
 		E4EF837424BF34F200D42D2C /* PartitionList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PartitionList.cpp; sourceTree = "<group>"; };
 		E4F027EF24D3062D00039E02 /* IntegerBreak.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerBreak.cpp; sourceTree = "<group>"; };
 		E4F0280724D34AB500039E02 /* Valid Parentheses.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Valid Parentheses.cpp"; sourceTree = "<group>"; };
+		E4F0280B24D3578100039E02 /* DailyTemperatures.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DailyTemperatures.cpp; sourceTree = "<group>"; };
 		E4F5471924CAE1310079E871 /* DesignCircularQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DesignCircularQueue.cpp; sourceTree = "<group>"; };
 		E4F5471C24CB137E0079E871 /* KthLargestElementinanArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = KthLargestElementinanArray.cpp; path = "heap/215 Kth Largest Element in an Array/KthLargestElementinanArray.cpp"; sourceTree = SOURCE_ROOT; };
 		E4F5471F24CB2EB60079E871 /* FindMedianFromDataStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindMedianFromDataStream.cpp; sourceTree = "<group>"; };
@@ -151,7 +153,9 @@
 				E44664ED24C204240008DCEE /* 232 Implement Queue using Stacks */,
 				E4C4531124C9B67500E3C956 /* 224 Basic Calculator */,
 				E40E360324C2BCA6001DC2E2 /* 225 Implement Stack using Queues */,
+				E4F0280D24D3613900039E02 /* 394 Decode String */,
 				E4F5471824CAE0F30079E871 /* 622 Design Circular Queue */,
+				E4F0280A24D3575D00039E02 /* 739 Daily Temperatures */,
 				E4C4530C24C9AC6200E3C956 /* 946 Validate Stack Sequences */,
 			);
 			path = "stack and queue";
@@ -351,7 +355,6 @@
 		E45BF77824B9857D0051A649 = {
 			isa = PBXGroup;
 			children = (
-				E4F0280624D3432C00039E02 /* hash map */,
 				E4F027EE24D3059300039E02 /* dynamic programming */,
 				E45322A024CD0C4A00067CC4 /* tree */,
 				E4EE5EB124CC299A00C6F04E /* recursion */,
@@ -608,19 +611,27 @@
 			path = "dynamic programming";
 			sourceTree = "<group>";
 		};
-		E4F0280624D3432C00039E02 /* hash map */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "hash map";
-			sourceTree = "<group>";
-		};
 		E4F0280924D34AB900039E02 /* 20 Valid Parentheses */ = {
 			isa = PBXGroup;
 			children = (
 				E4F0280724D34AB500039E02 /* Valid Parentheses.cpp */,
 			);
 			path = "20 Valid Parentheses";
+			sourceTree = "<group>";
+		};
+		E4F0280A24D3575D00039E02 /* 739 Daily Temperatures */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0280B24D3578100039E02 /* DailyTemperatures.cpp */,
+			);
+			path = "739 Daily Temperatures";
+			sourceTree = "<group>";
+		};
+		E4F0280D24D3613900039E02 /* 394 Decode String */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "394 Decode String";
 			sourceTree = "<group>";
 		};
 		E4F5471824CAE0F30079E871 /* 622 Design Circular Queue */ = {
@@ -758,6 +769,7 @@
 				E4553CD124BEDD41002A69D3 /* FlattenaMultilevelDoublyLinkedList.cpp in Sources */,
 				E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */,
 				E42C8F3C24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp in Sources */,
+				E4F0280C24D3578100039E02 /* DailyTemperatures.cpp in Sources */,
 				E45322B924CED49300067CC4 /* PathSum.cpp in Sources */,
 				E45322B624CEC35500067CC4 /* SymmetricTree.cpp in Sources */,
 			);
