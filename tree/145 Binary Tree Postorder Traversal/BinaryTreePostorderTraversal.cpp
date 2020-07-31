@@ -51,17 +51,16 @@ public:
                 curr = curr->left;
             }
             
-            if (!node_stack.empty()) {
-                curr = node_stack.top();
-                if (!curr->right || visited == curr->right) { // right node is null or has been visited
-                    visited = node_stack.top();
-                    result_vector.push_back(visited->val);
-                    node_stack.pop();
-                    curr = nullptr;
-                } else {
-                    curr = curr->right;
-                }
+            curr = node_stack.top();
+            if (!curr->right || visited == curr->right) { // right node is null or has been visited
+                visited = node_stack.top();
+                result_vector.push_back(visited->val);
+                node_stack.pop();
+                curr = nullptr;
+            } else {
+                curr = curr->right;
             }
+            
         }
         
         return result_vector;

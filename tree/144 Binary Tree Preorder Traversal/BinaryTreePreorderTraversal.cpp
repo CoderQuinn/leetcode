@@ -54,11 +54,9 @@ public:
                 curr = curr->left;
             }
             
-            if (!node_stack.empty()) {
-                curr = node_stack.top();
-                node_stack.pop();
-                curr = curr->right;
-            }
+            curr = node_stack.top();
+            node_stack.pop();
+            curr = curr->right;
         }
         return result_vector;
     }

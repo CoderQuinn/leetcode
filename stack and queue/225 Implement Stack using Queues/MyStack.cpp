@@ -24,57 +24,59 @@ using namespace::std;
  你可以假设所有操作都是有效的（例如, 对一个空的栈不会调用 pop 或者 top 操作）。
 
  */
-// 思路：栈1只负责入，栈2只负责出
-class MyStack {
+// 思路：主栈只负责出入，辅助栈只负责移动位置
+class MyStack
+{
 public:
     /** Initialize your data structure here. */
-    MyStack() {
-        queue1 = new std::queue<int>();
-        queue2 = new std::queue<int>();
+    MyStack()
+    {
+        main_queue = new queue<int>();
+        help_queue = new queue<int>();
     }
-    
-    ~MyStack() {
-        delete queue1;
-        delete queue2;
-    }
-    
+
     /** Push element x onto stack. */
-    void push(int x) {
-        queue1->push(x);
+    void push(int x)
+    {
+        main_queue->push(x);
     }
-    
+
     /** Removes the element on top of the stack and returns that element. */
-    int pop() {
-        int element = top();
-        queue1->pop();
-        return element;
+    int pop()
+    {
+        int val = top();
+        main_queue->pop();
+        return val;
     }
-    
+
     /** Get the top element. */
-    int top() {
-        if (queue1->empty()) { // 此时将队列2作为出入队列，节省操作
-            std::queue<int> *temp = queue1;
-            queue1 = queue2;
-            queue2 = temp;
+    int top()
+    {
+        if (main_queue->empty())
+        {
+            std::queue<int> *tmp = main_queue;
+            main_queue = help_queue;
+            help_queue = tmp;
         }
-        
-        while (queue1->size() > 1) {
-            int element = queue1->front();
-            queue1->pop();
-            queue2->push(element);
+
+        while (main_queue->size() > 1)
+        {
+            int val = main_queue->front();
+            main_queue->pop();
+            help_queue->push(val);
         }
-        int element = queue1->front();
-        return element;
+        return main_queue->front();
     }
-    
+
     /** Returns whether the stack is empty. */
-    bool empty() {
-        return queue1->empty() && queue2->empty();
+    bool empty()
+    {
+        return main_queue->empty() && help_queue->empty();
     }
-    
+
 private:
-    std::queue<int> *queue1; // 出入队列
-    std::queue<int> *queue2; // 辅助队列，用于调整顺序
+    std::queue<int> *main_queue; // 出入栈
+    std::queue<int> *help_queue; // 辅助栈
 };
 
 /**

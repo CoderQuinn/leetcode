@@ -1,15 +1,5 @@
-
-//
-//  MyQueue.cpp
-//  Leetcode
-//
-//  Created by Quinn on 2020/7/18.
-//  Copyright © 2020 Quinn. All rights reserved.
-//
-
-#include <stdio.h>
 #include <stack>
-using namespace::std;
+using namespace std;
 
 class MyQueue {
 public:
@@ -20,36 +10,38 @@ public:
     
     /** Push element x to the back of queue. */
     void push(int x) {
-        stack1.push(x);
+        push_stack.push(x);
     }
     
     /** Removes the element from in front of queue and returns that element. */
     int pop() {
-        int element = peek();
-        stack2.pop();
-        return element;
+        int top_val = peek();
+        pop_stack.pop();
+        return top_val;
     }
     
     /** Get the front element. */
     int peek() {
-        if (stack2.empty()) {
-            while (!stack1.empty()) {
-                int element = stack1.top();
-                stack1.pop();
-                stack2.push(element);
+        if (pop_stack.empty())
+        {
+            while (!push_stack.empty())
+            {
+                int val = push_stack.top();
+                push_stack.pop();
+                pop_stack.push(val);
             }
         }
-        return stack2.top();
+        return pop_stack.top();
     }
     
     /** Returns whether the queue is empty. */
     bool empty() {
-        return stack1.empty() && stack2.empty();
+        return push_stack.empty() && pop_stack.empty();
     }
-    
-private:
-    std::stack<int> stack1;
-    std::stack<int> stack2;
+
+    private:
+    std::stack<int> push_stack;
+    std::stack<int> pop_stack;
 };
 
 /**

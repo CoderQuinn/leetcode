@@ -17,7 +17,7 @@ public:
         reverse_string_core(s, 0, s.size()-1);
     }
     
-    void reverse_string_core(vector<char>& s, unsigned long letf, unsigned long right) {
+    void reverse_string_core(vector<char>& s, int letf, int right) {
         if (letf >= right) return;
         char temp_c = s[right];
         s[right] = s[letf];

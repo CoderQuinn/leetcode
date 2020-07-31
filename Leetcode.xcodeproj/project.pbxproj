@@ -19,6 +19,7 @@
 		E42C8F4224D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F4124D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp */; };
 		E44664E924C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* MyQueue.cpp */; };
+		E4502FBD24D43AFB002A0AD4 /* DecodeString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4502FBC24D43AFB002A0AD4 /* DecodeString.cpp */; };
 		E45322A224CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322A124CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp */; };
 		E45322A724CD1BB400067CC4 /* BinaryTreeInorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322A624CD1BB400067CC4 /* BinaryTreeInorderTraversal.cpp */; };
 		E45322AA24CD201F00067CC4 /* BinaryTreePostorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45322A924CD201F00067CC4 /* BinaryTreePostorderTraversal.cpp */; };
@@ -83,6 +84,7 @@
 		E42C8F4124D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LowestCommonAncestorofaBinaryTree.cpp; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicatesfromSortedList.cpp; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyQueue.cpp; sourceTree = "<group>"; };
+		E4502FBC24D43AFB002A0AD4 /* DecodeString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DecodeString.cpp; sourceTree = "<group>"; };
 		E45322A124CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreePreorderTraversal.cpp; sourceTree = "<group>"; };
 		E45322A424CD0D2E00067CC4 /* TreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
 		E45322A624CD1BB400067CC4 /* BinaryTreeInorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeInorderTraversal.cpp; sourceTree = "<group>"; };
@@ -630,6 +632,7 @@
 		E4F0280D24D3613900039E02 /* 394 Decode String */ = {
 			isa = PBXGroup;
 			children = (
+				E4502FBC24D43AFB002A0AD4 /* DecodeString.cpp */,
 			);
 			path = "394 Decode String";
 			sourceTree = "<group>";
@@ -739,6 +742,7 @@
 				E45322A724CD1BB400067CC4 /* BinaryTreeInorderTraversal.cpp in Sources */,
 				E4C4530A24C98B7100E3C956 /* SwapNodesinPairs.cpp in Sources */,
 				E45322AA24CD201F00067CC4 /* BinaryTreePostorderTraversal.cpp in Sources */,
+				E4502FBD24D43AFB002A0AD4 /* DecodeString.cpp in Sources */,
 				E4F5471A24CAE1310079E871 /* DesignCircularQueue.cpp in Sources */,
 				E4F5472024CB2EB60079E871 /* FindMedianFromDataStream.cpp in Sources */,
 				E45BF7DF24BC76A60051A649 /* OddEvenLinkedList.cpp in Sources */,
