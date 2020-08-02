@@ -11,15 +11,14 @@
 #include <stack>
 using namespace::std;
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+// not a tail recursion because it does some computation after the recursive call returned.
+class Solution0 {
+public:
+    int maxDepth(TreeNode* root) {
+        if (!root) return 0;
+        return max(maxDepth(root->left), maxDepth(root->right)) + 1;
+    }
+};
 
 /*
  自顶向下
@@ -35,9 +34,8 @@ using namespace::std;
  4. maximum_depth(root.left, depth + 1)      // call the function recursively for left child
  5. maximum_depth(root.right, depth + 1)     // call the function recursively for right child
 */
-class Solution0 {
+class Solution1 { // this is a tail recursion because the final instruction is the recursive call.
 public:
-    public:
     int maxDepth(TreeNode* root) {
         int result = 0;
         max_depth_core(root, 1, result);
@@ -46,22 +44,13 @@ public:
 
     void max_depth_core(TreeNode *root, int depth, int &answer) {
         if (!root) return;
-        
-        if (!root->left && !root->right)
-        {
-            /* code */
-            answer = max(answer, depth);
+        if (!root->left && !root->right) {
+            answer = max(depth, answer);
         }
-
+        
         max_depth_core(root->left, depth + 1, answer);
         max_depth_core(root->right, depth + 1, answer);
     }
 };
 
-class Solution1 {
-public:
-    int maxDepth(TreeNode* root) {
-        if (!root) return 0;
-        return max(maxDepth(root->left), maxDepth(root->right)) + 1;
-    }
-};
+

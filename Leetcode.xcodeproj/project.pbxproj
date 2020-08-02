@@ -44,6 +44,12 @@
 		E45BF7E824BD89D30051A649 /* MergeTwoSortedLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7E724BD89D30051A649 /* MergeTwoSortedLists.cpp */; };
 		E45BF7EB24BDA0AC0051A649 /* AddTwoNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EA24BDA0AC0051A649 /* AddTwoNumbers.cpp */; };
 		E45BF7ED24BDDE0E0051A649 /* RotateList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EC24BDDE0E0051A649 /* RotateList.cpp */; };
+		E47F01B424D5461B00D05DD4 /* Pascal'sTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E47F01B324D5461B00D05DD4 /* Pascal'sTriangle.cpp */; };
+		E47F01B724D5550E00D05DD4 /* Pascal'sTriangleII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E47F01B624D5550E00D05DD4 /* Pascal'sTriangleII.cpp */; };
+		E4BBEAFF24D57FB900067F1E /* FibonacciNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEAFE24D57FB900067F1E /* FibonacciNumber.cpp */; };
+		E4BBEB0224D5850500067F1E /* ClimbingStairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEB0124D5850500067F1E /* ClimbingStairs.cpp */; };
+		E4BBEB0524D5A5FE00067F1E /* Pow(x, n).cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEB0424D5A5FE00067F1E /* Pow(x, n).cpp */; };
+		E4BBEB0824D5BE3F00067F1E /* K-thSymbolInGrammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEB0724D5BE3F00067F1E /* K-thSymbolInGrammar.cpp */; };
 		E4C4530A24C98B7100E3C956 /* SwapNodesinPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4530924C98B7100E3C956 /* SwapNodesinPairs.cpp */; };
 		E4C4530E24C9AC9600E3C956 /* ValidateStackSequences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4530D24C9AC9600E3C956 /* ValidateStackSequences.cpp */; };
 		E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */; };
@@ -112,6 +118,12 @@
 		E45BF7E724BD89D30051A649 /* MergeTwoSortedLists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeTwoSortedLists.cpp; sourceTree = "<group>"; };
 		E45BF7EA24BDA0AC0051A649 /* AddTwoNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AddTwoNumbers.cpp; sourceTree = "<group>"; };
 		E45BF7EC24BDDE0E0051A649 /* RotateList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RotateList.cpp; sourceTree = "<group>"; };
+		E47F01B324D5461B00D05DD4 /* Pascal'sTriangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Pascal'sTriangle.cpp"; sourceTree = "<group>"; };
+		E47F01B624D5550E00D05DD4 /* Pascal'sTriangleII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Pascal'sTriangleII.cpp"; sourceTree = "<group>"; };
+		E4BBEAFE24D57FB900067F1E /* FibonacciNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FibonacciNumber.cpp; sourceTree = "<group>"; };
+		E4BBEB0124D5850500067F1E /* ClimbingStairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClimbingStairs.cpp; sourceTree = "<group>"; };
+		E4BBEB0424D5A5FE00067F1E /* Pow(x, n).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Pow(x, n).cpp"; sourceTree = "<group>"; };
+		E4BBEB0724D5BE3F00067F1E /* K-thSymbolInGrammar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "K-thSymbolInGrammar.cpp"; sourceTree = "<group>"; };
 		E4C4530924C98B7100E3C956 /* SwapNodesinPairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SwapNodesinPairs.cpp; sourceTree = "<group>"; };
 		E4C4530D24C9AC9600E3C956 /* ValidateStackSequences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ValidateStackSequences.cpp; sourceTree = "<group>"; };
 		E4C4531224C9CDFE00E3C956 /* BasicCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicCalculator.cpp; sourceTree = "<group>"; };
@@ -516,6 +528,54 @@
 			path = "61 Rotate List";
 			sourceTree = "<group>";
 		};
+		E47F01B224D545F700D05DD4 /* 118 Pascal's Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				E47F01B324D5461B00D05DD4 /* Pascal'sTriangle.cpp */,
+			);
+			path = "118 Pascal's Triangle";
+			sourceTree = "<group>";
+		};
+		E47F01B524D554DC00D05DD4 /* 119 Pascal's Triangle II */ = {
+			isa = PBXGroup;
+			children = (
+				E47F01B624D5550E00D05DD4 /* Pascal'sTriangleII.cpp */,
+			);
+			path = "119 Pascal's Triangle II";
+			sourceTree = "<group>";
+		};
+		E4BBEAFD24D57F6D00067F1E /* 509 Fibonacci Number */ = {
+			isa = PBXGroup;
+			children = (
+				E4BBEAFE24D57FB900067F1E /* FibonacciNumber.cpp */,
+			);
+			path = "509 Fibonacci Number";
+			sourceTree = "<group>";
+		};
+		E4BBEB0024D584E300067F1E /* 70 Climbing Stairs */ = {
+			isa = PBXGroup;
+			children = (
+				E4BBEB0124D5850500067F1E /* ClimbingStairs.cpp */,
+			);
+			path = "70 Climbing Stairs";
+			sourceTree = "<group>";
+		};
+		E4BBEB0324D5A5D300067F1E /* 50 Pow(x, n) */ = {
+			isa = PBXGroup;
+			children = (
+				E4BBEB0424D5A5FE00067F1E /* Pow(x, n).cpp */,
+			);
+			path = "50 Pow(x, n)";
+			sourceTree = "<group>";
+		};
+		E4BBEB0624D5BE0700067F1E /* 779 K-th Symbol in Grammar */ = {
+			isa = PBXGroup;
+			children = (
+				E4BBEB0724D5BE3F00067F1E /* K-thSymbolInGrammar.cpp */,
+			);
+			path = "779 K-th Symbol in Grammar";
+			sourceTree = "<group>";
+		};
 		E4C4530824C9892100E3C956 /* 24 Swap Nodes in Pairs */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,7 +644,13 @@
 		E4EE5EB124CC299A00C6F04E /* recursion */ = {
 			isa = PBXGroup;
 			children = (
+				E4BBEB0324D5A5D300067F1E /* 50 Pow(x, n) */,
+				E4BBEB0024D584E300067F1E /* 70 Climbing Stairs */,
+				E47F01B224D545F700D05DD4 /* 118 Pascal's Triangle */,
+				E47F01B524D554DC00D05DD4 /* 119 Pascal's Triangle II */,
 				E415BD1824CC96DD003D4899 /* 344 Reverse String */,
+				E4BBEAFD24D57F6D00067F1E /* 509 Fibonacci Number */,
+				E4BBEB0624D5BE0700067F1E /* 779 K-th Symbol in Grammar */,
 			);
 			path = recursion;
 			sourceTree = "<group>";
@@ -695,7 +761,7 @@
 		E45BF77924B9857D0051A649 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = Quinn;
 				TargetAttributes = {
 					E45BF78024B9857D0051A649 = {
@@ -735,6 +801,8 @@
 				E40E360524C2BCC8001DC2E2 /* MyStack.cpp in Sources */,
 				E4553CD424BEFD62002A69D3 /* CopyListwithRandomPointer.cpp in Sources */,
 				E4ECFDB724D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp in Sources */,
+				E4BBEAFF24D57FB900067F1E /* FibonacciNumber.cpp in Sources */,
+				E47F01B424D5461B00D05DD4 /* Pascal'sTriangle.cpp in Sources */,
 				E4C4531624CA094D00E3C956 /* EvaluateReversePolishNotation.cpp in Sources */,
 				E45BF7E824BD89D30051A649 /* MergeTwoSortedLists.cpp in Sources */,
 				E4C4530E24C9AC9600E3C956 /* ValidateStackSequences.cpp in Sources */,
@@ -748,6 +816,7 @@
 				E45BF7DF24BC76A60051A649 /* OddEvenLinkedList.cpp in Sources */,
 				E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* LinkedListCycle.cpp in Sources */,
+				E4BBEB0224D5850500067F1E /* ClimbingStairs.cpp in Sources */,
 				E42C8F4224D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp in Sources */,
 				E42C8F3324CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp in Sources */,
 				E42C8F3924D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */,
@@ -770,6 +839,9 @@
 				E45322A224CD0C9800067CC4 /* BinaryTreePreorderTraversal.cpp in Sources */,
 				E415BD1724CC96CA003D4899 /* ReverseString.cpp in Sources */,
 				E42C8F3624CFED05009979EE /* ConstructBinaryTreefromInorderandPostorderTraversal.cpp in Sources */,
+				E47F01B724D5550E00D05DD4 /* Pascal'sTriangleII.cpp in Sources */,
+				E4BBEB0824D5BE3F00067F1E /* K-thSymbolInGrammar.cpp in Sources */,
+				E4BBEB0524D5A5FE00067F1E /* Pow(x, n).cpp in Sources */,
 				E4553CD124BEDD41002A69D3 /* FlattenaMultilevelDoublyLinkedList.cpp in Sources */,
 				E4F5471D24CB137E0079E871 /* KthLargestElementinanArray.cpp in Sources */,
 				E42C8F3C24D01A22009979EE /* PopulatingNextRightPointersinEachNode.cpp in Sources */,
@@ -894,6 +966,7 @@
 		E45BF78924B9857D0051A649 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -902,6 +975,7 @@
 		E45BF78A24B9857D0051A649 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

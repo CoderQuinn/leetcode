@@ -13,18 +13,15 @@ using namespace::std;
 class Solution {
 public:
     void reverseString(vector<char>& s) {
-        if (s.empty() || s.size() == 1) return;
-        reverse_string_core(s, 0, s.size()-1);
+        reverse_string_core(s, 0, (int)s.size() - 1);
     }
     
     void reverse_string_core(vector<char>& s, int letf, int right) {
-        if (letf >= right) return;
-        char temp_c = s[right];
-        s[right] = s[letf];
-        s[letf] = temp_c;
-
-        letf++;
-        right--;
-        reverse_string_core(s, letf, right);
+        if (letf > right) return;
+        char ch = s[letf];
+        s[letf] = s[right];
+        s[right] = ch;
+        
+        reverse_string_core(s, letf + 1, right - 1);
     }
 };
