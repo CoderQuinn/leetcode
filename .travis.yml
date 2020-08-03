@@ -1,20 +1,11 @@
-osx_image: xcode9
 language: objective-c
-
-env:
-  global:
-    - LANG=en_US.UTF-8
-    - LC_ALL=en_US.UTF-8
-    - XCODE_PROJECT=core/leetcode.xcodeproj
-  matrix:
-    - SCHEME="leetcode"
-
-before_install:
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-
+osx_image: xcode9.1
+rvm:
+    - 2.4.2
+install:
+    - gem install xcpretty
 script:
-  - set -o pipefail
-  - xcodebuild -project "$XCODE_PROJECT" -scheme "$SCHEME" -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
-
+    - xcodebuild -project Leetcode.xcodeproj -scheme "Leetcode" | xcpretty
 after_success:
-  - sleep 3
+    - "./docs/build_docs.sh"
+    - sleep 3
