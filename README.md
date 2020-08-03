@@ -24,7 +24,7 @@
 
 ## Author
 
-[QuinnYoung](coderquinn@gmail.com)
+QuinnYoung, coderquinn@gmail.com
 
 
 
