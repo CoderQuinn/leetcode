@@ -1,5 +1,5 @@
 osx_image: xcode9
-language: objective-c
+language: c++
 
 env:
   global:
