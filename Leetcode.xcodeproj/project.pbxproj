@@ -46,6 +46,14 @@
 		E45BF7ED24BDDE0E0051A649 /* RotateList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EC24BDDE0E0051A649 /* RotateList.cpp */; };
 		E47F01B424D5461B00D05DD4 /* Pascal'sTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E47F01B324D5461B00D05DD4 /* Pascal'sTriangle.cpp */; };
 		E47F01B724D5550E00D05DD4 /* Pascal'sTriangleII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E47F01B624D5550E00D05DD4 /* Pascal'sTriangleII.cpp */; };
+		E49CC5EE24D6AF6600F5DADC /* BinarySearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC5ED24D6AF6600F5DADC /* BinarySearch.cpp */; };
+		E49CC5F124D6B5F100F5DADC /* Sqrt(x).cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC5F024D6B5F100F5DADC /* Sqrt(x).cpp */; };
+		E49CC5F424D6BE2B00F5DADC /* GuessNumberHigherorLower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC5F324D6BE2B00F5DADC /* GuessNumberHigherorLower.cpp */; };
+		E49CC5F724D6C28400F5DADC /* SearchinRotatedSortedArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC5F624D6C28400F5DADC /* SearchinRotatedSortedArray.cpp */; };
+		E49CC5FA24D748CD00F5DADC /* FirstBadVersion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC5F924D748CD00F5DADC /* FirstBadVersion.cpp */; };
+		E49CC5FD24D7509000F5DADC /* FindPeakElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC5FC24D7509000F5DADC /* FindPeakElement.cpp */; };
+		E49CC60024D752B900F5DADC /* FindMinimumInRotatedSortedArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC5FF24D752B900F5DADC /* FindMinimumInRotatedSortedArray.cpp */; };
+		E49CC60324D7FE9300F5DADC /* FindFirstAndLastPositionOfElementInSortedArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC60224D7FE9300F5DADC /* FindFirstAndLastPositionOfElementInSortedArray.cpp */; };
 		E4BBEAFF24D57FB900067F1E /* FibonacciNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEAFE24D57FB900067F1E /* FibonacciNumber.cpp */; };
 		E4BBEB0224D5850500067F1E /* ClimbingStairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEB0124D5850500067F1E /* ClimbingStairs.cpp */; };
 		E4BBEB0524D5A5FE00067F1E /* Pow(x, n).cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEB0424D5A5FE00067F1E /* Pow(x, n).cpp */; };
@@ -120,6 +128,14 @@
 		E45BF7EC24BDDE0E0051A649 /* RotateList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RotateList.cpp; sourceTree = "<group>"; };
 		E47F01B324D5461B00D05DD4 /* Pascal'sTriangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Pascal'sTriangle.cpp"; sourceTree = "<group>"; };
 		E47F01B624D5550E00D05DD4 /* Pascal'sTriangleII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Pascal'sTriangleII.cpp"; sourceTree = "<group>"; };
+		E49CC5ED24D6AF6600F5DADC /* BinarySearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearch.cpp; sourceTree = "<group>"; };
+		E49CC5F024D6B5F100F5DADC /* Sqrt(x).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Sqrt(x).cpp"; sourceTree = "<group>"; };
+		E49CC5F324D6BE2B00F5DADC /* GuessNumberHigherorLower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GuessNumberHigherorLower.cpp; sourceTree = "<group>"; };
+		E49CC5F624D6C28400F5DADC /* SearchinRotatedSortedArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SearchinRotatedSortedArray.cpp; sourceTree = "<group>"; };
+		E49CC5F924D748CD00F5DADC /* FirstBadVersion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FirstBadVersion.cpp; sourceTree = "<group>"; };
+		E49CC5FC24D7509000F5DADC /* FindPeakElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindPeakElement.cpp; sourceTree = "<group>"; };
+		E49CC5FF24D752B900F5DADC /* FindMinimumInRotatedSortedArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindMinimumInRotatedSortedArray.cpp; sourceTree = "<group>"; };
+		E49CC60224D7FE9300F5DADC /* FindFirstAndLastPositionOfElementInSortedArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindFirstAndLastPositionOfElementInSortedArray.cpp; sourceTree = "<group>"; };
 		E4BBEAFE24D57FB900067F1E /* FibonacciNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FibonacciNumber.cpp; sourceTree = "<group>"; };
 		E4BBEB0124D5850500067F1E /* ClimbingStairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClimbingStairs.cpp; sourceTree = "<group>"; };
 		E4BBEB0424D5A5FE00067F1E /* Pow(x, n).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Pow(x, n).cpp"; sourceTree = "<group>"; };
@@ -369,6 +385,7 @@
 		E45BF77824B9857D0051A649 = {
 			isa = PBXGroup;
 			children = (
+				E49CC5EB24D6AF2300F5DADC /* binary search */,
 				E4F027EE24D3059300039E02 /* dynamic programming */,
 				E45322A024CD0C4A00067CC4 /* tree */,
 				E4EE5EB124CC299A00C6F04E /* recursion */,
@@ -542,6 +559,85 @@
 				E47F01B624D5550E00D05DD4 /* Pascal'sTriangleII.cpp */,
 			);
 			path = "119 Pascal's Triangle II";
+			sourceTree = "<group>";
+		};
+		E49CC5EB24D6AF2300F5DADC /* binary search */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC5F524D6C26500F5DADC /* 33 Search in Rotated Sorted Array */,
+				E49CC60124D7FE5D00F5DADC /* 34 Find First and Last Position of Element in Sorted Array */,
+				E49CC5EF24D6B5A900F5DADC /* 69 Sqrt(x) */,
+				E49CC5FE24D7527F00F5DADC /* 153 Find Minimum in Rotated Sorted Array */,
+				E49CC5FB24D7507800F5DADC /* 162 Find Peak Element */,
+				E49CC5F824D748AA00F5DADC /* 278 First Bad Version */,
+				E49CC5F224D6BE1200F5DADC /* 374. Guess Number Higher or Lower */,
+				E49CC5EC24D6AF5000F5DADC /* 704 Binary Search */,
+			);
+			path = "binary search";
+			sourceTree = "<group>";
+		};
+		E49CC5EC24D6AF5000F5DADC /* 704 Binary Search */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC5ED24D6AF6600F5DADC /* BinarySearch.cpp */,
+			);
+			path = "704 Binary Search";
+			sourceTree = "<group>";
+		};
+		E49CC5EF24D6B5A900F5DADC /* 69 Sqrt(x) */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC5F024D6B5F100F5DADC /* Sqrt(x).cpp */,
+			);
+			path = "69 Sqrt(x)";
+			sourceTree = "<group>";
+		};
+		E49CC5F224D6BE1200F5DADC /* 374. Guess Number Higher or Lower */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC5F324D6BE2B00F5DADC /* GuessNumberHigherorLower.cpp */,
+			);
+			path = "374. Guess Number Higher or Lower";
+			sourceTree = "<group>";
+		};
+		E49CC5F524D6C26500F5DADC /* 33 Search in Rotated Sorted Array */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC5F624D6C28400F5DADC /* SearchinRotatedSortedArray.cpp */,
+			);
+			path = "33 Search in Rotated Sorted Array";
+			sourceTree = "<group>";
+		};
+		E49CC5F824D748AA00F5DADC /* 278 First Bad Version */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC5F924D748CD00F5DADC /* FirstBadVersion.cpp */,
+			);
+			path = "278 First Bad Version";
+			sourceTree = "<group>";
+		};
+		E49CC5FB24D7507800F5DADC /* 162 Find Peak Element */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC5FC24D7509000F5DADC /* FindPeakElement.cpp */,
+			);
+			path = "162 Find Peak Element";
+			sourceTree = "<group>";
+		};
+		E49CC5FE24D7527F00F5DADC /* 153 Find Minimum in Rotated Sorted Array */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC5FF24D752B900F5DADC /* FindMinimumInRotatedSortedArray.cpp */,
+			);
+			path = "153 Find Minimum in Rotated Sorted Array";
+			sourceTree = "<group>";
+		};
+		E49CC60124D7FE5D00F5DADC /* 34 Find First and Last Position of Element in Sorted Array */ = {
+			isa = PBXGroup;
+			children = (
+				E49CC60224D7FE9300F5DADC /* FindFirstAndLastPositionOfElementInSortedArray.cpp */,
+			);
+			path = "34 Find First and Last Position of Element in Sorted Array";
 			sourceTree = "<group>";
 		};
 		E4BBEAFD24D57F6D00067F1E /* 509 Fibonacci Number */ = {
@@ -802,33 +898,41 @@
 				E4553CD424BEFD62002A69D3 /* CopyListwithRandomPointer.cpp in Sources */,
 				E4ECFDB724D1C5060035C59A /* SerializeandDeserializeBinaryTree.cpp in Sources */,
 				E4BBEAFF24D57FB900067F1E /* FibonacciNumber.cpp in Sources */,
+				E49CC60024D752B900F5DADC /* FindMinimumInRotatedSortedArray.cpp in Sources */,
 				E47F01B424D5461B00D05DD4 /* Pascal'sTriangle.cpp in Sources */,
 				E4C4531624CA094D00E3C956 /* EvaluateReversePolishNotation.cpp in Sources */,
 				E45BF7E824BD89D30051A649 /* MergeTwoSortedLists.cpp in Sources */,
+				E49CC60324D7FE9300F5DADC /* FindFirstAndLastPositionOfElementInSortedArray.cpp in Sources */,
 				E4C4530E24C9AC9600E3C956 /* ValidateStackSequences.cpp in Sources */,
 				E45322B324CE116700067CC4 /* MinimumDepthofBinaryTree.cpp in Sources */,
 				E45322A724CD1BB400067CC4 /* BinaryTreeInorderTraversal.cpp in Sources */,
 				E4C4530A24C98B7100E3C956 /* SwapNodesinPairs.cpp in Sources */,
 				E45322AA24CD201F00067CC4 /* BinaryTreePostorderTraversal.cpp in Sources */,
+				E49CC5FD24D7509000F5DADC /* FindPeakElement.cpp in Sources */,
 				E4502FBD24D43AFB002A0AD4 /* DecodeString.cpp in Sources */,
 				E4F5471A24CAE1310079E871 /* DesignCircularQueue.cpp in Sources */,
 				E4F5472024CB2EB60079E871 /* FindMedianFromDataStream.cpp in Sources */,
 				E45BF7DF24BC76A60051A649 /* OddEvenLinkedList.cpp in Sources */,
+				E49CC5EE24D6AF6600F5DADC /* BinarySearch.cpp in Sources */,
 				E4C4531324C9CDFE00E3C956 /* BasicCalculator.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* LinkedListCycle.cpp in Sources */,
 				E4BBEB0224D5850500067F1E /* ClimbingStairs.cpp in Sources */,
 				E42C8F4224D05E4D009979EE /* LowestCommonAncestorofaBinaryTree.cpp in Sources */,
+				E49CC5F124D6B5F100F5DADC /* Sqrt(x).cpp in Sources */,
 				E42C8F3324CFE553009979EE /* BinaryTreeLevelOrderTraversalII.cpp in Sources */,
 				E42C8F3924D00AC4009979EE /* ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */,
 				E4F0280824D34AB500039E02 /* Valid Parentheses.cpp in Sources */,
+				E49CC5F724D6C28400F5DADC /* SearchinRotatedSortedArray.cpp in Sources */,
 				E45BF7DC24BC636B0051A649 /* RemoveLinkedListElements.cpp in Sources */,
 				E45322AD24CD619800067CC4 /* BinaryTreeLevelOrderTraversal.cpp in Sources */,
 				E45BF79624B9AAC30051A649 /* Intersection of Two Linked Lists.cpp in Sources */,
 				E42C8F3F24D03374009979EE /* PopulatingNextRightPointersinEachNodeII.cpp in Sources */,
 				E4EF837524BF34F200D42D2C /* PartitionList.cpp in Sources */,
+				E49CC5F424D6BE2B00F5DADC /* GuessNumberHigherorLower.cpp in Sources */,
 				E45BF78E24B985C50051A649 /* ReverseLinkedList.cpp in Sources */,
 				E414D4F924C7187C00DD41F3 /* AddTwoNumbers.cpp in Sources */,
 				E45BF7E224BC84B60051A649 /* PalindromeLinkedList.cpp in Sources */,
+				E49CC5FA24D748CD00F5DADC /* FirstBadVersion.cpp in Sources */,
 				E44664E924C0EF360008DCEE /* RemoveDuplicatesfromSortedList.cpp in Sources */,
 				E45322B024CE011E00067CC4 /* MaximumDepthofBinaryTree.cpp in Sources */,
 				E45BF7D924BC52AC0051A649 /* RemoveNthNodeFromEndofList.cpp in Sources */,
@@ -860,7 +964,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -918,7 +1022,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
