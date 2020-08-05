@@ -42,21 +42,18 @@ public:
         std::vector<int> result_vec;
         std::stack<TreeNode *> node_stack;
         TreeNode *curr = root;
-
+        
         while (curr || !node_stack.empty()) {
             while (curr) {
                 node_stack.push(curr);
                 curr = curr->left;
             }
             
-            if (!node_stack.empty()) {
-                curr = node_stack.top();
-                result_vec.push_back(curr->val);
-                node_stack.pop();
-                curr = curr->right;
-            }
+            curr = node_stack.top();
+            result_vec.push_back(curr->val);
+            node_stack.pop();
+            curr = curr->right;
         }
-        
         return result_vec;
     }
 };
