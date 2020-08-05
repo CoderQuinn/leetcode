@@ -7,5 +7,4 @@ install:
 script:
     - xcodebuild -project Leetcode.xcodeproj -scheme "Leetcode" | xcpretty
 after_success:
-    - "./docs/build_docs.sh"
     - sleep 3
