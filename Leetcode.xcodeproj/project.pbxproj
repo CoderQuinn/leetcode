@@ -22,6 +22,7 @@
 		E42C8F3C24D01A22009979EE /* 116 PopulatingNextRightPointersinEachNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3B24D01A22009979EE /* 116 PopulatingNextRightPointersinEachNode.cpp */; };
 		E42C8F3F24D03374009979EE /* 117 PopulatingNextRightPointersinEachNodeII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3E24D03374009979EE /* 117 PopulatingNextRightPointersinEachNodeII.cpp */; };
 		E42C8F4224D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F4124D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp */; };
+		E43549E924DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43549E824DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp */; };
 		E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* 232 MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */; };
 		E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */; };
@@ -115,6 +116,7 @@
 		E42C8F3B24D01A22009979EE /* 116 PopulatingNextRightPointersinEachNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "116 PopulatingNextRightPointersinEachNode.cpp"; sourceTree = "<group>"; };
 		E42C8F3E24D03374009979EE /* 117 PopulatingNextRightPointersinEachNodeII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "117 PopulatingNextRightPointersinEachNodeII.cpp"; sourceTree = "<group>"; };
 		E42C8F4124D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "236 LowestCommonAncestorofaBinaryTree.cpp"; sourceTree = "<group>"; };
+		E43549E824DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "703 Kth Largest Element in a Stream.cpp"; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "83 RemoveDuplicatesfromSortedList.cpp"; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "232 MyQueue.cpp"; sourceTree = "<group>"; };
 		E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "394 DecodeString.cpp"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				E41948F124DB30EE0026B020 /* 450 Delete Node in a BST.cpp */,
 				E41948ED24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp */,
 				E41948EF24DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp */,
+				E43549E824DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp */,
 			);
 			path = "binary search tree";
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */,
 				E45322B024CE011E00067CC4 /* 104 MaximumDepthofBinaryTree.cpp in Sources */,
 				E49CC60624D826E300F5DADC /* 658 FindKClosestElements.cpp in Sources */,
+				E43549E924DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp in Sources */,
 				E45BF7D924BC52AC0051A649 /* 19 RemoveNthNodeFromEndofList.cpp in Sources */,
 				E45BF7EB24BDA0AC0051A649 /* 2 AddTwoNumbers.cpp in Sources */,
 				E45BF7E524BC9B040051A649 /* 707 DesignLinkedList.cpp in Sources */,
