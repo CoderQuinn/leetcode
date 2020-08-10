@@ -40,11 +40,11 @@ public:
     }
     
     bool find_enable(vector<int>& nums, int target) {
-        int left = 0;
-        int right = nums.size() - 1;
+        long left = 0;
+        long right = nums.size() - 1;
         
         while (left <= right) {
-            int mid = left + (right - left) / 2;
+            long mid = left + (right - left) / 2;
             if (nums[mid] == target) {
                 return true;
             } else if (nums[mid] < target) {
@@ -62,6 +62,7 @@ public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
         vector<int> result_vector;
         if (nums1.empty() || nums2.empty()) return result_vector;
+        
         unordered_set<int> set1;
         for (auto num : nums1) {
             set1.insert(num);
@@ -72,23 +73,20 @@ public:
             set2.insert(num);
         }
         
-        if (set1.size() < set2.size()) {
-            result_vector = set_intersection(set1, set2);
-        } else {
-            result_vector = set_intersection(set2, set1);
-        }
-        
-        return result_vector;
+        return intersection_helper(set1, set2);
     }
     
-    vector<int> set_intersection(unordered_set<int>& set1, unordered_set<int>& set2) {
+    vector<int> intersection_helper(unordered_set<int>& set1, unordered_set<int>& set2) {
+        if (set1.size() > set2.size()) {
+            return intersection_helper(set2, set1);
+        }
         vector<int> vector;
+        
         for (auto num : set1) {
-            if (set2.count(num)) {
+            if (set2.count(num) > 0) {
                 vector.push_back(num);
             }
         }
-        
         return vector;
     }
 };

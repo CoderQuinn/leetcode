@@ -8,20 +8,20 @@
 
 #include "ListNode.h"
 
-class MyLinkedList {
+class MyList {
 public:
         /** Initialize your data structure here. */
-        MyLinkedList(): size(0) {
-            dummy_node = new SinglyListNode(-1);
+        MyList(): size_(0) {
+            dummy_node_ = new MapNode(-1);
         }
 
         /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
         int get(int index) {
-            if (index < 0 || index >= size) {
+            if (index < 0 || index >= size_) {
                 return -1;
             }
 
-            SinglyListNode *curr = dummy_node;
+            MapNode *curr = dummy_node_;
             for (int i = 0; i < index + 1; ++i) {
                 curr = curr->next;
             }
@@ -35,53 +35,53 @@ public:
 
         /** Append a node of value val to the last element of the linked list. */
         void addAtTail(int val) {
-            addAtIndex(size, val);
+            addAtIndex(size_, val);
         }
 
         /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
         void addAtIndex(int index, int val) {
-            if (index > size) return;
+            if (index > size_) return;
 
             if(index < 0) index = 0;
 
-            SinglyListNode *prev = dummy_node;
+            MapNode *prev = dummy_node_;
             for (int i = 0; i < index; ++i) {
                 prev = prev->next;
             }
 
-            SinglyListNode *newNode = new SinglyListNode(val);
+            MapNode *newNode = new MapNode(val);
             newNode->next = prev->next;
             prev->next = newNode;
 
-            size++;
+            size_++;
         }
 
         /** Delete the index-th node in the linked list, if the index is valid. */
         void deleteAtIndex(int index) {
-            if (index < 0 || index >= size) return;
+            if (index < 0 || index >= size_) return;
 
-            SinglyListNode *prev = dummy_node;
+            MapNode *prev = dummy_node_;
             for (int i = 0; i < index; ++i) {
                 prev = prev->next;
             }
 
-            SinglyListNode *deletedNode = prev->next;
+            MapNode *deletedNode = prev->next;
             prev->next = prev->next->next;
 
             delete deletedNode;
             
-            --size;
+            --size_;
         }
 
 private:
         // Definition for singly-linked list.
-        struct SinglyListNode {
+        struct MapNode {
             int val;
-            SinglyListNode *next;
-            SinglyListNode(int x) : val(x), next(NULL) {}
+            MapNode *next;
+            MapNode(int x) : val(x), next(NULL) {}
         };
-        SinglyListNode *dummy_node; // 哑结点
-        int size; // 链表的长度
+        MapNode *dummy_node_; // 哑结点
+        int size_; // 链表的长度
 };
 
 class MyLinkedList1 {

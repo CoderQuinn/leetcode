@@ -27,6 +27,13 @@
 		E4354A0024E00E8E00CC606A /* 220 Contains Duplicate III.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43549FF24E00E8E00CC606A /* 220 Contains Duplicate III.cpp */; };
 		E4354A0224E047EA00CC606A /* 110 Balanced Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0124E047EA00CC606A /* 110 Balanced Binary Tree.cpp */; };
 		E4354A0424E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0324E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp */; };
+		E4354A0724E14F9C00CC606A /* 705 Design HashSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0624E14F9C00CC606A /* 705 Design HashSet.cpp */; };
+		E4354A0924E1701100CC606A /* 706 Design HashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0824E1701100CC606A /* 706 Design HashMap.cpp */; };
+		E4354A0B24E18D4D00CC606A /* 217 Contains Duplicate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0A24E18D4D00CC606A /* 217 Contains Duplicate.cpp */; };
+		E4354A0D24E190B500CC606A /* 136 Single Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0C24E190B500CC606A /* 136 Single Number.cpp */; };
+		E4354A0F24E1975100CC606A /* 202 Happy Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0E24E1975100CC606A /* 202 Happy Number.cpp */; };
+		E4354A1124E19EE900CC606A /* 1 Two Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */; };
+		E4354A1324E1AAFF00CC606A /* 205 Isomorphic Strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */; };
 		E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* 232 MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */; };
 		E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */; };
@@ -125,6 +132,13 @@
 		E43549FF24E00E8E00CC606A /* 220 Contains Duplicate III.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "220 Contains Duplicate III.cpp"; sourceTree = "<group>"; };
 		E4354A0124E047EA00CC606A /* 110 Balanced Binary Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "110 Balanced Binary Tree.cpp"; sourceTree = "<group>"; };
 		E4354A0324E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "108 Convert Sorted Array to Binary Search Tree.cpp"; sourceTree = "<group>"; };
+		E4354A0624E14F9C00CC606A /* 705 Design HashSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "705 Design HashSet.cpp"; sourceTree = "<group>"; };
+		E4354A0824E1701100CC606A /* 706 Design HashMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "706 Design HashMap.cpp"; sourceTree = "<group>"; };
+		E4354A0A24E18D4D00CC606A /* 217 Contains Duplicate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "217 Contains Duplicate.cpp"; sourceTree = "<group>"; };
+		E4354A0C24E190B500CC606A /* 136 Single Number.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "136 Single Number.cpp"; sourceTree = "<group>"; };
+		E4354A0E24E1975100CC606A /* 202 Happy Number.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "202 Happy Number.cpp"; sourceTree = "<group>"; };
+		E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "1 Two Sum.cpp"; sourceTree = "<group>"; };
+		E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "205 Isomorphic Strings.cpp"; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "83 RemoveDuplicatesfromSortedList.cpp"; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "232 MyQueue.cpp"; sourceTree = "<group>"; };
 		E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "394 DecodeString.cpp"; sourceTree = "<group>"; };
@@ -241,6 +255,13 @@
 		E4354A0524E14EEF00CC606A /* hash table */ = {
 			isa = PBXGroup;
 			children = (
+				E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */,
+				E4354A0C24E190B500CC606A /* 136 Single Number.cpp */,
+				E4354A0E24E1975100CC606A /* 202 Happy Number.cpp */,
+				E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */,
+				E4354A0A24E18D4D00CC606A /* 217 Contains Duplicate.cpp */,
+				E4354A0624E14F9C00CC606A /* 705 Design HashSet.cpp */,
+				E4354A0824E1701100CC606A /* 706 Design HashMap.cpp */,
 			);
 			path = "hash table";
 			sourceTree = "<group>";
@@ -455,6 +476,7 @@
 				E487532724D8669E00319259 /* 154 FindMinimumInRotatedSortedArrayII.cpp in Sources */,
 				E4F5472324CB379F0079E871 /* 455 AssignCookies.cpp in Sources */,
 				E44664EF24C20CAB0008DCEE /* 232 MyQueue.cpp in Sources */,
+				E4354A1124E19EE900CC606A /* 1 Two Sum.cpp in Sources */,
 				E45BF7ED24BDDE0E0051A649 /* 61 RotateList.cpp in Sources */,
 				E40E360524C2BCC8001DC2E2 /* 225 MyStack.cpp in Sources */,
 				E4553CD424BEFD62002A69D3 /* 138 CopyListwithRandomPointer.cpp in Sources */,
@@ -462,6 +484,7 @@
 				E4ECFDB724D1C5060035C59A /* 297 SerializeandDeserializeBinaryTree.cpp in Sources */,
 				E4BBEAFF24D57FB900067F1E /* 509 FibonacciNumber.cpp in Sources */,
 				E49CC60024D752B900F5DADC /* 153 FindMinimumInRotatedSortedArray.cpp in Sources */,
+				E4354A0B24E18D4D00CC606A /* 217 Contains Duplicate.cpp in Sources */,
 				E47F01B424D5461B00D05DD4 /* 118 Pascal'sTriangle.cpp in Sources */,
 				E4C4531624CA094D00E3C956 /* 150 EvaluateReversePolishNotation.cpp in Sources */,
 				E41948EE24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp in Sources */,
@@ -502,6 +525,7 @@
 				E4EF837524BF34F200D42D2C /* 86 PartitionList.cpp in Sources */,
 				E49CC5F424D6BE2B00F5DADC /* 374 GuessNumberHigherorLower.cpp in Sources */,
 				E45BF78E24B985C50051A649 /* 206 ReverseLinkedList.cpp in Sources */,
+				E4354A0724E14F9C00CC606A /* 705 Design HashSet.cpp in Sources */,
 				E483232A24D979EB00C427D6 /* 287 Find the Duplicate Number.cpp in Sources */,
 				E414D4F924C7187C00DD41F3 /* 445 AddTwoNumbers.cpp in Sources */,
 				E45BF7E224BC84B60051A649 /* 234 PalindromeLinkedList.cpp in Sources */,
@@ -509,6 +533,7 @@
 				E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */,
 				E45322B024CE011E00067CC4 /* 104 MaximumDepthofBinaryTree.cpp in Sources */,
 				E49CC60624D826E300F5DADC /* 658 FindKClosestElements.cpp in Sources */,
+				E4354A0924E1701100CC606A /* 706 Design HashMap.cpp in Sources */,
 				E43549E924DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp in Sources */,
 				E45BF7D924BC52AC0051A649 /* 19 RemoveNthNodeFromEndofList.cpp in Sources */,
 				E45BF7EB24BDA0AC0051A649 /* 2 AddTwoNumbers.cpp in Sources */,
@@ -516,12 +541,14 @@
 				E40E360924C2E16B001DC2E2 /* 155 MinStack.cpp in Sources */,
 				E45BF79224B9903E0051A649 /* 92 Reverse Linked List II.cpp in Sources */,
 				E483231E24D92BC300C427D6 /* 349 IntersectionOfTwoArrays.cpp in Sources */,
+				E4354A1324E1AAFF00CC606A /* 205 Isomorphic Strings.cpp in Sources */,
 				E41948F024DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp in Sources */,
 				E45322A224CD0C9800067CC4 /* 144 BinaryTreePreorderTraversal.cpp in Sources */,
 				E41948F224DB30EE0026B020 /* 450 Delete Node in a BST.cpp in Sources */,
 				E483232424D9428B00C427D6 /* 350 IntersectionofTwoArraysII.cpp in Sources */,
 				E415BD1724CC96CA003D4899 /* 344 ReverseString.cpp in Sources */,
 				E42C8F3624CFED05009979EE /* 106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp in Sources */,
+				E4354A0D24E190B500CC606A /* 136 Single Number.cpp in Sources */,
 				E47F01B724D5550E00D05DD4 /* 119 Pascal'sTriangleII.cpp in Sources */,
 				E4BBEB0824D5BE3F00067F1E /* 779 K-thSymbolInGrammar.cpp in Sources */,
 				E41948EA24DB084F0026B020 /* 98 ValidateBinarySearchTree.cpp in Sources */,
@@ -529,6 +556,7 @@
 				E4553CD124BEDD41002A69D3 /* 430 FlattenaMultilevelDoublyLinkedList.cpp in Sources */,
 				E4F5471D24CB137E0079E871 /* 215 KthLargestElementinanArray.cpp in Sources */,
 				E42C8F3C24D01A22009979EE /* 116 PopulatingNextRightPointersinEachNode.cpp in Sources */,
+				E4354A0F24E1975100CC606A /* 202 Happy Number.cpp in Sources */,
 				E4F0280C24D3578100039E02 /* 739 DailyTemperatures.cpp in Sources */,
 				E45322B924CED49300067CC4 /* 112 PathSum.cpp in Sources */,
 				E45322B624CEC35500067CC4 /* 101 SymmetricTree.cpp in Sources */,
