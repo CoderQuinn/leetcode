@@ -28,6 +28,6 @@ public:
     }
 };
 
-// todo: sort
+// todo: quick select
 
 // todo: heap

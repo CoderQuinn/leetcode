@@ -23,6 +23,10 @@
 		E42C8F3F24D03374009979EE /* 117 PopulatingNextRightPointersinEachNodeII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3E24D03374009979EE /* 117 PopulatingNextRightPointersinEachNodeII.cpp */; };
 		E42C8F4224D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F4124D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp */; };
 		E43549E924DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43549E824DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp */; };
+		E43549FE24DE578B00CC606A /* 235 Lowest Common Ancestor of a Binary Search Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43549FD24DE578B00CC606A /* 235 Lowest Common Ancestor of a Binary Search Tree.cpp */; };
+		E4354A0024E00E8E00CC606A /* 220 Contains Duplicate III.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43549FF24E00E8E00CC606A /* 220 Contains Duplicate III.cpp */; };
+		E4354A0224E047EA00CC606A /* 110 Balanced Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0124E047EA00CC606A /* 110 Balanced Binary Tree.cpp */; };
+		E4354A0424E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0324E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp */; };
 		E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* 232 MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */; };
 		E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */; };
@@ -117,6 +121,10 @@
 		E42C8F3E24D03374009979EE /* 117 PopulatingNextRightPointersinEachNodeII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "117 PopulatingNextRightPointersinEachNodeII.cpp"; sourceTree = "<group>"; };
 		E42C8F4124D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "236 LowestCommonAncestorofaBinaryTree.cpp"; sourceTree = "<group>"; };
 		E43549E824DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "703 Kth Largest Element in a Stream.cpp"; sourceTree = "<group>"; };
+		E43549FD24DE578B00CC606A /* 235 Lowest Common Ancestor of a Binary Search Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "235 Lowest Common Ancestor of a Binary Search Tree.cpp"; sourceTree = "<group>"; };
+		E43549FF24E00E8E00CC606A /* 220 Contains Duplicate III.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "220 Contains Duplicate III.cpp"; sourceTree = "<group>"; };
+		E4354A0124E047EA00CC606A /* 110 Balanced Binary Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "110 Balanced Binary Tree.cpp"; sourceTree = "<group>"; };
+		E4354A0324E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "108 Convert Sorted Array to Binary Search Tree.cpp"; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "83 RemoveDuplicatesfromSortedList.cpp"; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "232 MyQueue.cpp"; sourceTree = "<group>"; };
 		E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "394 DecodeString.cpp"; sourceTree = "<group>"; };
@@ -217,13 +225,24 @@
 			isa = PBXGroup;
 			children = (
 				E41948E924DB084F0026B020 /* 98 ValidateBinarySearchTree.cpp */,
+				E4354A0124E047EA00CC606A /* 110 Balanced Binary Tree.cpp */,
 				E41948EB24DB19B00026B020 /* 173 Binary Search Tree Iterator.cpp */,
+				E4354A0324E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp */,
+				E43549FF24E00E8E00CC606A /* 220 Contains Duplicate III.cpp */,
+				E43549FD24DE578B00CC606A /* 235 Lowest Common Ancestor of a Binary Search Tree.cpp */,
 				E41948F124DB30EE0026B020 /* 450 Delete Node in a BST.cpp */,
 				E41948ED24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp */,
 				E41948EF24DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp */,
 				E43549E824DDF6A600CC606A /* 703 Kth Largest Element in a Stream.cpp */,
 			);
 			path = "binary search tree";
+			sourceTree = "<group>";
+		};
+		E4354A0524E14EEF00CC606A /* hash table */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "hash table";
 			sourceTree = "<group>";
 		};
 		E45322A024CD0C4A00067CC4 /* tree */ = {
@@ -252,6 +271,7 @@
 		E45BF77824B9857D0051A649 = {
 			isa = PBXGroup;
 			children = (
+				E4354A0524E14EEF00CC606A /* hash table */,
 				E41948E824DB018D0026B020 /* binary search tree */,
 				E49CC5EB24D6AF2300F5DADC /* binary search */,
 				E4F027EE24D3059300039E02 /* dynamic programming */,
@@ -453,14 +473,18 @@
 				E45322A724CD1BB400067CC4 /* 94 BinaryTreeInorderTraversal.cpp in Sources */,
 				E4C4530A24C98B7100E3C956 /* 24 SwapNodesinPairs.cpp in Sources */,
 				E45322AA24CD201F00067CC4 /* 145 BinaryTreePostorderTraversal.cpp in Sources */,
+				E4354A0224E047EA00CC606A /* 110 Balanced Binary Tree.cpp in Sources */,
+				E43549FE24DE578B00CC606A /* 235 Lowest Common Ancestor of a Binary Search Tree.cpp in Sources */,
 				E49CC5FD24D7509000F5DADC /* 162 FindPeakElement.cpp in Sources */,
 				E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */,
 				E4F5471A24CAE1310079E871 /* 622 DesignCircularQueue.cpp in Sources */,
 				E4F5472024CB2EB60079E871 /* 295 FindMedianFromDataStream.cpp in Sources */,
+				E4354A0024E00E8E00CC606A /* 220 Contains Duplicate III.cpp in Sources */,
 				E45BF7DF24BC76A60051A649 /* 328 OddEvenLinkedList.cpp in Sources */,
 				E49CC5EE24D6AF6600F5DADC /* 704 BinarySearch.cpp in Sources */,
 				E4C4531324C9CDFE00E3C956 /* 224 BasicCalculator.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* 141 LinkedListCycle.cpp in Sources */,
+				E4354A0424E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp in Sources */,
 				E4BBEB0224D5850500067F1E /* 70 ClimbingStairs.cpp in Sources */,
 				E42C8F4224D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp in Sources */,
 				E49CC5F124D6B5F100F5DADC /* 69 Sqrt(x).cpp in Sources */,

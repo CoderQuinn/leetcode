@@ -7,9 +7,11 @@
 //
 
 #include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, leetcode！\n");
+    
     return 0;
 }
