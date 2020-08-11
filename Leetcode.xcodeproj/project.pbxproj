@@ -34,6 +34,7 @@
 		E4354A0F24E1975100CC606A /* 202 Happy Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0E24E1975100CC606A /* 202 Happy Number.cpp */; };
 		E4354A1124E19EE900CC606A /* 1 Two Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */; };
 		E4354A1324E1AAFF00CC606A /* 205 Isomorphic Strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */; };
+		E43BA11124E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43BA11024E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp */; };
 		E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* 232 MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */; };
 		E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */; };
@@ -139,6 +140,7 @@
 		E4354A0E24E1975100CC606A /* 202 Happy Number.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "202 Happy Number.cpp"; sourceTree = "<group>"; };
 		E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "1 Two Sum.cpp"; sourceTree = "<group>"; };
 		E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "205 Isomorphic Strings.cpp"; sourceTree = "<group>"; };
+		E43BA11024E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "82 Remove Duplicates from Sorted List II.cpp"; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "83 RemoveDuplicatesfromSortedList.cpp"; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "232 MyQueue.cpp"; sourceTree = "<group>"; };
 		E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "394 DecodeString.cpp"; sourceTree = "<group>"; };
@@ -224,9 +226,9 @@
 				E4F0280724D34AB500039E02 /* 20 Valid Parentheses.cpp */,
 				E4C4531524CA094D00E3C956 /* 150 EvaluateReversePolishNotation.cpp */,
 				E40E360824C2E16B001DC2E2 /* 155 MinStack.cpp */,
-				E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */,
 				E4C4531224C9CDFE00E3C956 /* 224 BasicCalculator.cpp */,
 				E40E360424C2BCC8001DC2E2 /* 225 MyStack.cpp */,
+				E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */,
 				E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */,
 				E4F5471924CAE1310079E871 /* 622 DesignCircularQueue.cpp */,
 				E4F0280B24D3578100039E02 /* 739 DailyTemperatures.cpp */,
@@ -239,9 +241,9 @@
 			isa = PBXGroup;
 			children = (
 				E41948E924DB084F0026B020 /* 98 ValidateBinarySearchTree.cpp */,
+				E4354A0324E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp */,
 				E4354A0124E047EA00CC606A /* 110 Balanced Binary Tree.cpp */,
 				E41948EB24DB19B00026B020 /* 173 Binary Search Tree Iterator.cpp */,
-				E4354A0324E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp */,
 				E43549FF24E00E8E00CC606A /* 220 Contains Duplicate III.cpp */,
 				E43549FD24DE578B00CC606A /* 235 Lowest Common Ancestor of a Binary Search Tree.cpp */,
 				E41948F124DB30EE0026B020 /* 450 Delete Node in a BST.cpp */,
@@ -292,16 +294,16 @@
 		E45BF77824B9857D0051A649 = {
 			isa = PBXGroup;
 			children = (
-				E4354A0524E14EEF00CC606A /* hash table */,
-				E41948E824DB018D0026B020 /* binary search tree */,
-				E49CC5EB24D6AF2300F5DADC /* binary search */,
-				E4F027EE24D3059300039E02 /* dynamic programming */,
-				E45322A024CD0C4A00067CC4 /* tree */,
-				E4EE5EB124CC299A00C6F04E /* recursion */,
 				E45BF79324B9912B0051A649 /* list */,
 				E40E360624C2E0C1001DC2E2 /* stack and queue */,
 				E4C4530B24C99F2B00E3C956 /* heap */,
+				E45322A024CD0C4A00067CC4 /* tree */,
+				E4EE5EB124CC299A00C6F04E /* recursion */,
 				E4C4531024C9B57F00E3C956 /* greedy */,
+				E4F027EE24D3059300039E02 /* dynamic programming */,
+				E49CC5EB24D6AF2300F5DADC /* binary search */,
+				E41948E824DB018D0026B020 /* binary search tree */,
+				E4354A0524E14EEF00CC606A /* hash table */,
 				E45BF78324B9857D0051A649 /* Leetcode */,
 				E45BF78224B9857D0051A649 /* Products */,
 			);
@@ -332,6 +334,7 @@
 				E45BF7E724BD89D30051A649 /* 21 MergeTwoSortedLists.cpp */,
 				E4C4530924C98B7100E3C956 /* 24 SwapNodesinPairs.cpp */,
 				E45BF7EC24BDDE0E0051A649 /* 61 RotateList.cpp */,
+				E43BA11024E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp */,
 				E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */,
 				E4EF837424BF34F200D42D2C /* 86 PartitionList.cpp */,
 				E45BF79024B9903E0051A649 /* 92 Reverse Linked List II.cpp */,
@@ -529,6 +532,7 @@
 				E483232A24D979EB00C427D6 /* 287 Find the Duplicate Number.cpp in Sources */,
 				E414D4F924C7187C00DD41F3 /* 445 AddTwoNumbers.cpp in Sources */,
 				E45BF7E224BC84B60051A649 /* 234 PalindromeLinkedList.cpp in Sources */,
+				E43BA11124E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp in Sources */,
 				E49CC5FA24D748CD00F5DADC /* 278 FirstBadVersion.cpp in Sources */,
 				E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */,
 				E45322B024CE011E00067CC4 /* 104 MaximumDepthofBinaryTree.cpp in Sources */,
