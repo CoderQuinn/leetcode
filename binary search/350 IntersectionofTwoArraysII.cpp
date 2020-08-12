@@ -12,6 +12,7 @@
 #include <unordered_map>
 using namespace std;
 
+// using sort
 class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
@@ -28,6 +29,7 @@ public:
     
 };
 
+// using sort
 class Solution1 {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
@@ -56,5 +58,36 @@ public:
         
         return result_vector;
     }
-    
 };
+
+class Solution2 {
+public:
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        if (nums1.size() > nums2.size()) {
+            return intersect(nums2, nums1);
+        }
+        vector<int> vector;
+        unordered_map<int, int> hash_map;
+        for (auto num : nums1) {
+            if (hash_map.count(num) > 0) {
+                hash_map[num] += 1;
+            } else {
+                hash_map[num] = 1;
+            }
+        }
+        
+        for (auto num : nums2) {
+            auto it = hash_map.find(num);
+            if (it != hash_map.end()) {
+                vector.push_back(num);
+                
+                hash_map[num] -= 1;
+                if (hash_map[num] == 0) {
+                    hash_map.erase(it);
+                }
+            }
+        }
+        return vector;
+    }
+};
+

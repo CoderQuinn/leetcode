@@ -35,6 +35,7 @@
 		E4354A1124E19EE900CC606A /* 1 Two Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */; };
 		E4354A1324E1AAFF00CC606A /* 205 Isomorphic Strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */; };
 		E43BA11124E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43BA11024E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp */; };
+		E43BA11324E26069006B2C02 /* 219 Contains Duplicate II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43BA11224E26069006B2C02 /* 219 Contains Duplicate II.cpp */; };
 		E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* 232 MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */; };
 		E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */; };
@@ -62,6 +63,9 @@
 		E45BF7E824BD89D30051A649 /* 21 MergeTwoSortedLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7E724BD89D30051A649 /* 21 MergeTwoSortedLists.cpp */; };
 		E45BF7EB24BDA0AC0051A649 /* 2 AddTwoNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EA24BDA0AC0051A649 /* 2 AddTwoNumbers.cpp */; };
 		E45BF7ED24BDDE0E0051A649 /* 61 RotateList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EC24BDDE0E0051A649 /* 61 RotateList.cpp */; };
+		E475FB1C24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E475FB1B24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp */; };
+		E475FB1E24E27DF90039F26C /* 387 First Unique Character in a String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E475FB1D24E27DF90039F26C /* 387 First Unique Character in a String.cpp */; };
+		E475FB2024E3EA660039F26C /* 49 Group Anagrams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E475FB1F24E3EA660039F26C /* 49 Group Anagrams.cpp */; };
 		E47F01B424D5461B00D05DD4 /* 118 Pascal'sTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E47F01B324D5461B00D05DD4 /* 118 Pascal'sTriangle.cpp */; };
 		E47F01B724D5550E00D05DD4 /* 119 Pascal'sTriangleII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E47F01B624D5550E00D05DD4 /* 119 Pascal'sTriangleII.cpp */; };
 		E483231E24D92BC300C427D6 /* 349 IntersectionOfTwoArrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E483231D24D92BC300C427D6 /* 349 IntersectionOfTwoArrays.cpp */; };
@@ -141,6 +145,7 @@
 		E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "1 Two Sum.cpp"; sourceTree = "<group>"; };
 		E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "205 Isomorphic Strings.cpp"; sourceTree = "<group>"; };
 		E43BA11024E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "82 Remove Duplicates from Sorted List II.cpp"; sourceTree = "<group>"; };
+		E43BA11224E26069006B2C02 /* 219 Contains Duplicate II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "219 Contains Duplicate II.cpp"; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "83 RemoveDuplicatesfromSortedList.cpp"; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "232 MyQueue.cpp"; sourceTree = "<group>"; };
 		E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "394 DecodeString.cpp"; sourceTree = "<group>"; };
@@ -171,6 +176,9 @@
 		E45BF7E724BD89D30051A649 /* 21 MergeTwoSortedLists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "21 MergeTwoSortedLists.cpp"; sourceTree = "<group>"; };
 		E45BF7EA24BDA0AC0051A649 /* 2 AddTwoNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "2 AddTwoNumbers.cpp"; sourceTree = "<group>"; };
 		E45BF7EC24BDDE0E0051A649 /* 61 RotateList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "61 RotateList.cpp"; sourceTree = "<group>"; };
+		E475FB1B24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "599 Minimum Index Sum of Two Lists.cpp"; sourceTree = "<group>"; };
+		E475FB1D24E27DF90039F26C /* 387 First Unique Character in a String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "387 First Unique Character in a String.cpp"; sourceTree = "<group>"; };
+		E475FB1F24E3EA660039F26C /* 49 Group Anagrams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "49 Group Anagrams.cpp"; sourceTree = "<group>"; };
 		E47F01B324D5461B00D05DD4 /* 118 Pascal'sTriangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "118 Pascal'sTriangle.cpp"; sourceTree = "<group>"; };
 		E47F01B624D5550E00D05DD4 /* 119 Pascal'sTriangleII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "119 Pascal'sTriangleII.cpp"; sourceTree = "<group>"; };
 		E483231D24D92BC300C427D6 /* 349 IntersectionOfTwoArrays.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "349 IntersectionOfTwoArrays.cpp"; sourceTree = "<group>"; };
@@ -258,10 +266,14 @@
 			isa = PBXGroup;
 			children = (
 				E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */,
+				E475FB1F24E3EA660039F26C /* 49 Group Anagrams.cpp */,
 				E4354A0C24E190B500CC606A /* 136 Single Number.cpp */,
 				E4354A0E24E1975100CC606A /* 202 Happy Number.cpp */,
 				E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */,
 				E4354A0A24E18D4D00CC606A /* 217 Contains Duplicate.cpp */,
+				E43BA11224E26069006B2C02 /* 219 Contains Duplicate II.cpp */,
+				E475FB1D24E27DF90039F26C /* 387 First Unique Character in a String.cpp */,
+				E475FB1B24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp */,
 				E4354A0624E14F9C00CC606A /* 705 Design HashSet.cpp */,
 				E4354A0824E1701100CC606A /* 706 Design HashMap.cpp */,
 			);
@@ -483,9 +495,11 @@
 				E45BF7ED24BDDE0E0051A649 /* 61 RotateList.cpp in Sources */,
 				E40E360524C2BCC8001DC2E2 /* 225 MyStack.cpp in Sources */,
 				E4553CD424BEFD62002A69D3 /* 138 CopyListwithRandomPointer.cpp in Sources */,
+				E43BA11324E26069006B2C02 /* 219 Contains Duplicate II.cpp in Sources */,
 				E483232724D96A2F00C427D6 /* 167 Two Sum II - Input array is sorted.cpp in Sources */,
 				E4ECFDB724D1C5060035C59A /* 297 SerializeandDeserializeBinaryTree.cpp in Sources */,
 				E4BBEAFF24D57FB900067F1E /* 509 FibonacciNumber.cpp in Sources */,
+				E475FB1C24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp in Sources */,
 				E49CC60024D752B900F5DADC /* 153 FindMinimumInRotatedSortedArray.cpp in Sources */,
 				E4354A0B24E18D4D00CC606A /* 217 Contains Duplicate.cpp in Sources */,
 				E47F01B424D5461B00D05DD4 /* 118 Pascal'sTriangle.cpp in Sources */,
@@ -503,11 +517,13 @@
 				E43549FE24DE578B00CC606A /* 235 Lowest Common Ancestor of a Binary Search Tree.cpp in Sources */,
 				E49CC5FD24D7509000F5DADC /* 162 FindPeakElement.cpp in Sources */,
 				E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */,
+				E475FB1E24E27DF90039F26C /* 387 First Unique Character in a String.cpp in Sources */,
 				E4F5471A24CAE1310079E871 /* 622 DesignCircularQueue.cpp in Sources */,
 				E4F5472024CB2EB60079E871 /* 295 FindMedianFromDataStream.cpp in Sources */,
 				E4354A0024E00E8E00CC606A /* 220 Contains Duplicate III.cpp in Sources */,
 				E45BF7DF24BC76A60051A649 /* 328 OddEvenLinkedList.cpp in Sources */,
 				E49CC5EE24D6AF6600F5DADC /* 704 BinarySearch.cpp in Sources */,
+				E475FB2024E3EA660039F26C /* 49 Group Anagrams.cpp in Sources */,
 				E4C4531324C9CDFE00E3C956 /* 224 BasicCalculator.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* 141 LinkedListCycle.cpp in Sources */,
 				E4354A0424E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp in Sources */,

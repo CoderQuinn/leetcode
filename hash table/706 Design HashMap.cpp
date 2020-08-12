@@ -165,7 +165,7 @@ private:
 public:
     /** Initialize your data structure here. */
     MyHashMap() {
-        key_range_ = 991;
+        key_range_ = 2011;
         for (int i = 0; i < key_range_; ++i) {
             Bucket bucket;
             hash_set_.push_back(bucket);
