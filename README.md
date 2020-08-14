@@ -38,18 +38,18 @@ Welcome to discuss by opening an issue !
 
 ### Stack queue(栈、队列)
 
-|  ID  | Title                                                        | Difficulty |                           Solution                           | Note |
-| :--: | ------------------------------------------------------------ | :--------: | :----------------------------------------------------------: | :--: |
-|  20  | [Valid Parentheses](https://leetcode-cn.com/problems/valid-parentheses) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/20%20Valid%20Parentheses.cpp) |      |
-| 150  | [Evaluate Reverse Polish Notation](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/150%20EvaluateReversePolishNotation.cpp) |      |
-| 155  | [Min Stack](https://leetcode-cn.com/problems/min-stack)      |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/155%20MinStack.cpp) |      |
-| 224  | [Basic Calculator](https://leetcode-cn.com/problems/basic-calculator) |    Hard    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/224%20BasicCalculator.cpp) |      |
-| 225  | [Implement Stack using Queues](https://leetcode-cn.com/problems/implement-stack-using-queues) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/225%20MyStack.cpp) |      |
-| 232  | [Implement Queue using Stacks](https://leetcode-cn.com/problems/implement-queue-using-stacks) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/232%20MyQueue.cpp) |      |
-| 394  | [Decode String](https://leetcode-cn.com/problems/decode-string) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/394%20DecodeString.cpp) |      |
-| 622  | [Design Circular Queue](https://leetcode-cn.com/problems/design-circular-queue) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/622%20DesignCircularQueue.cpp) |      |
-| 739  | [Daily Temperatures](https://leetcode-cn.com/problems/daily-temperatures) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/739%20DailyTemperatures.cpp) |      |
-| 946  | [Validate Stack Sequences](https://leetcode-cn.com/problems/validate-stack-sequences) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/946ValidateStackSequences.cpp) |      |
+|  ID  | Title                                                        | Difficulty |                           Solution                           |                             Note                             |
+| :--: | ------------------------------------------------------------ | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|  20  | [Valid Parentheses](https://leetcode-cn.com/problems/valid-parentheses) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/20%20Valid%20Parentheses.cpp) |                                                              |
+| 150  | [Evaluate Reverse Polish Notation](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/150%20EvaluateReversePolishNotation.cpp) |                                                              |
+| 155  | [Min Stack](https://leetcode-cn.com/problems/min-stack)      |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/155%20MinStack.cpp) |                                                              |
+| 224  | [Basic Calculator](https://leetcode-cn.com/problems/basic-calculator) |    Hard    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/224%20BasicCalculator.cpp) | [Note](https://quinnyoung.com/2020/07/24/leetcode224-Basic-Calculator/) |
+| 225  | [Implement Stack using Queues](https://leetcode-cn.com/problems/implement-stack-using-queues) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/225%20MyStack.cpp) |                                                              |
+| 232  | [Implement Queue using Stacks](https://leetcode-cn.com/problems/implement-queue-using-stacks) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/232%20MyQueue.cpp) |                                                              |
+| 394  | [Decode String](https://leetcode-cn.com/problems/decode-string) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/394%20DecodeString.cpp) |                                                              |
+| 622  | [Design Circular Queue](https://leetcode-cn.com/problems/design-circular-queue) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/622%20DesignCircularQueue.cpp) |                                                              |
+| 739  | [Daily Temperatures](https://leetcode-cn.com/problems/daily-temperatures) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/739%20DailyTemperatures.cpp) |                                                              |
+| 946  | [Validate Stack Sequences](https://leetcode-cn.com/problems/validate-stack-sequences) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/stack%20and%20queue/946ValidateStackSequences.cpp) |                                                              |
 
 ### Heap(堆)
 
@@ -91,17 +91,29 @@ Welcome to discuss by opening an issue !
 | 779  | [K-th Symbol in Grammar](https://leetcode-cn.com/problems/k-th-symbol-in-grammar) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/recursion/779%20K-thSymbolInGrammar.cpp) |      |
 | 1137 | [N-th Tribonacci Number](https://leetcode-cn.com/problems/n-th-tribonacci-number) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/recursion/1137%20N-thTribonacciNumber.cpp) |      |
 
+### Divide and conquer（分治）
+
+|  ID  | Title                                                        | Difficulty |                           Solution                           |                             Note                             |
+| :--: | :----------------------------------------------------------- | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|  53  | [Maximum Subarray](https://leetcode-cn.com/problems/maximum-subarray) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/divide%20and%20conquer/53%20Maximum%20Subarray.cpp) | [Note](https://quinnyoung.com/2020/08/14/leetcode-53-Maximum-Subarray/) |
+
 ### Greedy(贪心)
 
-|  ID  | Title                                                       | Difficulty |                           Solution                           | Note |
-| :--: | :---------------------------------------------------------- | :--------: | :----------------------------------------------------------: | :--: |
-| 455  | [分发饼干](https://leetcode-cn.com/problems/assign-cookies) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/greedy/455%20AssignCookies.cpp) |      |
+|  ID  | Title                                                        | Difficulty |                           Solution                           | Note |
+| :--: | :----------------------------------------------------------- | :--------: | :----------------------------------------------------------: | :--: |
+| 455  | [AssignCookies](https://leetcode-cn.com/problems/assign-cookies) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/greedy/455%20AssignCookies.cpp) |      |
 
 ### Dynamic Programming(动态规则)
 
 |  ID  | Title                                                        | Difficulty |                           Solution                           | Note |
 | :--: | :----------------------------------------------------------- | :--------: | :----------------------------------------------------------: | :--: |
 | 343  | [Integer Break](https://leetcode-cn.com/problems/integer-break) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/dynamic%20programming/343%20IntegerBreak.cpp) |      |
+
+### Sliding window(滑动窗口)
+
+|  ID  | Title                                                        | Difficulty |                           Solution                           | Note |
+| :--: | :----------------------------------------------------------- | :--------: | :----------------------------------------------------------: | :--: |
+|  3   | [Longest Substring Without Repeating Characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/sliding%20window/3%20Longest%20Substring%20Without%20Repeating%20Characters.cpp) |      |
 
 ### Binary Search(二分查找)
 
@@ -144,12 +156,22 @@ Welcome to discuss by opening an issue !
 |  ID  | Title                                                        | Difficulty |                           Solution                           | Note |
 | :--: | :----------------------------------------------------------- | :--------: | :----------------------------------------------------------: | :--: |
 |  1   | [Two Sum](https://leetcode-cn.com/problems/two-sum)          |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/1%20Two%20Sum.cpp) |      |
+|  36  | [Valid Sudoku](https://leetcode-cn.com/problems/valid-sudoku) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/36%20Valid%20Sudoku.cpp) |      |
+|  49  | [Group Anagrams](https://leetcode-cn.com/problems/group-anagrams) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/49%20Group%20Anagrams.cpp) |      |
 | 136  | [Single Number](https://leetcode-cn.com/problems/single-number) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/136%20Single%20Number.cpp) |      |
 | 202  | [Happy Number](https://leetcode-cn.com/problems/happy-number) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/202%20Happy%20Number.cpp) |      |
 | 205  | [Isomorphic Strings](https://leetcode-cn.com/problems/isomorphic-strings) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/205%20Isomorphic%20Strings.cpp) |      |
 | 217  | [Contains Duplicate](https://leetcode-cn.com/problems/contains-duplicate) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/217%20Contains%20Duplicate.cpp) |      |
+| 219  | [Contains Duplicate II](https://leetcode-cn.com/problems/contains-duplicate-ii) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/219%20Contains%20Duplicate%20II.cpp) |      |
+| 347  | [Top K Frequent Elements](https://leetcode-cn.com/problems/top-k-frequent-elements) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/347%20Top%20K%20Frequent%20Elements.cpp) |      |
+| 380  | [Insert Delete GetRandom O(1)](https://leetcode-cn.com/problems/insert-delete-getrandom-o1) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/380%20Insert%20Delete%20GetRandom%20O(1).cpp) |      |
+| 387  | [First Unique Character in a String](https://leetcode-cn.com/problems/first-unique-character-in-a-string) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/387%20First%20Unique%20Character%20in%20a%20String.cpp) |      |
+| 454  | [4Sum II](https://leetcode-cn.com/problems/4sum-ii)          |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/454%204Sum%20II.cpp) |      |
+| 599  | [Minimum Index Sum of Two Lists](https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/599%20Minimum%20Index%20Sum%20of%20Two%20Lists.cpp) |      |
+| 652  | [Find Duplicate Subtrees](https://leetcode-cn.com/problems/find-duplicate-subtrees) |   Medium   | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/652%20Find%20Duplicate%20Subtrees.cpp) |      |
 | 705  | [Design HashSet](https://leetcode-cn.com/problems/design-hashset) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/705%20Design%20HashSet.cpp) |      |
 | 706  | [Design HashMap](https://leetcode-cn.com/problems/design-hashmap) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/706%20Design%20HashMap.cpp) |      |
+| 771  | [Jewels and Stones](https://leetcode-cn.com/problems/jewels-and-stones) |    Easy    | [C++](https://github.com/CoderQuinn/leetcode/blob/master/hash%20table/771%20Jewels%20and%20Stones.cpp) |      |
 
 ## Author
 
