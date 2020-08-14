@@ -16,6 +16,7 @@
 		E41948EE24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E41948ED24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp */; };
 		E41948F024DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E41948EF24DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp */; };
 		E41948F224DB30EE0026B020 /* 450 Delete Node in a BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E41948F124DB30EE0026B020 /* 450 Delete Node in a BST.cpp */; };
+		E424093724E5934500897236 /* 454 4Sum II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E424093624E5934500897236 /* 454 4Sum II.cpp */; };
 		E42C8F3324CFE553009979EE /* 107 BinaryTreeLevelOrderTraversalII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3224CFE553009979EE /* 107 BinaryTreeLevelOrderTraversalII.cpp */; };
 		E42C8F3624CFED05009979EE /* 106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3524CFED05009979EE /* 106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp */; };
 		E42C8F3924D00AC4009979EE /* 105 ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3824D00AC4009979EE /* 105 ConstructBinaryTreefromPreorderandInorderTraversal.cpp */; };
@@ -86,10 +87,14 @@
 		E49CC60024D752B900F5DADC /* 153 FindMinimumInRotatedSortedArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC5FF24D752B900F5DADC /* 153 FindMinimumInRotatedSortedArray.cpp */; };
 		E49CC60324D7FE9300F5DADC /* 34 FindFirstAndLastPositionOfElementInSortedArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC60224D7FE9300F5DADC /* 34 FindFirstAndLastPositionOfElementInSortedArray.cpp */; };
 		E49CC60624D826E300F5DADC /* 658 FindKClosestElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC60524D826E300F5DADC /* 658 FindKClosestElements.cpp */; };
+		E4BB07C524E620750093F322 /* 347 Top K Frequent Elements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BB07C424E620750093F322 /* 347 Top K Frequent Elements.cpp */; };
+		E4BB07C724E62DD30093F322 /* 380 Insert Delete GetRandom O(1).cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BB07C624E62DD30093F322 /* 380 Insert Delete GetRandom O(1).cpp */; };
 		E4BBEAFF24D57FB900067F1E /* 509 FibonacciNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEAFE24D57FB900067F1E /* 509 FibonacciNumber.cpp */; };
 		E4BBEB0224D5850500067F1E /* 70 ClimbingStairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEB0124D5850500067F1E /* 70 ClimbingStairs.cpp */; };
 		E4BBEB0524D5A5FE00067F1E /* 50 Pow(x, n).cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEB0424D5A5FE00067F1E /* 50 Pow(x, n).cpp */; };
 		E4BBEB0824D5BE3F00067F1E /* 779 K-thSymbolInGrammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEB0724D5BE3F00067F1E /* 779 K-thSymbolInGrammar.cpp */; };
+		E4BF46DC24E47ED1001F3F0B /* 771 Jewels and Stones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BF46DB24E47ED1001F3F0B /* 771 Jewels and Stones.cpp */; };
+		E4BF46DF24E48EA0001F3F0B /* 3 Longest Substring Without Repeating Characters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BF46DE24E48EA0001F3F0B /* 3 Longest Substring Without Repeating Characters.cpp */; };
 		E4C4530A24C98B7100E3C956 /* 24 SwapNodesinPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4530924C98B7100E3C956 /* 24 SwapNodesinPairs.cpp */; };
 		E4C4530E24C9AC9600E3C956 /* 946ValidateStackSequences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4530D24C9AC9600E3C956 /* 946ValidateStackSequences.cpp */; };
 		E4C4531324C9CDFE00E3C956 /* 224 BasicCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4C4531224C9CDFE00E3C956 /* 224 BasicCalculator.cpp */; };
@@ -128,6 +133,7 @@
 		E41948ED24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "700 Search in a Binary Search Tree.cpp"; sourceTree = "<group>"; };
 		E41948EF24DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "701 Insert into a Binary Search Tree.cpp"; sourceTree = "<group>"; };
 		E41948F124DB30EE0026B020 /* 450 Delete Node in a BST.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "450 Delete Node in a BST.cpp"; sourceTree = "<group>"; };
+		E424093624E5934500897236 /* 454 4Sum II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "454 4Sum II.cpp"; sourceTree = "<group>"; };
 		E42C8F3224CFE553009979EE /* 107 BinaryTreeLevelOrderTraversalII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "107 BinaryTreeLevelOrderTraversalII.cpp"; sourceTree = "<group>"; };
 		E42C8F3524CFED05009979EE /* 106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp"; sourceTree = "<group>"; };
 		E42C8F3824D00AC4009979EE /* 105 ConstructBinaryTreefromPreorderandInorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "105 ConstructBinaryTreefromPreorderandInorderTraversal.cpp"; sourceTree = "<group>"; };
@@ -201,10 +207,14 @@
 		E49CC5FF24D752B900F5DADC /* 153 FindMinimumInRotatedSortedArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "153 FindMinimumInRotatedSortedArray.cpp"; sourceTree = "<group>"; };
 		E49CC60224D7FE9300F5DADC /* 34 FindFirstAndLastPositionOfElementInSortedArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "34 FindFirstAndLastPositionOfElementInSortedArray.cpp"; sourceTree = "<group>"; };
 		E49CC60524D826E300F5DADC /* 658 FindKClosestElements.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "658 FindKClosestElements.cpp"; sourceTree = "<group>"; };
+		E4BB07C424E620750093F322 /* 347 Top K Frequent Elements.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "347 Top K Frequent Elements.cpp"; sourceTree = "<group>"; };
+		E4BB07C624E62DD30093F322 /* 380 Insert Delete GetRandom O(1).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "380 Insert Delete GetRandom O(1).cpp"; sourceTree = "<group>"; };
 		E4BBEAFE24D57FB900067F1E /* 509 FibonacciNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "509 FibonacciNumber.cpp"; sourceTree = "<group>"; };
 		E4BBEB0124D5850500067F1E /* 70 ClimbingStairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "70 ClimbingStairs.cpp"; sourceTree = "<group>"; };
 		E4BBEB0424D5A5FE00067F1E /* 50 Pow(x, n).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "50 Pow(x, n).cpp"; sourceTree = "<group>"; };
 		E4BBEB0724D5BE3F00067F1E /* 779 K-thSymbolInGrammar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "779 K-thSymbolInGrammar.cpp"; sourceTree = "<group>"; };
+		E4BF46DB24E47ED1001F3F0B /* 771 Jewels and Stones.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "771 Jewels and Stones.cpp"; sourceTree = "<group>"; };
+		E4BF46DE24E48EA0001F3F0B /* 3 Longest Substring Without Repeating Characters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "3 Longest Substring Without Repeating Characters.cpp"; sourceTree = "<group>"; };
 		E4C4530924C98B7100E3C956 /* 24 SwapNodesinPairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "24 SwapNodesinPairs.cpp"; sourceTree = "<group>"; };
 		E4C4530D24C9AC9600E3C956 /* 946ValidateStackSequences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 946ValidateStackSequences.cpp; sourceTree = "<group>"; };
 		E4C4531224C9CDFE00E3C956 /* 224 BasicCalculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "224 BasicCalculator.cpp"; sourceTree = "<group>"; };
@@ -277,11 +287,15 @@
 				E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */,
 				E4354A0A24E18D4D00CC606A /* 217 Contains Duplicate.cpp */,
 				E43BA11224E26069006B2C02 /* 219 Contains Duplicate II.cpp */,
+				E4BB07C424E620750093F322 /* 347 Top K Frequent Elements.cpp */,
+				E4BB07C624E62DD30093F322 /* 380 Insert Delete GetRandom O(1).cpp */,
 				E475FB1D24E27DF90039F26C /* 387 First Unique Character in a String.cpp */,
+				E424093624E5934500897236 /* 454 4Sum II.cpp */,
 				E475FB1B24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp */,
 				E4DF094B24E450CF00F7D44C /* 652 Find Duplicate Subtrees.cpp */,
 				E4354A0624E14F9C00CC606A /* 705 Design HashSet.cpp */,
 				E4354A0824E1701100CC606A /* 706 Design HashMap.cpp */,
+				E4BF46DB24E47ED1001F3F0B /* 771 Jewels and Stones.cpp */,
 			);
 			path = "hash table";
 			sourceTree = "<group>";
@@ -322,6 +336,7 @@
 				E49CC5EB24D6AF2300F5DADC /* binary search */,
 				E41948E824DB018D0026B020 /* binary search tree */,
 				E4354A0524E14EEF00CC606A /* hash table */,
+				E4BF46DD24E48BEA001F3F0B /* sliding window */,
 				E45BF78324B9857D0051A649 /* Leetcode */,
 				E45BF78224B9857D0051A649 /* Products */,
 			);
@@ -392,6 +407,14 @@
 				E487532324D8585C00319259 /* 744 FindSmallestLetterGreaterThanTarget.cpp */,
 			);
 			path = "binary search";
+			sourceTree = "<group>";
+		};
+		E4BF46DD24E48BEA001F3F0B /* sliding window */ = {
+			isa = PBXGroup;
+			children = (
+				E4BF46DE24E48EA0001F3F0B /* 3 Longest Substring Without Repeating Characters.cpp */,
+			);
+			path = "sliding window";
 			sourceTree = "<group>";
 		};
 		E4C4530B24C99F2B00E3C956 /* heap */ = {
@@ -508,6 +531,7 @@
 				E475FB1C24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp in Sources */,
 				E49CC60024D752B900F5DADC /* 153 FindMinimumInRotatedSortedArray.cpp in Sources */,
 				E4354A0B24E18D4D00CC606A /* 217 Contains Duplicate.cpp in Sources */,
+				E4BB07C524E620750093F322 /* 347 Top K Frequent Elements.cpp in Sources */,
 				E47F01B424D5461B00D05DD4 /* 118 Pascal'sTriangle.cpp in Sources */,
 				E4C4531624CA094D00E3C956 /* 150 EvaluateReversePolishNotation.cpp in Sources */,
 				E41948EE24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp in Sources */,
@@ -535,10 +559,12 @@
 				E4354A0424E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp in Sources */,
 				E4BBEB0224D5850500067F1E /* 70 ClimbingStairs.cpp in Sources */,
 				E42C8F4224D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp in Sources */,
+				E424093724E5934500897236 /* 454 4Sum II.cpp in Sources */,
 				E49CC5F124D6B5F100F5DADC /* 69 Sqrt(x).cpp in Sources */,
 				E487532424D8585C00319259 /* 744 FindSmallestLetterGreaterThanTarget.cpp in Sources */,
 				E42C8F3324CFE553009979EE /* 107 BinaryTreeLevelOrderTraversalII.cpp in Sources */,
 				E42C8F3924D00AC4009979EE /* 105 ConstructBinaryTreefromPreorderandInorderTraversal.cpp in Sources */,
+				E4BB07C724E62DD30093F322 /* 380 Insert Delete GetRandom O(1).cpp in Sources */,
 				E483232124D92DF700C427D6 /* 1137 N-thTribonacciNumber.cpp in Sources */,
 				E4F0280824D34AB500039E02 /* 20 Valid Parentheses.cpp in Sources */,
 				E49CC5F724D6C28400F5DADC /* 33 SearchinRotatedSortedArray.cpp in Sources */,
@@ -547,6 +573,7 @@
 				E45BF79624B9AAC30051A649 /* 160 Intersection of Two Linked Lists.cpp in Sources */,
 				E42C8F3F24D03374009979EE /* 117 PopulatingNextRightPointersinEachNodeII.cpp in Sources */,
 				E487532124D8430200319259 /* 367 ValidPerfectSquare.cpp in Sources */,
+				E4BF46DC24E47ED1001F3F0B /* 771 Jewels and Stones.cpp in Sources */,
 				E4EF837524BF34F200D42D2C /* 86 PartitionList.cpp in Sources */,
 				E49CC5F424D6BE2B00F5DADC /* 374 GuessNumberHigherorLower.cpp in Sources */,
 				E45BF78E24B985C50051A649 /* 206 ReverseLinkedList.cpp in Sources */,
@@ -555,6 +582,7 @@
 				E414D4F924C7187C00DD41F3 /* 445 AddTwoNumbers.cpp in Sources */,
 				E45BF7E224BC84B60051A649 /* 234 PalindromeLinkedList.cpp in Sources */,
 				E43BA11124E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp in Sources */,
+				E4BF46DF24E48EA0001F3F0B /* 3 Longest Substring Without Repeating Characters.cpp in Sources */,
 				E49CC5FA24D748CD00F5DADC /* 278 FirstBadVersion.cpp in Sources */,
 				E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */,
 				E45322B024CE011E00067CC4 /* 104 MaximumDepthofBinaryTree.cpp in Sources */,
