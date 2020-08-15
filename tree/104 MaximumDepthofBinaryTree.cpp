@@ -46,6 +46,7 @@ public:
         if (!root) return;
         if (!root->left && !root->right) {
             answer = max(depth, answer);
+            return;
         }
         
         max_depth_core(root->left, depth + 1, answer);

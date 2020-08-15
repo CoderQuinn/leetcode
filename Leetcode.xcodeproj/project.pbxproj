@@ -88,6 +88,10 @@
 		E49CC60324D7FE9300F5DADC /* 34 FindFirstAndLastPositionOfElementInSortedArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC60224D7FE9300F5DADC /* 34 FindFirstAndLastPositionOfElementInSortedArray.cpp */; };
 		E49CC60624D826E300F5DADC /* 658 FindKClosestElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E49CC60524D826E300F5DADC /* 658 FindKClosestElements.cpp */; };
 		E4A6C08224E691AE00B71A54 /* 53 Maximum Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4A6C08124E691AE00B71A54 /* 53 Maximum Subarray.cpp */; };
+		E4B4149824E6EFF700EC91EB /* 589 N-ary Tree Preorder Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4149724E6EFF700EC91EB /* 589 N-ary Tree Preorder Traversal.cpp */; };
+		E4B4149A24E6F04400EC91EB /* 590 N-ary Tree Postorder Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4149924E6F04400EC91EB /* 590 N-ary Tree Postorder Traversal.cpp */; };
+		E4B4149C24E6F05800EC91EB /* 429 N-ary Tree Level Order Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4149B24E6F05800EC91EB /* 429 N-ary Tree Level Order Traversal.cpp */; };
+		E4B4149E24E6F06E00EC91EB /* 559 Maximum Depth of N-ary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4149D24E6F06E00EC91EB /* 559 Maximum Depth of N-ary Tree.cpp */; };
 		E4BB07C524E620750093F322 /* 347 Top K Frequent Elements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BB07C424E620750093F322 /* 347 Top K Frequent Elements.cpp */; };
 		E4BB07C724E62DD30093F322 /* 380 Insert Delete GetRandom O(1).cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BB07C624E62DD30093F322 /* 380 Insert Delete GetRandom O(1).cpp */; };
 		E4BBEAFF24D57FB900067F1E /* 509 FibonacciNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4BBEAFE24D57FB900067F1E /* 509 FibonacciNumber.cpp */; };
@@ -209,6 +213,10 @@
 		E49CC60224D7FE9300F5DADC /* 34 FindFirstAndLastPositionOfElementInSortedArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "34 FindFirstAndLastPositionOfElementInSortedArray.cpp"; sourceTree = "<group>"; };
 		E49CC60524D826E300F5DADC /* 658 FindKClosestElements.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "658 FindKClosestElements.cpp"; sourceTree = "<group>"; };
 		E4A6C08124E691AE00B71A54 /* 53 Maximum Subarray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "53 Maximum Subarray.cpp"; sourceTree = "<group>"; };
+		E4B4149724E6EFF700EC91EB /* 589 N-ary Tree Preorder Traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "589 N-ary Tree Preorder Traversal.cpp"; sourceTree = "<group>"; };
+		E4B4149924E6F04400EC91EB /* 590 N-ary Tree Postorder Traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "590 N-ary Tree Postorder Traversal.cpp"; sourceTree = "<group>"; };
+		E4B4149B24E6F05800EC91EB /* 429 N-ary Tree Level Order Traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "429 N-ary Tree Level Order Traversal.cpp"; sourceTree = "<group>"; };
+		E4B4149D24E6F06E00EC91EB /* 559 Maximum Depth of N-ary Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "559 Maximum Depth of N-ary Tree.cpp"; sourceTree = "<group>"; };
 		E4BB07C424E620750093F322 /* 347 Top K Frequent Elements.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "347 Top K Frequent Elements.cpp"; sourceTree = "<group>"; };
 		E4BB07C624E62DD30093F322 /* 380 Insert Delete GetRandom O(1).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "380 Insert Delete GetRandom O(1).cpp"; sourceTree = "<group>"; };
 		E4BBEAFE24D57FB900067F1E /* 509 FibonacciNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "509 FibonacciNumber.cpp"; sourceTree = "<group>"; };
@@ -328,6 +336,7 @@
 		E45BF77824B9857D0051A649 = {
 			isa = PBXGroup;
 			children = (
+				E4B4149624E6EFBE00EC91EB /* n-ray tree */,
 				E4A6C08324E6935700B71A54 /* divide and conquer */,
 				E45BF79324B9912B0051A649 /* list */,
 				E40E360624C2E0C1001DC2E2 /* stack and queue */,
@@ -418,6 +427,17 @@
 				E4A6C08124E691AE00B71A54 /* 53 Maximum Subarray.cpp */,
 			);
 			path = "divide and conquer";
+			sourceTree = "<group>";
+		};
+		E4B4149624E6EFBE00EC91EB /* n-ray tree */ = {
+			isa = PBXGroup;
+			children = (
+				E4B4149B24E6F05800EC91EB /* 429 N-ary Tree Level Order Traversal.cpp */,
+				E4B4149D24E6F06E00EC91EB /* 559 Maximum Depth of N-ary Tree.cpp */,
+				E4B4149724E6EFF700EC91EB /* 589 N-ary Tree Preorder Traversal.cpp */,
+				E4B4149924E6F04400EC91EB /* 590 N-ary Tree Postorder Traversal.cpp */,
+			);
+			path = "n-ray tree";
 			sourceTree = "<group>";
 		};
 		E4BF46DD24E48BEA001F3F0B /* sliding window */ = {
@@ -543,6 +563,7 @@
 				E475FB1C24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp in Sources */,
 				E49CC60024D752B900F5DADC /* 153 FindMinimumInRotatedSortedArray.cpp in Sources */,
 				E4354A0B24E18D4D00CC606A /* 217 Contains Duplicate.cpp in Sources */,
+				E4B4149824E6EFF700EC91EB /* 589 N-ary Tree Preorder Traversal.cpp in Sources */,
 				E4BB07C524E620750093F322 /* 347 Top K Frequent Elements.cpp in Sources */,
 				E47F01B424D5461B00D05DD4 /* 118 Pascal'sTriangle.cpp in Sources */,
 				E4C4531624CA094D00E3C956 /* 150 EvaluateReversePolishNotation.cpp in Sources */,
@@ -567,8 +588,11 @@
 				E49CC5EE24D6AF6600F5DADC /* 704 BinarySearch.cpp in Sources */,
 				E475FB2024E3EA660039F26C /* 49 Group Anagrams.cpp in Sources */,
 				E4C4531324C9CDFE00E3C956 /* 224 BasicCalculator.cpp in Sources */,
+				E4B4149E24E6F06E00EC91EB /* 559 Maximum Depth of N-ary Tree.cpp in Sources */,
 				E45BF7D424BB6DBD0051A649 /* 141 LinkedListCycle.cpp in Sources */,
 				E4354A0424E0553200CC606A /* 108 Convert Sorted Array to Binary Search Tree.cpp in Sources */,
+				E4B4149C24E6F05800EC91EB /* 429 N-ary Tree Level Order Traversal.cpp in Sources */,
+				E4B4149A24E6F04400EC91EB /* 590 N-ary Tree Postorder Traversal.cpp in Sources */,
 				E4BBEB0224D5850500067F1E /* 70 ClimbingStairs.cpp in Sources */,
 				E42C8F4224D05E4D009979EE /* 236 LowestCommonAncestorofaBinaryTree.cpp in Sources */,
 				E424093724E5934500897236 /* 454 4Sum II.cpp in Sources */,
