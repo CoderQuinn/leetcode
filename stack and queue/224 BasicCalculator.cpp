@@ -10,6 +10,7 @@
 #include <string>
 #include <cctype>
 #include <stack>
+#include <vector>
 using namespace::std;
 
 /*
@@ -141,5 +142,95 @@ public:
         }
         
         return result + (sign * num);
+    }
+};
+
+// 字符串表达式可以包含左括号 ( ，右括号 )，加号 + ，减号 -，非负整数和空格
+class Solution4 {
+public:
+    int calculate(string s) {
+        vector<string> vector = shunting_yard_algorithm(s);
+        return evalRPN(vector);
+    }
+    
+    int evalRPN(vector<string>& tokens) {
+        stack<int> num_stack;
+        for (size_t i = 0; i < tokens.size(); ++i) {
+            string &curr = tokens[i];
+            if (curr == "+" || curr == "-") {
+                int num2 = num_stack.top();
+                num_stack.pop();
+                int num1 = num_stack.top();
+                num_stack.pop();
+                int sum;
+                if (curr == "-") {
+                    sum = num1 - num2;
+                } else {
+                    sum = num1 + num2;
+                }
+                num_stack.push(sum);
+            } else {
+                int num = stoi(curr);
+                num_stack.push(num);
+            }
+        }
+        
+        return num_stack.top();
+    }
+    
+    vector<string> shunting_yard_algorithm(string s) {
+        vector<string> str_vec;
+        stack<char> operator_stack;
+        
+        for (int i = 0; i < s.length(); ++i) {
+            switch (s[i]) {
+                case '+':
+                case '-':
+                    if (!operator_stack.empty() && (operator_stack.top() == '+' || operator_stack.top() == '-')) {
+                        string op;
+                        op += operator_stack.top();
+                        operator_stack.pop();
+                        
+                        str_vec.push_back(op);
+                    }
+                    operator_stack.push(s[i]);
+                    break;
+                case '(':
+                    operator_stack.push(s[i]);
+                    break;
+                case ')':
+                    while (operator_stack.top() != '(') {
+                        string op;
+                        op += operator_stack.top();
+                        operator_stack.pop();
+                        
+                        str_vec.push_back(op);
+                    }
+                    operator_stack.pop();
+                    break;
+                case ' ':
+                    continue;
+                    break;
+                default:
+                    if (isdigit(s[i])) {
+                        string num_str;
+                        num_str += s[i];
+                        while (i + 1 < s.length() && isdigit(s[i + 1])) {
+                            ++i;
+                            num_str += s[i];
+                        }
+                        str_vec.push_back(num_str);
+                    }
+                    break;
+            }
+        }
+        while (!operator_stack.empty()) {
+            string op;
+            op += operator_stack.top();
+            operator_stack.pop();
+            
+            str_vec.push_back(op);
+        }
+        return str_vec;
     }
 };
