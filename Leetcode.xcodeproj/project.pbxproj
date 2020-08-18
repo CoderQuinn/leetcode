@@ -16,6 +16,8 @@
 		E41948EE24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E41948ED24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp */; };
 		E41948F024DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E41948EF24DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp */; };
 		E41948F224DB30EE0026B020 /* 450 Delete Node in a BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E41948F124DB30EE0026B020 /* 450 Delete Node in a BST.cpp */; };
+		E421C35124EA42C600C100FB /* 912 Sort an Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E421C35024EA42C600C100FB /* 912 Sort an Array.cpp */; };
+		E421C35324EAA2D000C100FB /* 315 Count of Smaller Numbers After Self.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E421C35224EAA2D000C100FB /* 315 Count of Smaller Numbers After Self.cpp */; };
 		E424093724E5934500897236 /* 454 4Sum II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E424093624E5934500897236 /* 454 4Sum II.cpp */; };
 		E42C8F3324CFE553009979EE /* 107 BinaryTreeLevelOrderTraversalII.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3224CFE553009979EE /* 107 BinaryTreeLevelOrderTraversalII.cpp */; };
 		E42C8F3624CFED05009979EE /* 106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C8F3524CFED05009979EE /* 106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp */; };
@@ -138,6 +140,8 @@
 		E41948ED24DB25850026B020 /* 700 Search in a Binary Search Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "700 Search in a Binary Search Tree.cpp"; sourceTree = "<group>"; };
 		E41948EF24DB2B150026B020 /* 701 Insert into a Binary Search Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "701 Insert into a Binary Search Tree.cpp"; sourceTree = "<group>"; };
 		E41948F124DB30EE0026B020 /* 450 Delete Node in a BST.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "450 Delete Node in a BST.cpp"; sourceTree = "<group>"; };
+		E421C35024EA42C600C100FB /* 912 Sort an Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "912 Sort an Array.cpp"; sourceTree = "<group>"; };
+		E421C35224EAA2D000C100FB /* 315 Count of Smaller Numbers After Self.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "315 Count of Smaller Numbers After Self.cpp"; sourceTree = "<group>"; };
 		E424093624E5934500897236 /* 454 4Sum II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "454 4Sum II.cpp"; sourceTree = "<group>"; };
 		E42C8F3224CFE553009979EE /* 107 BinaryTreeLevelOrderTraversalII.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "107 BinaryTreeLevelOrderTraversalII.cpp"; sourceTree = "<group>"; };
 		E42C8F3524CFED05009979EE /* 106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "106 ConstructBinaryTreefromInorderandPostorderTraversal.cpp"; sourceTree = "<group>"; };
@@ -286,6 +290,14 @@
 			path = "binary search tree";
 			sourceTree = "<group>";
 		};
+		E421C34F24EA42A100C100FB /* sort */ = {
+			isa = PBXGroup;
+			children = (
+				E421C35024EA42C600C100FB /* 912 Sort an Array.cpp */,
+			);
+			path = sort;
+			sourceTree = "<group>";
+		};
 		E4354A0524E14EEF00CC606A /* hash table */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +348,7 @@
 		E45BF77824B9857D0051A649 = {
 			isa = PBXGroup;
 			children = (
+				E421C34F24EA42A100C100FB /* sort */,
 				E4B4149624E6EFBE00EC91EB /* n-ray tree */,
 				E4A6C08324E6935700B71A54 /* divide and conquer */,
 				E45BF79324B9912B0051A649 /* list */,
@@ -425,6 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				E4A6C08124E691AE00B71A54 /* 53 Maximum Subarray.cpp */,
+				E421C35224EAA2D000C100FB /* 315 Count of Smaller Numbers After Self.cpp */,
 			);
 			path = "divide and conquer";
 			sourceTree = "<group>";
@@ -579,6 +593,7 @@
 				E4354A0224E047EA00CC606A /* 110 Balanced Binary Tree.cpp in Sources */,
 				E43549FE24DE578B00CC606A /* 235 Lowest Common Ancestor of a Binary Search Tree.cpp in Sources */,
 				E49CC5FD24D7509000F5DADC /* 162 FindPeakElement.cpp in Sources */,
+				E421C35324EAA2D000C100FB /* 315 Count of Smaller Numbers After Self.cpp in Sources */,
 				E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */,
 				E475FB1E24E27DF90039F26C /* 387 First Unique Character in a String.cpp in Sources */,
 				E4F5471A24CAE1310079E871 /* 622 DesignCircularQueue.cpp in Sources */,
@@ -621,6 +636,7 @@
 				E4BF46DF24E48EA0001F3F0B /* 3 Longest Substring Without Repeating Characters.cpp in Sources */,
 				E49CC5FA24D748CD00F5DADC /* 278 FirstBadVersion.cpp in Sources */,
 				E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */,
+				E421C35124EA42C600C100FB /* 912 Sort an Array.cpp in Sources */,
 				E45322B024CE011E00067CC4 /* 104 MaximumDepthofBinaryTree.cpp in Sources */,
 				E49CC60624D826E300F5DADC /* 658 FindKClosestElements.cpp in Sources */,
 				E4354A0924E1701100CC606A /* 706 Design HashMap.cpp in Sources */,
