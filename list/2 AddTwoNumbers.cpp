@@ -19,37 +19,39 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode *dummy_head = new ListNode(0);
-        ListNode *p = l1, *q = l2, *curr = dummy_head;
+        if (!l1) return l2;
+        if (!l2) return l1;
+        ListNode *dummy_node = new ListNode(-1);
+        ListNode *tail = dummy_node;
+        
         int carry = 0;
-        
-        while (p || q) {
-            int x = p ? p->val : 0;
-            int y = q ? q->val : 0;
-            int sum = x + y + carry;
-            carry = sum / 10;
-            
-            ListNode *add_node = new ListNode(sum % 10);
-            curr->next = add_node;
-            curr = add_node;
-
-            // 指针向高位移动，直到最长链表的当前指针为空
-            if (p) {
-                p = p->next;
+        int sum = 0;
+        while (l1 || l2)
+        {
+            if (l1)
+            {
+                sum += l1->val;
+                l1 = l1->next;
             }
             
-            if (q) {
-                q = q->next;
+            if (l2)
+            {
+                sum += l2->val;
+                l2 = l2->next;
             }
+            
+            int val = (sum + carry) % 10;
+            carry = (sum + carry) / 10;
+            tail->next = new ListNode(val);
+            tail = tail->next;
+            sum = 0;
         }
-
-        if (carry != 0) {
-            ListNode *add_node = new ListNode(carry);
-            curr->next = add_node;
-        }
-        curr = dummy_head->next;
-        delete dummy_head;
         
-        return curr;
+        if (carry != 0)
+        {
+            tail->next = new ListNode(carry);
+            tail = tail->next;
+        }
+        return dummy_node->next;
     }
 };

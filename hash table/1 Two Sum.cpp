@@ -15,14 +15,15 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> hash_map;
-        
-        for (int i = 0; i < nums.size(); ++i) {
-            auto it = hash_map.find(target - nums[i]);
-            if (it != hash_map.end()) {
-                return {it->second, i};
+
+        auto size = nums.size();
+        for(int i = 0; i < size; i++) {
+            int another = target - nums[i];
+            if(hash_map.count(another) > 0) {
+                return {hash_map[another], i};
             }
-            hash_map.insert(make_pair(nums[i], i));
+            hash_map[nums[i]] = i;
         }
-        return {};
+        return {-1, -1};
     }
 };

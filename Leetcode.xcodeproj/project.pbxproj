@@ -66,6 +66,7 @@
 		E45BF7E824BD89D30051A649 /* 21 MergeTwoSortedLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7E724BD89D30051A649 /* 21 MergeTwoSortedLists.cpp */; };
 		E45BF7EB24BDA0AC0051A649 /* 2 AddTwoNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EA24BDA0AC0051A649 /* 2 AddTwoNumbers.cpp */; };
 		E45BF7ED24BDDE0E0051A649 /* 61 RotateList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45BF7EC24BDDE0E0051A649 /* 61 RotateList.cpp */; };
+		E45F314A24F0FD64007E5335 /* 4 Median of Two Sorted Arrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45F314924F0FD64007E5335 /* 4 Median of Two Sorted Arrays.cpp */; };
 		E475FB1C24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E475FB1B24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp */; };
 		E475FB1E24E27DF90039F26C /* 387 First Unique Character in a String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E475FB1D24E27DF90039F26C /* 387 First Unique Character in a String.cpp */; };
 		E475FB2024E3EA660039F26C /* 49 Group Anagrams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E475FB1F24E3EA660039F26C /* 49 Group Anagrams.cpp */; };
@@ -193,6 +194,7 @@
 		E45BF7E724BD89D30051A649 /* 21 MergeTwoSortedLists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "21 MergeTwoSortedLists.cpp"; sourceTree = "<group>"; };
 		E45BF7EA24BDA0AC0051A649 /* 2 AddTwoNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "2 AddTwoNumbers.cpp"; sourceTree = "<group>"; };
 		E45BF7EC24BDDE0E0051A649 /* 61 RotateList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "61 RotateList.cpp"; sourceTree = "<group>"; };
+		E45F314924F0FD64007E5335 /* 4 Median of Two Sorted Arrays.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "4 Median of Two Sorted Arrays.cpp"; sourceTree = "<group>"; };
 		E475FB1B24E26B440039F26C /* 599 Minimum Index Sum of Two Lists.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "599 Minimum Index Sum of Two Lists.cpp"; sourceTree = "<group>"; };
 		E475FB1D24E27DF90039F26C /* 387 First Unique Character in a String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "387 First Unique Character in a String.cpp"; sourceTree = "<group>"; };
 		E475FB1F24E3EA660039F26C /* 49 Group Anagrams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "49 Group Anagrams.cpp"; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 			children = (
 				E4A6C08124E691AE00B71A54 /* 53 Maximum Subarray.cpp */,
 				E421C35224EAA2D000C100FB /* 315 Count of Smaller Numbers After Self.cpp */,
+				E45F314924F0FD64007E5335 /* 4 Median of Two Sorted Arrays.cpp */,
 			);
 			path = "divide and conquer";
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				E42C8F3C24D01A22009979EE /* 116 PopulatingNextRightPointersinEachNode.cpp in Sources */,
 				E4354A0F24E1975100CC606A /* 202 Happy Number.cpp in Sources */,
 				E4F0280C24D3578100039E02 /* 739 DailyTemperatures.cpp in Sources */,
+				E45F314A24F0FD64007E5335 /* 4 Median of Two Sorted Arrays.cpp in Sources */,
 				E4DF094C24E450CF00F7D44C /* 652 Find Duplicate Subtrees.cpp in Sources */,
 				E45322B924CED49300067CC4 /* 112 PathSum.cpp in Sources */,
 				E45322B624CEC35500067CC4 /* 101 SymmetricTree.cpp in Sources */,
