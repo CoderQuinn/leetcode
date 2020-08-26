@@ -72,3 +72,43 @@ public:
         return result_vector;
     }
 };
+
+class Solution1 {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        if (nums.empty()) return {-1, -1};
+        
+        auto size = nums.size();
+        int left = 0;
+        int right = int(size - 1);
+        
+        int left_border = -1;
+        while (left < right) {
+            int mid = left + ((right - left) >> 1);
+            if (nums[mid] >= target) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        if (left < size && nums[left] == target) { // 右边界
+            left_border = left;
+            left = 0;
+            right = int(size - 1);
+            
+            int right_border = -1;
+            while (left < right) {
+                int mid = left + ((right + 1 - left) >> 1);
+                if (nums[mid] <= target) {
+                    left = mid;
+                } else {
+                    right = mid - 1;
+                }
+            }
+            right_border = left;
+            return {left_border, right_border};
+        }
+        
+        return {-1, -1};
+    }
+};
