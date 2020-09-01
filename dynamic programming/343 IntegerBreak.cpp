@@ -13,7 +13,7 @@
 #include <cmath>
 using namespace std;
 
-class Solution {
+class Solution0 {
 public:
     int integerBreak(int n) {
         if(n <= 0) return 0;
@@ -51,5 +51,28 @@ public:
         }
         
         return pow(3, x);
+    }
+};
+
+class Solution2 {
+public:
+    // 状态方程:
+    // f(i) = i - 1 , i <= 3;
+    // f(i) = max(1*f(i -1), (i - 1) * f(1)), i >= 4
+    int integerBreak(int n) {
+        if(n < 4) return n - 1;
+
+        vector<int> f(n + 1, 0);
+        f[1] = 1;
+        f[2] = 2;
+        f[3] = 3;
+        
+        for (int i = 4; i <= n; i++) {
+            for (int j = 1; j < i ; j++) {
+                f[i] = max(j * f[i - j], f[i]);
+            }
+        }
+        
+        return f[n];
     }
 };

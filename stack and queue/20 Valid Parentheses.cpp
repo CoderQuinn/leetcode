@@ -54,3 +54,27 @@ public:
         return result;
     }
 };
+
+class Solution1 {
+public:
+/*
+ * ascii
+ * { 123
+ * } 125
+ * ( 40
+ * ) 41
+ * [ 91
+ * ] 93
+ */
+    bool isValid(string s) {
+        stack<char> char_stack;
+        for(auto c : s) {
+            if(c == '{' || c == '[' || c == '(') char_stack.push(c);
+            else {
+                if(!char_stack.empty() && abs(c - char_stack.top()) <= 2) char_stack.pop();
+                else return false;
+            }
+        }
+        return char_stack.empty();
+    }
+};

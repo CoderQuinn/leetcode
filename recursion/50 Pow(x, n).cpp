@@ -36,3 +36,25 @@ public:
     }
     
 };
+
+// 快速幂
+class Solution1 {
+public:
+    double myPow(double x, int n) {
+        double res = 1;
+        bool is_minus = n < 0;
+        long long k = abs(n);
+        
+        while (k) {
+            if (k & 1)
+                res *= x;
+            k >>= 1;
+            x = x * x;
+        }
+        
+        if (is_minus)
+            res = 1 / res;
+        
+        return res;
+    }
+};
