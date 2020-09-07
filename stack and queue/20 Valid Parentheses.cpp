@@ -57,6 +57,7 @@ public:
 
 class Solution1 {
 public:
+    
 /*
  * ascii
  * { 123
