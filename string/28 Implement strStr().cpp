@@ -15,79 +15,81 @@ using namespace std;
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-        auto n = haystack.size();
-        auto m = needle.size();
-        
-        if (m == 0) return 0;
-        if (n < m) return -1;
+        int n = haystack.length();
+        int m = needle.length();
 
-        int ret = -1;
-        for (int i = 0, j = 0; i <= n - m; i++) {
-            j = 0;
-            
-            while (j < m && haystack[i + j] == needle[j]) {
+        if(m == 0) return 0;
+
+        int s = n - m;
+        if(s < 0) return -1;
+
+        for(int i = 0; i <= s; i++)
+        {
+            int j = 0, k = 0;
+            while(haystack[i + k] == needle[j] && j < m) {
+                k++;
                 j++;
-            }
-            
-            if (j == m) {
-                ret = i;
-                break;
-            }
+            };
+
+            if(j == m) return i;
         }
-        
-        return ret;
+
+        return -1;
     }
 };
 
 // kmp matcher, time complexity: O(n + m), sapce complexity: O(m)
 class Solution1 {
 public:
-    void compute_prefix(string &p, vector<int> &next) {
-        int m = p.size() - 1; // O(m)
+    vector<int> next;
+    void compute_prefix(string p)
+    {
+        int length = p.length() - 1;
         next[1] = 0;
-        int j = 0;
-        for (int i = 2; i <= m; i++) { // O(m)
-            while (j > 0 && p[j + 1] != p[i]) {
+        for(int i = 2, j = 0; i <= length; i++)
+        {
+            while(j > 0 && p[i] != p[j + 1])
+            {
                 j = next[j];
             }
-            
-            if (p[j + 1] == p[i]) {
+
+            if(p[i] == p[j + 1]) {
                 j++;
             }
             next[i] = j;
- 
         }
     }
-    
-    int strStr(string t, string p) {
-        if (p.empty()) return 0;
-        
-        int n = (int)t.size();
-        int m = (int)p.size();
 
-        t = ' ' + t; // for i=1 to n
-        p = ' ' + p;
+    int strStr(string haystack, string needle) {
+        int n = haystack.length();
+        int m = needle.length();
+        if(m == 0) return 0;
+        if(n < m) return -1;
         
-        vector<int> next(m + 1);
-        compute_prefix(p, next);
+        next.resize(m + 1);
+
+        haystack.insert(haystack.begin(), ' ');
+        needle.insert(needle.begin(), ' ');
         
-        int ret = -1;
-        for (int i = 1, j = 0; i <= n; i++) {
-            while (j > 0 && p[j + 1] != t[i]) { // pattern string backtracking
+        compute_prefix(needle);
+        
+
+        for(int i = 1, j = 0; i <= n; i++)
+        {
+            while(j > 0 && haystack[i] != needle[j + 1])
+            {
                 j = next[j];
             }
-            
-            if (p[j + 1] == t[i]) {
+
+            if(haystack[i] == needle[j + 1]) {
                 j++;
             }
-            
-            if (j == m) {
-                ret = i - m;
-                // j = next[j]; // go on searching next match substring
-                break;
+
+            if(j == m) {
+                return i - m;
             }
         }
-        
-        return ret;
+
+        return -1;
     }
 };

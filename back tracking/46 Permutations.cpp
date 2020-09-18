@@ -14,7 +14,7 @@ class Solution {
 public:
     vector<vector<int>> res;
     vector<int> path;
-    vector<bool> visit;
+    vector<bool> visited;
     
     void dfs(int n, vector<int>& nums)
     {
@@ -24,18 +24,18 @@ public:
         }
         
         for (int i = 0; i < nums.size(); i++) {
-            if (!visit[i]) {
-                visit[i] = true;
+            if (!visited[i]) {
+                visited[i] = true;
                 path[n] = nums[i];
                 dfs(n + 1, nums);
-                visit[i] = false;
+                visited[i] = false;
             }
         }
     }
     
     vector<vector<int>> permute(vector<int>& nums) {
         int size = nums.size();
-        visit.resize(size);
+        visited.resize(size);
         path.resize(size);
         dfs(0, nums);
         return res;
