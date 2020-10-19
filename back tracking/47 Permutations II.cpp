@@ -1,13 +1,13 @@
 //
-//  46 Permutations.cpp
+//  47 Permutations II.cpp
 //  Leetcode
 //
-//  Created by Quinn on 2020/9/1.
+//  Created by Quinn on 2020/10/1.
 //  Copyright © 2020 Quinn. All rights reserved.
 //
 
 #include <vector>
-#include <iostream>
+#include <unordered_set>
 using namespace std;
 
 class Solution {
@@ -16,9 +16,10 @@ public:
     vector<int> path;
     vector<bool> visited;
     
-    vector<vector<int>> permute(vector<int>& nums) {
-        auto n = nums.size();
+    vector<vector<int>> permuteUnique(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
         
+        auto n = nums.size();
         path.resize(n);
         visited.resize(n);
         
@@ -38,6 +39,8 @@ public:
         {
             if(!visited[i])
             {
+                if(i > 0 && nums[i - 1] == nums[i] && !visited[i - 1]) continue;
+                
                 path[u] = nums[i];
                 visited[i] = true;
                 dfs(nums, u + 1);

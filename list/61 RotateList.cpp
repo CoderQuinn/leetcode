@@ -19,26 +19,28 @@
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
-        if (!head || !head->next) return head; // 空链表和只有一个节点的链表
-        
-        int len = 1;
+        if(!head) return head;
+        int n = 0;
+        ListNode *p = nullptr;
         ListNode *curr = head;
-        while (curr->next) {
+        while(curr)
+        {
+            p = curr;
             curr = curr->next;
-            ++len;
+            n++;
         }
         
-        curr->next = head; // 形成环
+        p->next = head; // 形成环
+        k %= n;
         
-        int step = len - k % len - 1;
         curr = head;
-        while (step-- > 0) {
+        for(int i = 0; i < n - k - 1; i++)
+        {
             curr = curr->next;
         }
         
-        ListNode *new_head = curr->next;
+        p = curr->next;
         curr->next = nullptr; // 打破环
-        
-        return new_head;
+        return p;
     }
 };

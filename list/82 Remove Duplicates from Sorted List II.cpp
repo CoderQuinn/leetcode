@@ -19,40 +19,20 @@
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        if (!head) return nullptr;
-        
-        ListNode *dummy_node = new ListNode(-1);
-        dummy_node->next = head;
-        
-        ListNode *prev = dummy_node;
-        ListNode *curr = head;
-        ListNode *deleted_node = nullptr;
-        
-        while (curr && curr->next) {
-            if (curr->val == curr->next->val) {
-                //删除重复的结点
-                ListNode *fast = curr->next;
-                while (fast->next && fast->next->val == curr->val) {
-                    deleted_node = fast;
-                    fast = fast->next;
-                    delete deleted_node;
-                }
-                
-                deleted_node = fast;
-                prev->next = fast->next;
-                delete deleted_node;
-                
-                curr = prev->next;
-            } else {
-                prev = curr;
-                curr = curr->next;
-            }
-
+        ListNode *dummy = new ListNode(-1);
+        dummy->next = head;
+        auto p = dummy;
+        while(p->next)
+        {
+            auto q = p->next;
+            while(q && p->next->val == q->val)
+                q = q->next;
+            
+            if(p->next->next == q)
+                p = p->next;
+            else
+                p->next = q;
         }
-        
-        head = dummy_node->next;
-        delete dummy_node;
-        
-        return head;
+        return dummy->next;
     }
 };

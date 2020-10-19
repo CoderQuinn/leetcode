@@ -12,25 +12,32 @@ using namespace std;
 
 class Solution {
 public:
-    const int Boundary = INT_MIN;
-    vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        vector<vector<int>> ans;
-        sort(intervals.begin(), intervals.end());
-        int left = Boundary, right = Boundary;
-        for (int i = 0; i < intervals.size(); ++i) {
-            
-            if (right >= intervals[i].front()) {
-                right = max(right, intervals[i].back());
-            } else {
-                if (right != Boundary) ans.push_back({left, right});
-                
-                left = intervals[i].front();
-                right = intervals[i].back();
+    const int INF = 0x3f3f3f3f;
+    vector<vector<int>> merge(vector<vector<int>>& a) {
+        vector<vector<int>> res;
+        if(a.empty()) return res;
+        
+        auto n = a.size();
+        sort(a.begin(), a.end());
+        
+        int l = -INF, r = -INF;
+        for(int i = 0; i < n; i++)
+        {
+            if(a[i][0] > r)
+            {
+                if(r != -INF)
+                    res.push_back({l, r});
+                l = a[i][0];
+                r = a[i][1];
+            }
+            else
+            {
+                r = max(r, a[i][1]);
             }
         }
+        if(r != -INF)
+            res.push_back({l, r});
         
-        if (right != Boundary) ans.push_back({left, right});
-        return ans;
+        return res;
     }
 };
-

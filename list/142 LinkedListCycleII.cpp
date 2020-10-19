@@ -7,8 +7,6 @@
 //
 
 #include "ListNode.h"
-
-#include "ListNode.h"
 #include <set>
 
 class Solution {
@@ -18,7 +16,7 @@ public:
         // 方法1思路：若链表存在环，则set中必能查找到环的第一个节点
         std::set<ListNode *> node_set;
         while (head) {
-            if (node_set.find(head) != node_set.end()) {
+            if (node_set.count(head)) {
                 return head;
             }
             node_set.insert(head);

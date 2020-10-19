@@ -81,3 +81,33 @@ public:
         return left_sum + right_sum;
     }
 };
+
+// 动态规划
+class Solution4
+{
+public:
+    int maxSubArray(vector<int> &nums)
+    {
+        int n = nums.size();
+        vector<int> f(n);
+        vector<int> rect(n);
+        f[n - 1] = nums[n - 1];
+        int res = f[n - 1];
+        
+        for (int i = n - 2; i >= 0; i--)
+        {
+            if (f[i + 1] > 0)
+            {
+                f[i] = f[i + 1] + nums[i];
+            }
+            else
+            {
+                f[i] = nums[i];
+            }
+            res = max(f[i], res);
+        }
+        
+        
+        return res;
+    }
+};

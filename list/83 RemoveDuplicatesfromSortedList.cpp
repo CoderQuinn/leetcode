@@ -19,21 +19,19 @@
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        if (!head) return nullptr;
-    
-        ListNode *curr = head;
-        
-        while (curr && curr->next) {
-            if (curr->val == curr->next->val) {
-                ListNode *deleted = curr->next;
-                curr->next = curr->next->next;
-                delete deleted;
-            } else {
-                curr = curr->next;
+        if(!head) return nullptr;
+        auto prev = head;
+        auto curr = head;
+        while(curr)
+        {
+            if(prev->val != curr->val)
+            {
+                prev->next = curr;
+                prev = curr;
             }
-            
+            curr = curr->next;
         }
-        
+        prev->next = nullptr;
         return head;
     }
 };

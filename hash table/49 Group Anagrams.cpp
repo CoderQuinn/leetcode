@@ -15,60 +15,76 @@ using namespace std;
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        vector<vector<string>> result_vector;
-        unordered_map<string, vector<string>> hash_map;
-        
-        for (auto str : strs) {
-            string key = str;
+        vector<vector<string>> res;
+        unordered_map<string, vector<string>> hash;
+        for(auto &v : strs)
+        {
+            string key = v;
             sort(key.begin(), key.end());
-            
-            if (hash_map.count(key) > 0) {
-                hash_map[key].push_back(str);
-            } else {
-                vector<string> val = { str };
-                hash_map[key] = val;
+            if(hash.count(key))
+            {
+                vector<string> &cur = hash[key];
+                cur.push_back(v);
+            }
+            else
+            {
+                vector<string> ans({v});
+                hash[key] = ans;
             }
         }
         
-        for (auto pair : hash_map) {
-            result_vector.push_back(pair.second);
+        for(auto &pair : hash)
+        {
+            res.push_back(pair.second);
         }
-
-        return result_vector;
+        return res;
     }
 };
 
+// 字符串哈希
 class Solution1 {
 public:
-#define ALPHA_MAX_SIZE 26
+#define MAX_SIZE 26
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        vector<vector<string>> result_vector;
-        unordered_map<string, vector<string>> hash_map;
+        int alphas[MAX_SIZE];
+        vector<vector<string>> res;
+        unordered_map<string, vector<string>> hash;
         
-        for (auto str : strs) {
-            int alpha[ALPHA_MAX_SIZE] = {0};
+        for(auto &v : strs)
+        {
+            memset(alphas, 0, sizeof alphas);
             string key;
-            for (auto ch : str) {
-                alpha[ch - 'a'] += 1;
+            
+            for(auto &ch : v)
+            {
+                alphas[ch - 'a']++;
             }
             
-            for (int i = 0; i < ALPHA_MAX_SIZE; ++i) {
-                key += '#';
-                key += to_string(alpha[i]);
+            for(int i = 0; i < MAX_SIZE; i++)
+            {
+                if(alphas[i] > 0)
+                {
+                    key += (i + 'a');
+                    key += to_string(alphas[i]);
+                }
             }
-
-            if (hash_map.count(key) > 0) {
-                hash_map[key].push_back(str);
-            } else {
-                vector<string> val = { str };
-                hash_map[key] = val;
+            
+            if(hash.count(key))
+            {
+                vector<string> &cur = hash[key];
+                cur.push_back(v);
+            }
+            else
+            {
+                vector<string> ans({v});
+                hash[key] = ans;
             }
         }
         
-        for (auto pair : hash_map) {
-            result_vector.push_back(pair.second);
+        for(auto &pair : hash)
+        {
+            res.push_back(pair.second);
         }
-
-        return result_vector;
+        return res;
     }
 };
