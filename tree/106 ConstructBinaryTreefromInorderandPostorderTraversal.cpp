@@ -8,64 +8,50 @@
 
 #include "TreeNode.h"
 #include <vector>
-#include <stack>
+#include <unordered_map>
 using namespace::std;
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+// hash加速
 class Solution {
 public:
-     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-         if (inorder.empty() || inorder.empty() || inorder.size() != postorder.size()) return nullptr;
-     
-//         return build_tree_core(inorder, 0, postorder, 0, inorder.size());
-         return build_tree_core(inorder.begin(), postorder.begin(), inorder.size());
-     }
-     
-     TreeNode* build_tree_core(vector<int>& inorder, int in_begin, vector<int>& postorder, int pos_begin, size_t size) {
-         if (size <= 0) return nullptr;
-         
-         int root_val = postorder[pos_begin + (size - 1)];
-         TreeNode *root = new TreeNode(root_val);
-    
-         int i = 0;
-         while (i < size) {
-             if (root_val == inorder[in_begin + i]) {
-                 break;
-             }
-             ++i;
-         }
+    unordered_map<int, int> pos;
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+        for(int i = 0; i < inorder.size(); i++)
+        {
+            pos[inorder[i]] = i;
+        }
+        return build(inorder, postorder, 0, inorder.size() - 1, 0, postorder.size() - 1);
+    }
 
-         root->left = build_tree_core(inorder, in_begin, postorder, pos_begin, i);
-         root->right = build_tree_core(inorder, in_begin + i + 1, postorder, pos_begin + i, size - i - 1);
-         
-         return root;
-     }
-    
-     TreeNode* build_tree_core(vector<int>::iterator in_iter, vector<int>::iterator pos_iter, size_t size) {
-         if (size <= 0) return nullptr;
-         
-         int root_val = *(pos_iter + size - 1);
-         TreeNode *root = new TreeNode(root_val);
-    
-         int i = 0;
-         while (i < size) {
-             if (root_val == *(in_iter + i)) {
-                 break;
-             }
-             ++i;
-         }
+    TreeNode *build(vector<int>& inorder, vector<int>& postorder, int il, int ir, int pl, int pr)
+    {
+        if(pl > pr) return nullptr;
+        TreeNode *root = new TreeNode(postorder[pr]);
+        int k = pos[postorder[pr]] - il;
+        root->left = build(inorder, postorder, il, il + k - 1, pl, pl + k - 1);
+        root->right = build(inorder, postorder, il + k + 1, ir, pl + k, pr - 1);
+        return root;
+    }
+};
 
-         root->left = build_tree_core(in_iter, pos_iter, i);
-         root->right = build_tree_core(in_iter + i + 1, pos_iter + i, size - i - 1);
-         
-         return root;
-     }
+class Solution1 {
+public:
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+        return build(inorder, postorder, 0, inorder.size() - 1, 0, postorder.size() - 1);
+    }
+
+    TreeNode *build(vector<int>& inorder, vector<int>& postorder, int il, int ir, int pl, int pr)
+    {
+        if(pl > pr) return nullptr;
+        TreeNode *root = new TreeNode(postorder[pr]);
+        int k = 0;
+        for(; il + k <= ir; k++)
+        {
+            if(inorder[il + k] == postorder[pr])
+                break;
+        }
+        root->left = build(inorder, postorder, il, il + k - 1, pl, pl + k - 1);
+        root->right = build(inorder, postorder, il + k + 1, ir, pl + k, pr - 1);
+        return root;
+    }
 };

@@ -11,71 +11,45 @@
 #include <unordered_map>
 using namespace::std;
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        if (inorder.empty() || inorder.empty() || inorder.size() != preorder.size()) return nullptr;
-        
-        return build_tree_core(preorder.begin(), inorder.begin(), inorder.size());
+        return build(preorder, inorder, 0, preorder.size() - 1, 0, inorder.size() - 1);
     }
     
-    TreeNode* build_tree_core(vector<int>::iterator pre_iter, vector<int>::iterator in_iter, size_t size) {
-        if (size <= 0) return nullptr;
-        
-        int root_val = *pre_iter;
-        TreeNode *root = new TreeNode(root_val);
-        
-        int i = 0;
-        while (i < size) {
-            if (root_val == *(in_iter + i)) {
+    TreeNode* build(vector<int>& preorder, vector<int>& inorder, int pl, int pr, int il, int ir) {
+        if(pl > pr) return nullptr;
+        TreeNode *root = new TreeNode(preorder[pl]);
+        int k = 0;
+        for(; il + k <= ir; k++)
+        {
+            if(inorder[il + k] == root->val)
                 break;
-            }
-            ++i;
         }
-        
-        root->left = build_tree_core(pre_iter + 1, in_iter, i);
-        root->right = build_tree_core(pre_iter + i + 1, in_iter + i + 1, size - i - 1);
+        root->left = build(preorder, inorder, pl + 1, pl + k, il, il + k - 1);
+        root->right = build(preorder, inorder, pl + k + 1, pr, il + k + 1, ir);
         
         return root;
     }
 };
 
-// 使用hash_map加速查找
+// hash_map加速
 class Solution1 {
 public:
+    unordered_map<int, int> pos;
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        if (inorder.empty() || inorder.empty() || inorder.size() != preorder.size()) return nullptr;
-
-        for (vector<int>::iterator it = inorder.begin(); it != inorder.end(); ++it) {
-            index[*it] = it;
-        }
-        
-        return build_tree_core(preorder.begin(), inorder.begin(), inorder.size());
+        for(int i = 0; i < inorder.size(); i++)
+            pos[inorder[i]] = i;
+        return build(preorder, inorder, 0, preorder.size() - 1, 0, inorder.size() - 1);
     }
-    
-    TreeNode* build_tree_core(vector<int>::iterator pre_iter, vector<int>::iterator in_iter, size_t size) {
-        if (size <= 0) return nullptr;
-        
-        int root_val = *pre_iter;
-        TreeNode *root = new TreeNode(root_val);
-        
-        vector<int>::iterator target_it = index[root_val];
-        auto i = target_it - in_iter;
-        root->left = build_tree_core(pre_iter + 1, in_iter, i);
-        root->right = build_tree_core(pre_iter + i + 1, in_iter + i + 1, size - i - 1);
-        
+
+    TreeNode* build(vector<int>& preorder, vector<int>& inorder, int pl, int pr, int il, int ir) {
+        if(pl > pr) return nullptr;
+        TreeNode *root = new TreeNode(preorder[pl]);
+        int k = pos[root->val] - il;
+        root->left = build(preorder, inorder, pl + 1, pl + k, il, il + k - 1);
+        root->right = build(preorder, inorder, pl + k + 1, pr, il + k+ 1, ir);
+
         return root;
     }
-private:
-    unordered_map<int, vector<int>::iterator> index;
-    
 };

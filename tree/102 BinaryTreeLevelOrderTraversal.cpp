@@ -25,23 +25,24 @@ using namespace::std;
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-        std::vector<vector<int>> result_vec;
-        if (!root) return result_vec;
-        
-        std::queue<TreeNode *> queue;
-        queue.push(root);
-        while (!queue.empty()) {
-            auto current_level_size = queue.size();
-            result_vec.push_back(vector<int>());
-            for (decltype(current_level_size) i = 0; i < current_level_size; ++i) {
-                TreeNode *curr = queue.front();
-                queue.pop();
-                result_vec.back().push_back(curr->val);
-                if (curr->left) queue.push(curr->left);
-                if (curr->right) queue.push(curr->right);
+        vector<vector<int>> res;
+        queue<TreeNode*> q;
+        if(root) q.push(root);
+        while(!q.empty())
+        {
+            int size = q.size();
+            vector<int> level;
+            for(int i = 0; i < size; i++)
+            {
+                auto curr = q.front();
+                q.pop();
+                level.push_back(curr->val);
+                if(curr->left) q.push(curr->left);
+                if(curr->right) q.push(curr->right);
             }
+            res.push_back(level);
         }
-        return result_vec;
+        return res;
     }
 };
 
@@ -64,4 +65,3 @@ public:
         DFS(vec, level + 1, root->right);
     }
 };
-

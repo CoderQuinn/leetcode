@@ -22,20 +22,16 @@ using namespace std;
 class Solution {
 public:
     TreeNode* sortedArrayToBST(vector<int>& nums) {
-        return sorted_array_to_bst_helper(nums, 0, nums.size() - 1);
+        return build(nums, 0, nums.size() - 1);
     }
     
-    TreeNode *sorted_array_to_bst_helper(vector<int>& nums, long left, long right) {
-        if (left > right) {
-            return nullptr;
-        }
-        
-        long mid = left + (right - left) / 2;
-        
+    TreeNode *build(vector<int> &nums, int l, int r)
+    {
+        if(l > r) return nullptr;
+        int mid = l + r >> 1;
         TreeNode *root = new TreeNode(nums[mid]);
-        
-        root->left = sorted_array_to_bst_helper(nums, left, mid - 1);
-        root->right = sorted_array_to_bst_helper(nums, mid + 1, right);
+        root->left = build(nums, l, mid - 1);
+        root->right = build(nums, mid + 1, r);
         return root;
     }
 };

@@ -23,38 +23,42 @@ using namespace std;
 // 自顶向下
 class Solution {
 public:
-    int heigth(TreeNode *root) {
-        if (!root) return 0;
-        
-        return 1 + max(heigth(root->left) , heigth(root->right));
-    }
+    
     bool isBalanced(TreeNode* root) {
-        if (!root) return true;
-        
-        return abs(heigth(root->left) - heigth(root->right)) <= 1 && isBalanced(root->left) && isBalanced(root->right);
+        bool ans = true;
+        dfs(root, ans);
+        return ans;
+    }
+    
+    int dfs(TreeNode *root, bool &ans) {
+        if (!root) return 0;
+        int lh = dfs(root->left, ans), rh = dfs(root->right, ans);
+        if(abs(lh - rh) > 1)
+            ans = false;
+        return 1 + max(lh, rh);
     }
 };
 
-// 自底向上
+// 尾递归
 class Solution1 {
 public:
-    bool is_balanced_helper(TreeNode *root, int &height) {
-        if (!root) {
-            height = 0;
-            return true;
-        }
-        int left_height = 0, right_height = 0;
-        if (is_balanced_helper(root->left, left_height) && is_balanced_helper(root->right, right_height)) {
-            if (abs(left_height - right_height) <= 1) {
-                height = max(left_height, right_height) + 1;
-                return true;
-            }
-        }
-        return false;
+    bool isBalanced(TreeNode* root) {
+        int depth = 0;
+        return dfs(root, depth);
     }
     
-    bool isBalanced(TreeNode* root) {
-        int height = 0;
-        return is_balanced_helper(root, height);
+    bool dfs(TreeNode *root, int &depth) {
+        if(!root)
+        {
+            depth = 0;
+            return true;
+        }
+        
+        int lh = 0, rh = 0;
+        if(!dfs(root->left, lh) || !dfs(root->right, rh)) return false;
+
+        if(abs(lh - rh) > 1) return false;
+        depth = max(lh, rh) + 1;
+        return true;
     }
 };

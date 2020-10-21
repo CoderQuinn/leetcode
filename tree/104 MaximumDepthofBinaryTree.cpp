@@ -12,10 +12,10 @@
 using namespace::std;
 
 // not a tail recursion because it does some computation after the recursive call returned.
-class Solution0 {
+class Solution {
 public:
     int maxDepth(TreeNode* root) {
-        if (!root) return 0;
+        if(!root) return 0;
         return max(maxDepth(root->left), maxDepth(root->right)) + 1;
     }
 };
@@ -34,23 +34,25 @@ public:
  4. maximum_depth(root.left, depth + 1)      // call the function recursively for left child
  5. maximum_depth(root.right, depth + 1)     // call the function recursively for right child
 */
-class Solution1 { // this is a tail recursion because the final instruction is the recursive call.
+class Solution1 {
 public:
     int maxDepth(TreeNode* root) {
-        int result = 0;
-        max_depth_core(root, 1, result);
-        return result;
+        int ans = 0;
+        dfs(root, 0, ans);
+        return ans;
     }
 
-    void max_depth_core(TreeNode *root, int depth, int &answer) {
-        if (!root) return;
-        if (!root->left && !root->right) {
-            answer = max(depth, answer);
+    void dfs(TreeNode *root, int depth, int &ans)
+    {
+        if(!root) return;
+        if(!root->left && !root->right)
+        {
+            ans = max(ans, depth + 1);
             return;
         }
-        
-        max_depth_core(root->left, depth + 1, answer);
-        max_depth_core(root->right, depth + 1, answer);
+
+        dfs(root->left, depth + 1, ans);
+        dfs(root->right, depth + 1, ans);
     }
 };
 
