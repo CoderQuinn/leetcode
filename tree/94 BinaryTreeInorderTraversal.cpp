@@ -22,16 +22,18 @@ using namespace::std;
  */
 class Solution {
 public:
-    std::vector<int> result_vec;
+    vector<int> res;
     vector<int> inorderTraversal(TreeNode* root) {
-        TreeNode *curr = root;
-        if (curr) {
-            inorderTraversal(curr->left);
-            result_vec.push_back(curr->val);
-            inorderTraversal(curr->right);
-        }
-        
-        return result_vec;
+        dfs(root);
+        return res;
+    }
+    
+    void dfs(TreeNode *root)
+    {
+        if(!root) return;
+        dfs(root->left);
+        res.push_back(root->val);
+        dfs(root->right);
     }
 };
 
@@ -39,21 +41,19 @@ class Solution1 {
 public:
     
     vector<int> inorderTraversal(TreeNode* root) {
-        std::vector<int> result_vec;
-        std::stack<TreeNode *> node_stack;
-        TreeNode *curr = root;
-        
-        while (curr || !node_stack.empty()) {
+        vector<int> res;
+        stack<TreeNode *> st;
+        TreeNode * curr = root;
+        while (curr || !st.empty()) {
             while (curr) {
-                node_stack.push(curr);
+                st.push(curr);
                 curr = curr->left;
             }
-            
-            curr = node_stack.top();
-            result_vec.push_back(curr->val);
-            node_stack.pop();
+            curr = st.top();
+            st.pop();
+            res.push_back(curr->val);
             curr = curr->right;
         }
-        return result_vec;
+        return res;
     }
 };

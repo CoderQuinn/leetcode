@@ -21,30 +21,25 @@ public:
     ListNode* partition(ListNode* head, int x) {
         if (!head) return nullptr;
         
-        ListNode *less_dummy = new ListNode(-1);
-        ListNode *more_dummy = new ListNode(-1);
-        ListNode *less_tail = less_dummy;
-        ListNode *more_tail = more_dummy;
-        
-        ListNode *ptr = head;
-        while (ptr) {
-            ListNode *curr = ptr;
-            ptr = ptr->next;
-            curr->next = nullptr;
-            if (curr->val < x) {
-                less_tail->next = curr;
-                less_tail = curr;
-            } else {
-                more_tail->next = curr;
-                more_tail = curr;
+        ListNode *l_dummy = new ListNode(-1);
+        ListNode *r_dummy = new ListNode(-1);
+        ListNode *lt = l_dummy;
+        ListNode *rt = r_dummy;
+        for (auto p = head; p; p = p->next) {
+            if(p->val < x)
+            {
+                lt->next = p;
+                lt = lt->next;
+            }
+            else
+            {
+                rt->next = p;
+                rt = rt->next;
             }
         }
-        less_tail->next = more_dummy->next;
-        delete more_dummy;
+        lt->next = r_dummy->next;
+        rt->next = nullptr;
         
-        ListNode *result = less_dummy->next;
-        delete less_dummy;
-        
-        return result;
+        return l_dummy->next;
     }
 };

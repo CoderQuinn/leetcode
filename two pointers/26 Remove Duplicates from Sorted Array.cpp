@@ -22,3 +22,16 @@ public:
        return j;
     }
 };
+
+class Solution1 {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int j = 0;
+        for(auto x : nums)
+        {
+            if(j == 0 || nums[j - 1] != x)
+                nums[j++] = x;
+        }
+        return j;
+    }
+};

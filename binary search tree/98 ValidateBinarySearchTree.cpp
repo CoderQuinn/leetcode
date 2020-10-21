@@ -11,29 +11,43 @@
 #include <climits>
 using namespace std;
 
-// inorder traversal
+// recursion
 class Solution {
 public:
     bool isValidBST(TreeNode* root) {
-        if (!root) return true;
-        if (!root->left && !root->right) return true;
+        return dfs(root, LONG_MIN, LONG_MAX);
+    }
 
+    bool dfs(TreeNode *root, long left_val, long right_val)
+    {
+        if(!root) return true;
+        if(root->val <= left_val || root->val >= right_val)
+            return false;
+        return dfs(root->left, left_val, root->val) && dfs(root->right, root->val, right_val);
+    }
+};
+
+// inorder traversal
+class Solution1 {
+public:
+    bool isValidBST(TreeNode* root) {
+        if (!root)
+            return true;
+        long prev = LONG_MIN;
         TreeNode *curr = root;
-        std::stack<TreeNode *> node_stack;
-        
-        long long prev_val = LLONG_MIN;
-        while (curr || !node_stack.empty()) {
+        stack<TreeNode *> stk;
+        while (curr || !stk.empty()) {
             while (curr) {
-                node_stack.push(curr);
+                stk.push(curr);
                 curr = curr->left;
             }
             
-            curr = node_stack.top();
-            if (prev_val >= curr->val) {
+            curr = stk.top();
+            stk.pop();
+            if (curr->val <= prev) {
                 return false;
             }
-            prev_val = curr->val;
-            node_stack.pop();
+            prev = curr->val;
             curr = curr->right;
         }
         
@@ -42,19 +56,3 @@ public:
     }
 };
 
-// recursion
-class Solution1 {
-public:
-    bool isValidBST(TreeNode* root) {
-
-        return helper(root, LLONG_MIN, LLONG_MAX);
-    }
-    
-    bool helper(TreeNode *root, long long min_val, long long max_val) {
-        if (!root) return true;
-        if (root->val <= min_val || root->val >= max_val) {
-            return false;
-        }
-        return helper(root->left, min_val, root->val) && helper(root->right, root->val, max_val);
-    }
-};

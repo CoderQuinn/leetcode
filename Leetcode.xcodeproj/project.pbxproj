@@ -59,8 +59,22 @@
 		E4354A0F24E1975100CC606A /* 202 Happy Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A0E24E1975100CC606A /* 202 Happy Number.cpp */; };
 		E4354A1124E19EE900CC606A /* 1 Two Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */; };
 		E4354A1324E1AAFF00CC606A /* 205 Isomorphic Strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */; };
+		E436CF63253EF72A00B1B157 /* 76 Minimum Window Substring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF62253EF72A00B1B157 /* 76 Minimum Window Substring.cpp */; };
+		E436CF65253F1B1000B1B157 /* 77 Combinations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF64253F1B1000B1B157 /* 77 Combinations.cpp */; };
+		E436CF67253F242600B1B157 /* 78 Subsets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF66253F242600B1B157 /* 78 Subsets.cpp */; };
+		E436CF69253F360300B1B157 /* 80 Remove Duplicates from Sorted Array II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF68253F360300B1B157 /* 80 Remove Duplicates from Sorted Array II.cpp */; };
+		E436CF6B253F426600B1B157 /* 81 Search in Rotated Sorted Array II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF6A253F426600B1B157 /* 81 Search in Rotated Sorted Array II.cpp */; };
+		E436CF6D253FDE0100B1B157 /* 88 Merge Sorted Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF6C253FDE0100B1B157 /* 88 Merge Sorted Array.cpp */; };
+		E436CF6F253FE87E00B1B157 /* 89 Gray Code.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF6E253FE87E00B1B157 /* 89 Gray Code.cpp */; };
+		E436CF71253FE8E300B1B157 /* 90 Subsets II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF70253FE8E300B1B157 /* 90 Subsets II.cpp */; };
+		E436CF732540101900B1B157 /* 91 Decode Ways.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF722540101900B1B157 /* 91 Decode Ways.cpp */; };
+		E436CF7525405E5C00B1B157 /* 93 Restore IP Addresses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF7425405E5C00B1B157 /* 93 Restore IP Addresses.cpp */; };
+		E436CF77254097EC00B1B157 /* 95 Unique Binary Search Trees II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF76254097EC00B1B157 /* 95 Unique Binary Search Trees II.cpp */; };
+		E436CF7925409B8C00B1B157 /* 96 Unique Binary Search Trees.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF7825409B8C00B1B157 /* 96 Unique Binary Search Trees.cpp */; };
+		E436CF7B2540A63800B1B157 /* 100 Same Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E436CF7A2540A63800B1B157 /* 100 Same Tree.cpp */; };
 		E43BA11124E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43BA11024E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp */; };
 		E43BA11324E26069006B2C02 /* 219 Contains Duplicate II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43BA11224E26069006B2C02 /* 219 Contains Duplicate II.cpp */; };
+		E445450C253DA2BA00D62F02 /* 75 Sort Colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E445450B253DA2BA00D62F02 /* 75 Sort Colors.cpp */; };
 		E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */; };
 		E44664EF24C20CAB0008DCEE /* 232 MyQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */; };
 		E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */; };
@@ -258,8 +272,22 @@
 		E4354A0E24E1975100CC606A /* 202 Happy Number.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "202 Happy Number.cpp"; sourceTree = "<group>"; };
 		E4354A1024E19EE900CC606A /* 1 Two Sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "1 Two Sum.cpp"; sourceTree = "<group>"; };
 		E4354A1224E1AAFF00CC606A /* 205 Isomorphic Strings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "205 Isomorphic Strings.cpp"; sourceTree = "<group>"; };
+		E436CF62253EF72A00B1B157 /* 76 Minimum Window Substring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "76 Minimum Window Substring.cpp"; sourceTree = "<group>"; };
+		E436CF64253F1B1000B1B157 /* 77 Combinations.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "77 Combinations.cpp"; sourceTree = "<group>"; };
+		E436CF66253F242600B1B157 /* 78 Subsets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "78 Subsets.cpp"; sourceTree = "<group>"; };
+		E436CF68253F360300B1B157 /* 80 Remove Duplicates from Sorted Array II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "80 Remove Duplicates from Sorted Array II.cpp"; sourceTree = "<group>"; };
+		E436CF6A253F426600B1B157 /* 81 Search in Rotated Sorted Array II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "81 Search in Rotated Sorted Array II.cpp"; sourceTree = "<group>"; };
+		E436CF6C253FDE0100B1B157 /* 88 Merge Sorted Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "88 Merge Sorted Array.cpp"; sourceTree = "<group>"; };
+		E436CF6E253FE87E00B1B157 /* 89 Gray Code.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "89 Gray Code.cpp"; sourceTree = "<group>"; };
+		E436CF70253FE8E300B1B157 /* 90 Subsets II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "90 Subsets II.cpp"; sourceTree = "<group>"; };
+		E436CF722540101900B1B157 /* 91 Decode Ways.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "91 Decode Ways.cpp"; sourceTree = "<group>"; };
+		E436CF7425405E5C00B1B157 /* 93 Restore IP Addresses.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "93 Restore IP Addresses.cpp"; sourceTree = "<group>"; };
+		E436CF76254097EC00B1B157 /* 95 Unique Binary Search Trees II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "95 Unique Binary Search Trees II.cpp"; sourceTree = "<group>"; };
+		E436CF7825409B8C00B1B157 /* 96 Unique Binary Search Trees.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "96 Unique Binary Search Trees.cpp"; sourceTree = "<group>"; };
+		E436CF7A2540A63800B1B157 /* 100 Same Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "100 Same Tree.cpp"; sourceTree = "<group>"; };
 		E43BA11024E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "82 Remove Duplicates from Sorted List II.cpp"; sourceTree = "<group>"; };
 		E43BA11224E26069006B2C02 /* 219 Contains Duplicate II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "219 Contains Duplicate II.cpp"; sourceTree = "<group>"; };
+		E445450B253DA2BA00D62F02 /* 75 Sort Colors.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "75 Sort Colors.cpp"; sourceTree = "<group>"; };
 		E44664E824C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "83 RemoveDuplicatesfromSortedList.cpp"; sourceTree = "<group>"; };
 		E44664EE24C20CAB0008DCEE /* 232 MyQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "232 MyQueue.cpp"; sourceTree = "<group>"; };
 		E4502FBC24D43AFB002A0AD4 /* 394 DecodeString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "394 DecodeString.cpp"; sourceTree = "<group>"; };
@@ -457,6 +485,9 @@
 				E424DA4024FDEAE90088C400 /* 18 4Sum.cpp */,
 				E46B98CF2510AFA400F956A3 /* 26 Remove Duplicates from Sorted Array.cpp */,
 				E46B98D12510B12B00F956A3 /* 27 Remove Element.cpp */,
+				E445450B253DA2BA00D62F02 /* 75 Sort Colors.cpp */,
+				E436CF68253F360300B1B157 /* 80 Remove Duplicates from Sorted Array II.cpp */,
+				E436CF6C253FDE0100B1B157 /* 88 Merge Sorted Array.cpp */,
 			);
 			path = "two pointers";
 			sourceTree = "<group>";
@@ -472,6 +503,11 @@
 				E429D0DD2526273B0039F21E /* 51 N-Queens.cpp */,
 				E429D0DF25262D1E0039F21E /* 52 N-Queens II.cpp */,
 				E489442C25376BC40041E6DE /* 60 Permutation Sequence.cpp */,
+				E436CF64253F1B1000B1B157 /* 77 Combinations.cpp */,
+				E436CF66253F242600B1B157 /* 78 Subsets.cpp */,
+				E436CF6E253FE87E00B1B157 /* 89 Gray Code.cpp */,
+				E436CF70253FE8E300B1B157 /* 90 Subsets II.cpp */,
+				E436CF7425405E5C00B1B157 /* 93 Restore IP Addresses.cpp */,
 			);
 			path = "back tracking";
 			sourceTree = "<group>";
@@ -506,6 +542,8 @@
 			children = (
 				E45322A424CD0D2E00067CC4 /* TreeNode.h */,
 				E45322A624CD1BB400067CC4 /* 94 BinaryTreeInorderTraversal.cpp */,
+				E436CF76254097EC00B1B157 /* 95 Unique Binary Search Trees II.cpp */,
+				E436CF7A2540A63800B1B157 /* 100 Same Tree.cpp */,
 				E45322B524CEC35500067CC4 /* 101 SymmetricTree.cpp */,
 				E45322AC24CD619800067CC4 /* 102 BinaryTreeLevelOrderTraversal.cpp */,
 				E45322AF24CE011E00067CC4 /* 104 MaximumDepthofBinaryTree.cpp */,
@@ -674,6 +712,7 @@
 				E429D0DB252609320039F21E /* 50 Pow(x, n).cpp */,
 				E49CC5F024D6B5F100F5DADC /* 69 Sqrt(x).cpp */,
 				E4658AA7253D9C0B00168D73 /* 74 Search a 2D Matrix.cpp */,
+				E436CF6A253F426600B1B157 /* 81 Search in Rotated Sorted Array II.cpp */,
 				E49CC5FF24D752B900F5DADC /* 153 FindMinimumInRotatedSortedArray.cpp */,
 				E487532624D8669E00319259 /* 154 FindMinimumInRotatedSortedArrayII.cpp */,
 				E49CC5FC24D7509000F5DADC /* 162 FindPeakElement.cpp */,
@@ -717,6 +756,7 @@
 			children = (
 				E4BF46DE24E48EA0001F3F0B /* 3 Longest Substring Without Repeating Characters.cpp */,
 				E4F6E399251A0C570095BE8F /* 30 Substring with Concatenation of All Words.cpp */,
+				E436CF62253EF72A00B1B157 /* 76 Minimum Window Substring.cpp */,
 			);
 			path = "sliding window";
 			sourceTree = "<group>";
@@ -764,6 +804,7 @@
 				E4A4AFE42538557D004F8D36 /* 64 Minimum Path Sum.cpp */,
 				E4B7767A253C3D85006AF24D /* 70 Climbing Stairs.cpp */,
 				E4E2D88824FC0EBB00F267B7 /* 72 Edit Distance.cpp */,
+				E436CF722540101900B1B157 /* 91 Decode Ways.cpp */,
 				E4E2D88C24FC150500F267B7 /* 120 Triangle.cpp */,
 				E48538D024FD3D3B00A688E3 /* 121  Best Time to Buy and Sell Stock.cpp */,
 				E48538D224FD444F00A688E3 /* 122 Best Time to Buy and Sell Stock II.cpp */,
@@ -771,6 +812,7 @@
 				E4F027EF24D3062D00039E02 /* 343 IntegerBreak.cpp */,
 				E4E2D88A24FC125400F267B7 /* 1143 Longest Common Subsequence.cpp */,
 				E429D0E12526365E0039F21E /* LCP 19 秋叶收藏集.cpp */,
+				E436CF7825409B8C00B1B157 /* 96 Unique Binary Search Trees.cpp */,
 			);
 			path = "dynamic programming";
 			sourceTree = "<group>";
@@ -834,10 +876,12 @@
 			files = (
 				E4A6C08224E691AE00B71A54 /* 53 Maximum Subarray.cpp in Sources */,
 				E45BF78524B9857D0051A649 /* main.cpp in Sources */,
+				E436CF77254097EC00B1B157 /* 95 Unique Binary Search Trees II.cpp in Sources */,
 				E45BF7D624BB6F600051A649 /* 142 LinkedListCycleII.cpp in Sources */,
 				E4F027F024D3062D00039E02 /* 343 IntegerBreak.cpp in Sources */,
 				E487532724D8669E00319259 /* 154 FindMinimumInRotatedSortedArrayII.cpp in Sources */,
 				E4F5472324CB379F0079E871 /* 455 AssignCookies.cpp in Sources */,
+				E436CF7925409B8C00B1B157 /* 96 Unique Binary Search Trees.cpp in Sources */,
 				E44664EF24C20CAB0008DCEE /* 232 MyQueue.cpp in Sources */,
 				E4658AA8253D9C0B00168D73 /* 74 Search a 2D Matrix.cpp in Sources */,
 				E4354A1124E19EE900CC606A /* 1 Two Sum.cpp in Sources */,
@@ -847,8 +891,11 @@
 				E4553CD424BEFD62002A69D3 /* 138 CopyListwithRandomPointer.cpp in Sources */,
 				E48C1BC324F6449D00E47211 /* 35 Search Insert Position.cpp in Sources */,
 				E4F333912525CC770089B928 /* 55 Jump Game.cpp in Sources */,
+				E436CF732540101900B1B157 /* 91 Decode Ways.cpp in Sources */,
 				E43BA11324E26069006B2C02 /* 219 Contains Duplicate II.cpp in Sources */,
+				E436CF6B253F426600B1B157 /* 81 Search in Rotated Sorted Array II.cpp in Sources */,
 				E483232724D96A2F00C427D6 /* 167 Two Sum II - Input array is sorted.cpp in Sources */,
+				E436CF7525405E5C00B1B157 /* 93 Restore IP Addresses.cpp in Sources */,
 				E429D0DE2526273B0039F21E /* 51 N-Queens.cpp in Sources */,
 				E48538D124FD3D3B00A688E3 /* 121  Best Time to Buy and Sell Stock.cpp in Sources */,
 				E4ECFDB724D1C5060035C59A /* 297 SerializeandDeserializeBinaryTree.cpp in Sources */,
@@ -870,6 +917,7 @@
 				E49CC60324D7FE9300F5DADC /* 34 FindFirstAndLastPositionOfElementInSortedArray.cpp in Sources */,
 				E4C4530E24C9AC9600E3C956 /* 946ValidateStackSequences.cpp in Sources */,
 				E41948EC24DB19B00026B020 /* 173 Binary Search Tree Iterator.cpp in Sources */,
+				E436CF65253F1B1000B1B157 /* 77 Combinations.cpp in Sources */,
 				E415545024FAB55A001DD7A5 /* 14 Longest Common Prefix.cpp in Sources */,
 				E45322B324CE116700067CC4 /* 111 MinimumDepthofBinaryTree.cpp in Sources */,
 				E45322A724CD1BB400067CC4 /* 94 BinaryTreeInorderTraversal.cpp in Sources */,
@@ -884,10 +932,12 @@
 				E421C35324EAA2D000C100FB /* 315 Count of Smaller Numbers After Self.cpp in Sources */,
 				E4502FBD24D43AFB002A0AD4 /* 394 DecodeString.cpp in Sources */,
 				E475FB1E24E27DF90039F26C /* 387 First Unique Character in a String.cpp in Sources */,
+				E436CF69253F360300B1B157 /* 80 Remove Duplicates from Sorted Array II.cpp in Sources */,
 				E415544A24FAA68F001DD7A5 /* 13 Roman to Integer.cpp in Sources */,
 				E424DA3D24FDDD700088C400 /* 15 3Sum.cpp in Sources */,
 				E4F5471A24CAE1310079E871 /* 622 DesignCircularQueue.cpp in Sources */,
 				E4B77677253C319D006AF24D /* 66 Plus One.cpp in Sources */,
+				E436CF71253FE8E300B1B157 /* 90 Subsets II.cpp in Sources */,
 				E4F5472024CB2EB60079E871 /* 295 FindMedianFromDataStream.cpp in Sources */,
 				E4E2D88B24FC125400F267B7 /* 1143 Longest Common Subsequence.cpp in Sources */,
 				E4354A0024E00E8E00CC606A /* 220 Contains Duplicate III.cpp in Sources */,
@@ -920,6 +970,7 @@
 				E4A4AFE725386132004F8D36 /* 65 Valid Number.cpp in Sources */,
 				E49CC5F124D6B5F100F5DADC /* 69 Sqrt(x).cpp in Sources */,
 				E487532424D8585C00319259 /* 744 FindSmallestLetterGreaterThanTarget.cpp in Sources */,
+				E436CF63253EF72A00B1B157 /* 76 Minimum Window Substring.cpp in Sources */,
 				E42C8F3324CFE553009979EE /* 107 BinaryTreeLevelOrderTraversalII.cpp in Sources */,
 				E4149760250BF52700838412 /* 23 Merge k Sorted Lists.cpp in Sources */,
 				E405335D24F28887005A7B15 /* 8 String to Integer (atoi).cpp in Sources */,
@@ -956,6 +1007,7 @@
 				E43BA11124E25062006B2C02 /* 82 Remove Duplicates from Sorted List II.cpp in Sources */,
 				E4BF46DF24E48EA0001F3F0B /* 3 Longest Substring Without Repeating Characters.cpp in Sources */,
 				E424DA3F24FDE1830088C400 /* 16 3Sum Closest.cpp in Sources */,
+				E436CF6F253FE87E00B1B157 /* 89 Gray Code.cpp in Sources */,
 				E49CC5FA24D748CD00F5DADC /* 278 FirstBadVersion.cpp in Sources */,
 				E4E2D89124FC8B8600F267B7 /* 62 Unique Paths.cpp in Sources */,
 				E44664E924C0EF360008DCEE /* 83 RemoveDuplicatesfromSortedList.cpp in Sources */,
@@ -975,12 +1027,14 @@
 				E45BF7E524BC9B040051A649 /* 707 DesignLinkedList.cpp in Sources */,
 				E40E360924C2E16B001DC2E2 /* 155 MinStack.cpp in Sources */,
 				E4193EA525188C84005AE1D1 /* 29 Divide Two Integers.cpp in Sources */,
+				E436CF7B2540A63800B1B157 /* 100 Same Tree.cpp in Sources */,
 				E45BF79224B9903E0051A649 /* 92 Reverse Linked List II.cpp in Sources */,
 				E4658AA6253D94B500168D73 /* 73 Set Matrix Zeroes.cpp in Sources */,
 				E429D0DC252609320039F21E /* 50 Pow(x, n).cpp in Sources */,
 				E483231E24D92BC300C427D6 /* 349 IntersectionOfTwoArrays.cpp in Sources */,
 				E4F6E39C251A45650095BE8F /* 31 Next Permutation.cpp in Sources */,
 				E40DFB1F24F81348003B7C54 /* 11 Container With Most Water.cpp in Sources */,
+				E436CF67253F242600B1B157 /* 78 Subsets.cpp in Sources */,
 				E4658AA4253D792D00168D73 /* 71 Simplify Path.cpp in Sources */,
 				E4354A1324E1AAFF00CC606A /* 205 Isomorphic Strings.cpp in Sources */,
 				E4071F522529C8C80083A780 /* 54 Spiral Matrix.cpp in Sources */,
@@ -994,11 +1048,13 @@
 				E4F9C7C925069DDC008119CE /* 10 Regular Expression Matching.cpp in Sources */,
 				E4965319251E35CA004E3175 /* 37 Sudoku Solver.cpp in Sources */,
 				E4354A0D24E190B500CC606A /* 136 Single Number.cpp in Sources */,
+				E436CF6D253FDE0100B1B157 /* 88 Merge Sorted Array.cpp in Sources */,
 				E47F01B724D5550E00D05DD4 /* 119 Pascal'sTriangleII.cpp in Sources */,
 				E414975E250BE74600838412 /* 22 Generate Parentheses.cpp in Sources */,
 				E4BBEB0824D5BE3F00067F1E /* 779 K-thSymbolInGrammar.cpp in Sources */,
 				E41948EA24DB084F0026B020 /* 98 ValidateBinarySearchTree.cpp in Sources */,
 				E4BBEB0524D5A5FE00067F1E /* 50 Pow(x, n).cpp in Sources */,
+				E445450C253DA2BA00D62F02 /* 75 Sort Colors.cpp in Sources */,
 				E475FB2224E43BE20039F26C /* 36 Valid Sudoku.cpp in Sources */,
 				E489442725375DD90041E6DE /* 57 Insert Interval.cpp in Sources */,
 				E4553CD124BEDD41002A69D3 /* 430 FlattenaMultilevelDoublyLinkedList.cpp in Sources */,

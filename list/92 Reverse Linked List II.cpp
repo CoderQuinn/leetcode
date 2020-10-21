@@ -21,30 +21,23 @@
 
 class Solution {
 public:
-    ListNode *reverseBetween(ListNode *head, int m, int n) {
-        int length = n - m + 1;
-        ListNode *prev = nullptr; // 指向逆置后头结点的前驱
-        ListNode *result = head; // 转换后的链表头结点
-        while (head && --m > 0) { // 链表head前移m-1个位置
-            prev = head;
-            head = head->next;
-        }
-        ListNode *change_tial = head; // 指向逆置后的尾结点
-        ListNode *new_head = nullptr;
+    ListNode* reverseBetween(ListNode* head, int m, int n) {
+        ListNode *dummy = new ListNode(-1);
+        dummy->next = head;
         
-        while (head && length-- > 0) {
-            ListNode *curr = head;
-            head = head->next;
-            curr->next = new_head;
-            new_head = curr;
+        auto a = dummy;
+        for(int i = 1; i < m; i++)
+            a = a->next;
+        auto b = a->next, c = b->next;
+        for(int i = 0; i < n - m; i++)
+        {
+            auto tmp = c ->next;
+            c->next = b;
+            b = c;
+            c = tmp;
         }
-        change_tial->next = head; // 链接剩下的尾部
-        if (!prev) { // m = 1的情况
-            result = new_head;
-        } else {
-            prev->next = new_head;
-        }
-        
-        return result;
+        a->next->next = c;
+        a->next = b;
+        return dummy->next;
     }
 };
