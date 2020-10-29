@@ -12,10 +12,12 @@ using namespace std;
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int ans = 0;
-        for (int i = 1; i < prices.size(); i++) {
-            ans += max(0, prices[i] - prices[i-1]);
+        int res = 0;
+        for(int i = 0, min_p = INT_MAX; i < prices.size(); i++)
+        {
+            res = max(res, prices[i] - min_p);
+            min_p = min(min_p, prices[i]);
         }
-        return ans;
+        return res;
     }
 };

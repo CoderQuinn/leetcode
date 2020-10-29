@@ -62,40 +62,34 @@ public:
     }
 };
 
-class Solution3 {
+class Solution1
+{
 public:
-    Node* connect(Node* root) {
-        if (!root) return nullptr;
-        if (!root->left && !root->right) return root;
-        
-        if (root->left && root->right) {
-            root->left->next = root->right;
-            root->right->next = find_next_node(root->next);
+    Node *connect(Node *root)
+    {
+        if (!root)
+            return nullptr;
+        Node *head = new Node(-1), *tail = head;
+        Node *cur = root;
+        while (cur)
+        {
+            head->next = nullptr;
+            tail = head;
+            for (auto p = cur; p; p = p->next)
+            {
+                if (p->left)
+                {
+                    tail->next = p->left;
+                    tail = tail->next;
+                }
+                if (p->right)
+                {
+                    tail->next = p->right;
+                    tail = tail->next;
+                }
+            }
+            cur = head->next;
         }
-        else if(!root->right) {
-            root->left->next = find_next_node(root->next);
-        }
-        else if(!root->left) {
-            root->right->next = find_next_node(root->next);
-        }
-
-        root->right = connect(root->right);
-        root->left = connect(root->left);
-        
         return root;
     }
-    
-    Node *find_next_node(Node *next) {
-        while (next) {
-            if (next->left) {
-                return next->left;
-            } else if (next->right) {
-                return next->right;
-            }
-            next = next->next;
-        }
-        return nullptr;
-    }
-    
 };
-

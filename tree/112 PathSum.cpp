@@ -21,10 +21,11 @@ using namespace::std;
 class Solution {
 public:
     bool hasPathSum(TreeNode* root, int sum) {
-        if (!root) return false;
-        if (!root->left && !root->right) return sum == root->val;
-        int new_sum = sum - root->val;
-        if (new_sum < 0) return false;
-        return hasPathSum(root->left, new_sum) || hasPathSum(root->right, new_sum);
+        if(!root)
+            return false;
+        sum -= root->val;
+        if(!root->left && !root->right)
+            return sum == 0;
+        return hasPathSum(root->left, sum) || hasPathSum(root->right, sum);
     }
 };

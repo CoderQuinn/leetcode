@@ -26,66 +26,29 @@ public:
         : val(_val), left(_left), right(_right), next(_next) {}
 };
 
-
 class Solution {
 public:
     Node* connect(Node* root) {
-        if (!root) return nullptr;
-        queue<Node *> node_queue;
-        node_queue.push(root);
-        
-        while (!node_queue.empty()) {
-            auto size = node_queue.size();
-            Node *prev = nullptr;
-            for (int i = 0; i < size; ++i) {
-                Node *curr = node_queue.front();
-                node_queue.pop();
-                if (prev) {
-                    prev->next = curr;
+        if(!root) return nullptr;
+        Node *cur = root;
+        while(cur)
+        {
+            for(auto p = cur; p != nullptr; p = p->next)
+            {
+                if(p->left)
+                {
+                    p->left->next = p->right;
+                    if(p->next)
+                        p->right->next = p->next->left;
                 }
-                
-                if (curr->left) {
-                    node_queue.push(curr->left);
-                }
-                
-                if (curr->right) {
-                    node_queue.push(curr->right);
-                }
-                
-                prev = curr;
             }
-            prev->next = nullptr;
+            cur = cur->left;
         }
-        
-        
         return root;
     }
 };
 
-class Solution1 {
-public:
-    Node* connect(Node* root) {
-        if (!root) return nullptr;
-
-        Node *left_most = root;
-        
-        while (left_most->left) {
-            Node *level_node = left_most;
-            while (level_node) {
-                level_node->left->next = level_node->right;
-                if (level_node->next) {
-                    level_node->right->next = level_node->next->left;
-                }
-                level_node = level_node->next;
-            }
-            left_most = left_most->left;
-        }
-        
-        return root;
-    }
-};
-
-class Solution2 { // 完美二叉树，有左子树就必定有右子树
+class Solution1 { // 完美二叉树，有左子树就必定有右子树
 public:
     Node* connect(Node* root) {
         if (!root) return nullptr;
@@ -103,18 +66,18 @@ public:
     }
 };
 
-class Solution3 { // 完美二叉树，有左子树就必定有右子树
+class Solution2 {
 public:
     Node* connect(Node* root) {
-        return connect_core(root, nullptr);
+        return dfs(root, NULL);
     }
-    
-    Node *connect_core(Node *current, Node *next) {
-        if (!current) return nullptr;
-        current->next = next;
-        connect_core(current->left, current->right);
-        connect_core(current->right, next ? next->left : nullptr);
-        
-        return current;
+
+    Node *dfs(Node *root, Node *next)
+    {
+        if(!root) return NULL;
+        root->next = next;
+        dfs(root->left, root->right);
+        dfs(root->right, next ? next->left : NULL);
+        return root;
     }
 };

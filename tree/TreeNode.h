@@ -9,7 +9,7 @@
 #ifndef TreeNode_h
 #define TreeNode_h
 
-#include <stdio.h>
+#include <cstdio>
 
 struct TreeNode {
     int val;

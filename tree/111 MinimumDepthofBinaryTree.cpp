@@ -19,45 +19,43 @@ using namespace std;
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution0 {
+class Solution {
 public:
     int minDepth(TreeNode* root) {
-        if (!root) return 0;
-        int ret = INT_MAX;
-        minimum_depth(root, 1, ret);
-
-        return ret;
+        if(!root) return 0;
+        int res = INT_MAX;
+        dfs(root, 0, res);
+        return res;
     }
-    
-    void minimum_depth(TreeNode* root, int depth, int &result) {
-        if (!root) return;
-        
-        if (!root->left && !root->right) {
-            result = min(result, depth);
-        } else {
-            minimum_depth(root->left, depth + 1, result);
-            minimum_depth(root->right, depth + 1, result);
+
+    void dfs(TreeNode *root, int depth, int &res)
+    {
+        if(!root)
+            return;
+        if(!root->left && !root->right)
+        {
+            res = min(depth + 1, res);
+            return;
         }
-        
+        dfs(root->left, depth + 1, res);
+        dfs(root->right, depth + 1, res);
     }
 };
 
 class Solution1 {
 public:
     int minDepth(TreeNode* root) {
-        if (!root) return 0;
-        if (!root->left && !root->right) return 1;
-        
-        int ret = INT_MAX;
-        if (root->left) {
-            ret = min(minDepth(root->left), ret);
+        if(!root) return 0;
+        if(!root->left && !root->right) return 1;
+        int res = INT_MAX;
+        if(root->left)
+        {
+            res = min(minDepth(root->left), res);
         }
-        
-        if (root->right) {
-            ret = min(ret, minDepth(root->right));
+        if(root->right)
+        {
+            res = min(minDepth(root->right), res);
         }
-
-        return ret + 1;
+        return res + 1;
     }
-    
 };
