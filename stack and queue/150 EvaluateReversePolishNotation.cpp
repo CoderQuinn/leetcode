@@ -17,7 +17,7 @@ using namespace::std;
  * 2. 当读入的是一个运算符时，就从堆栈中弹出适当数量的运算符并进行计算，计算结果压回到栈中；
  * 3. 处理完整个后缀表达式之后，堆栈顶上的元素就是表达式的结果值。
  */
-class Solution {
+class Solution0 {
 public:
     bool is_operator(const std::string &tokens) {
         if (tokens.length() > 1) return false;
@@ -81,5 +81,41 @@ public:
             }
         }
         return num_stack.top();
+    }
+};
+
+class Solution
+{
+public:
+    int evalRPN(vector<string> &tokens)
+    {
+        stack<int> stk;
+
+        for (auto &s : tokens)
+        {
+            if (s == "+" || s == "-" || s == "/" || s == "*")
+            {
+                auto b = stk.top();
+                stk.pop();
+                auto a = stk.top();
+                stk.pop();
+
+                if (s == "+")
+                    a += b;
+                else if (s == "-")
+                    a -= b;
+                else if (s == "*")
+                    a *= b;
+                else
+                    a /= b;
+                stk.push(a);
+            }
+            else
+            {
+                stk.push(stoi(s));
+            }
+        }
+
+        return stk.top();
     }
 };

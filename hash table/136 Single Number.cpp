@@ -26,28 +26,15 @@ public:
     }
 };
 
-// using bit XOR
 class Solution1 {
 public:
     int singleNumber(vector<int>& nums) {
-        int result = 0;
-        for (auto num : nums) {
-            result ^= num;
-        }
-        return result;
-    }
-};
-
-class Solution2 {
-public:
-    int singleNumber(vector<int>& nums) {
-        int res = 0;
+        int ans = 0;
         
-        for(auto num : nums)
-        {
-            res ^= num;
+        for(auto num : nums) {
+            ans ^= num;
         }
 
-        return res;
+        return ans;
     }
 };

@@ -34,16 +34,23 @@ public:
 };
 
 // two pointer
-class Solution1 {
+class Solution0
+{
 public:
-    vector<int> twoSum(vector<int>& numbers, int target) {
-        for (int i = 0, j = int(numbers.size() - 1); i < j; ++i) {
-            while (i < j && numbers[i] + numbers[j] > target) j--;
-            if (numbers[i] + numbers[j] == target) {
+    vector<int> twoSum(vector<int> &numbers, int target)
+    {
+        int n = numbers.size();
+        for (int i = 0, j = n - 1; i < j; i++)
+        {
+            while (i < j && numbers[i] + numbers[j] > target)
+            {
+                j--;
+            }
+            if (numbers[i] + numbers[j] == target)
+            {
                 return {i + 1, j + 1};
             }
         }
-        
-        return {};
+        return {-1, -1};
     }
 };

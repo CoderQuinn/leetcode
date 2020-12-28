@@ -7,54 +7,47 @@
 //
 
 #include "ListNode.h"
-#include <set>
+#include <unordered_set>
+using namespace std;
+
+class Solution0 {
+public:
+    // 思路：若链表存在环，则set中必能查找到环的第一个节点
+    ListNode *detectCycle(ListNode *head) {
+        unordered_set<ListNode *> hash;
+        for(auto p = head; p; p = p->next) {
+            if(hash.count(p)) {
+                return p;
+            }
+            hash.insert(p);
+        }
+        return nullptr;
+    }
+};
 
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-
-        // 方法1思路：若链表存在环，则set中必能查找到环的第一个节点
-        std::set<ListNode *> node_set;
-        while (head) {
-            if (node_set.count(head)) {
-                return head;
-            }
-            node_set.insert(head);
-            head = head->next;
-        }
- 
-        return NULL;
-    }
-};
-
-class Solution1 {
-public:
-    ListNode *detectCycle(ListNode *head) {
-
-        // 方法2思路：快慢节点在有环的情况下，必能相遇，找到相遇点能很容易找到第一个节点
-        ListNode *slow = head;
-        ListNode *fast = head;
-        ListNode *meet = nullptr;
-        
-        while (slow && fast && fast->next && fast->next->next) {
+        ListNode *ans = nullptr;
+        auto fast = head, slow = head;
+        while(fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
-            
-            if (slow == fast) {
-                meet = slow;
+            if(fast && slow == fast) {
+                ans = slow;
                 break;
             }
         }
         
-        if (!meet) return nullptr;
+        if(!ans) return nullptr;
         
         slow = head;
-        while (meet && slow) {
-            if (meet == slow) {
-                return meet;
+        while(slow && fast) {
+            if(slow == fast) {
+                return fast;
             }
-            meet = meet->next;
             slow = slow->next;
+            fast = fast->next;
         }
         
         return nullptr;

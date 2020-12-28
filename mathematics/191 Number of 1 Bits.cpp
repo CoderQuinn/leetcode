@@ -8,7 +8,7 @@
 
 #include <cstdint>
 
-class Solution {
+class Solution0 {
 public:
     int hammingWeight(uint32_t n) {
         uint32_t flag = 1;
@@ -34,3 +34,18 @@ public:
         return count;
     }
 };
+
+// lowbit(x)
+class Solution2 {
+public:
+    int hammingWeight(uint32_t n) {
+        uint32_t res = 0;
+        while(n) {
+            n -= n & -n;
+            res++;
+        }
+        return res;
+    }
+};
+
+

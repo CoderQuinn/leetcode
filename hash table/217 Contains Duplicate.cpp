@@ -11,16 +11,25 @@
 #include <unordered_set>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool containsDuplicate(vector<int>& nums) {
-        unordered_set<int> hash_set;
-        for (auto num : nums) {
-            if (hash_set.count(num) > 0) {
+    bool containsDuplicate(vector<int> &nums)
+    {
+        unordered_set<int> s;
+
+        for (auto &v : nums)
+        {
+            if (s.count(v))
+            {
                 return true;
             }
-            hash_set.insert(num);
+            else
+            {
+                s.insert(v);
+            }
         }
+
         return false;
     }
 };

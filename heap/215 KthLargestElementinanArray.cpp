@@ -12,7 +12,7 @@
 using namespace::std;
 
 // using STL heap
-class Solution {
+class Solution0 {
 public:
     int findKthLargest(vector<int>& nums, int k) {
         std::priority_queue<int, std::vector<int>, std::greater<int>> min_heap;
@@ -28,50 +28,34 @@ public:
     }
 };
 
-// paritition
-class Solution1 {
+class Solution
+{
 public:
-    int findKthLargest(vector<int>& nums, int k) {
-        size_t size = nums.size();
-        srand(time(0));
-        return Kth_select(nums, 0, int(size - 1), int(size - k + 1));
+    int findKthLargest(vector<int> &nums, int k)
+    {
+        return quick_select(nums, 0, nums.size() - 1, k - 1);
     }
-    
-    int Kth_select(vector<int>& nums, int p, int r, int k) {
-        int q = randomized_partition(nums, p, r);
-        if (k == q - p + 1) {
-            return nums[q];
-        } else if(k < q - p + 1) {
-            return Kth_select(nums, p, q - 1, k);
-        } else {
-            return Kth_select(nums, q + 1, r, k - (q - p + 1));
-        }
-    }
-    
-    int randomized_partition(vector<int>& nums, int p, int r) {
-        int i = rand() %(r - p + 1) + p;
-        swap(nums[i], nums[r]);
-        return partition(nums, p, r);
-    }
-    
-    int partition(vector<int>& nums, int p, int r) {
 
-        int x = nums[r];
-        int i = p - 1;
+    int quick_select(vector<int> &nums, int l, int r, int k)
+    {
+        if (l == r)
+            return nums[k];
+        int x = nums[l], i = l - 1, j = r + 1;
 
-        for (int j = p; j < r; ++j) {
-            if (nums[j] <= x) {
-                i++;
-                if (i != j) {
-                    swap(nums[j], nums[i]);
-                }
-            }
+        while (i < j)
+        {
+            while (nums[++i] > x)
+                ;
+            while (nums[--j] < x)
+                ;
+
+            if (i < j)
+                swap(nums[i], nums[j]);
         }
-        swap(nums[i + 1], nums[r]);
-        
-        return i + 1;
+
+        if (k <= j)
+            return quick_select(nums, l, j, k);
+        else
+            return quick_select(nums, j + 1, r, k);
     }
-    
 };
-
-// heap

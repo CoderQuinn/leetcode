@@ -20,49 +20,57 @@ using namespace::std;
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
+class Solution0
+{
 public:
-    std::vector<int> result_vector;
-    vector<int> postorderTraversal(TreeNode* root) {
-        TreeNode *curr = root;
-        
-        if (curr) {
-            postorderTraversal(curr->left);
-            postorderTraversal(curr->right);
-            result_vector.push_back(curr->val);
-        }
-        return result_vector;
+    vector<int> ans;
+    vector<int> postorderTraversal(TreeNode *root)
+    {
+        dfs(root);
+        return ans;
+    }
+
+    void dfs(TreeNode *u)
+    {
+        if (!u)
+            return;
+        dfs(u->left);
+        dfs(u->right);
+        ans.push_back(u->val);
     }
 };
 
-class Solution1 {
+class Solution
+{
 public:
-    
-    vector<int> postorderTraversal(TreeNode* root) {
-        std::vector<int> result_vector;
-        std::stack<TreeNode *> node_stack;
-        TreeNode *curr = root;
-        TreeNode *visited = nullptr;
-        
-        while (curr || !node_stack.empty()) {
-            
-            while (curr) {
-                node_stack.push(curr);
-                curr = curr->left;
+    vector<int> postorderTraversal(TreeNode *root)
+    {
+        vector<int> ans;
+        stack<TreeNode *> stk;
+
+        TreeNode *p = root, *last = nullptr;
+        while (p || !stk.empty())
+        {
+            while (p)
+            {
+                stk.push(p);
+                p = p->left;
             }
-            
-            curr = node_stack.top();
-            if (!curr->right || visited == curr->right) { // right node is null or has been visited
-                visited = node_stack.top();
-                result_vector.push_back(visited->val);
-                node_stack.pop();
-                curr = nullptr;
-            } else {
-                curr = curr->right;
+
+            p = stk.top();
+            if (!p->right || last == p->right)
+            {
+                last = p;
+                ans.push_back(p->val);
+                stk.pop();
+                p = nullptr;
             }
-            
+            else
+            {
+                p = p->right;
+            }
         }
-        
-        return result_vector;
+
+        return ans;
     }
 };

@@ -24,19 +24,30 @@
 //输入: 1->2->3->4->5->NULL
 //输出: 5->4->3->2->1->NULL
 
+// 迭代
+class Solution0 {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(!head) return nullptr;
+        ListNode *prev = nullptr, *cur = head;
+        while(cur) {
+            auto tmp = cur->next;
+            cur->next = prev;
+            prev = cur;
+            cur = tmp;
+        }
+        return prev;
+    }
+};
+
+// 递归
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        // 使用头插法的思路解决
-        ListNode *prev = nullptr;
-        ListNode *curr = head;
-        while (curr) {
-            ListNode *temp = curr;
-            curr = curr->next;
-            
-            temp->next = prev;
-            prev = temp;
-        }
-        return prev;
+        if(!head || !head->next) return head;
+        ListNode *tail = reverseList(head->next);
+        head->next->next = head;
+        head->next = nullptr;
+        return tail;
     }
 };

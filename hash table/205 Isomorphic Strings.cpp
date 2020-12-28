@@ -15,16 +15,13 @@ using namespace std;
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
-        vector<int> map1(256, -1); // since the whole ASCII size is 256
-        vector<int> map2(256, -1);
-        long size = s.size();
-        for (int i = 0; i < size; ++i) {
-            if (map1[s[i]] != map2[t[i]]) {
-                return false;
-            }
-            // update
-            map1[s[i]] = i;
-            map2[t[i]] = i;
+        unordered_map<char, char> st, ts;
+        for(int i = 0; i < s.size(); i++) {
+            char a = s[i], b = t[i];
+            if(st.count(a) && st[a] != b) return false;
+            st[a] = b;
+            if(ts.count(b) && ts[b] != a) return false;
+            ts[b] = a;
         }
         return true;
     }

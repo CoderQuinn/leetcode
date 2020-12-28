@@ -8,6 +8,7 @@
 
 #include "TreeNode.h"
 #include <stack>
+using namespace std;
 
 /**
  * Definition for a binary tree node.
@@ -18,37 +19,37 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class BSTIterator {
+class BSTIterator
+{
 public:
-    BSTIterator(TreeNode* root) {
-        left_tree_inorder(root);
-    }
-    
-    void left_tree_inorder(TreeNode *root) {
-        while (root) {
-            node_stack_.push(root);
+    stack<TreeNode *> stk;
+    BSTIterator(TreeNode *root)
+    {
+        while (root)
+        {
+            stk.push(root);
             root = root->left;
         }
     }
 
-    /** @return the next smallest number */
-    int next() {
-        TreeNode *curr = node_stack_.top();
-        int result = curr->val;
-        node_stack_.pop();
-        
-        if (curr->right) {
-            left_tree_inorder(curr->right);
+    int next()
+    {
+        TreeNode *root = stk.top();
+        int res = root->val;
+        stk.pop();
+        root = root->right;
+        while (root)
+        {
+            stk.push(root);
+            root = root->left;
         }
-        return result;
+        return res;
     }
-    
-    /** @return whether we have a next smallest number */
-    bool hasNext() {
-        return !node_stack_.empty();
+
+    bool hasNext()
+    {
+        return !stk.empty();
     }
-private:
-    std::stack<TreeNode *> node_stack_;
 };
 
 /**

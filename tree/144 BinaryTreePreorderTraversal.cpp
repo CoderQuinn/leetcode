@@ -22,42 +22,44 @@ using namespace::std;
  */
 
 // recursively
-class Solution {
+class Solution0 {
 public:
-    std::vector<int> result_vector;
+    vector<int> ans;
     vector<int> preorderTraversal(TreeNode* root) {
-        
-        TreeNode *curr = root;
-        if (curr) {
-            result_vector.push_back(curr->val);
-            preorderTraversal(curr->left);
-            preorderTraversal(curr->right);
-        }
-        
-        return result_vector;
+        dfs(root);
+        return ans;
+    }
+
+    void dfs(TreeNode *u) {
+        if(!u) return;
+        ans.push_back(u->val);
+        dfs(u->left);
+        dfs(u->right);
     }
 };
 
 // iteratively
-class Solution1 {
+class Solution
+{
 public:
-    
-    vector<int> preorderTraversal(TreeNode* root) {
-        std::vector<int> result_vector;
-        std::stack<TreeNode *> node_stack;
-        
-        TreeNode *curr = root;
-        while (curr || !node_stack.empty()) {
-            while (curr) {
-                result_vector.push_back(curr->val);
-                node_stack.push(curr);
-                curr = curr->left;
+    vector<int> preorderTraversal(TreeNode *root)
+    {
+        vector<int> ans;
+        stack<TreeNode *> stk;
+
+        while (root || !stk.empty())
+        {
+            while (root)
+            {
+                ans.push_back(root->val);
+                stk.push(root);
+                root = root->left;
             }
-            
-            curr = node_stack.top();
-            node_stack.pop();
-            curr = curr->right;
+
+            root = stk.top();
+            stk.pop();
+            root = root->right;
         }
-        return result_vector;
+        return ans;
     }
 };

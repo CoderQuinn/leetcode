@@ -10,22 +10,18 @@
 #include <unordered_map>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool containsNearbyDuplicate(vector<int>& nums, int k) {
-        unordered_map<int, int> hash_map;
-        for (int i = 0; i < nums.size(); ++i) {
-            unordered_map<int, int>::iterator it = hash_map.find(nums[i]);
-            if (it != hash_map.end()) {
-                if (i != it->second && abs(it->second - i) <= k) {
-                    return true;
-                } else {
-                    it->second = i;
-                }
-                
-            } else {
-                hash_map.insert(make_pair(nums[i], i));
-            }
+    bool containsNearbyDuplicate(vector<int> &nums, int k)
+    {
+        unordered_map<int, int> hash;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            int x = nums[i];
+            if (hash.count(x) && i - hash[x] <= k)
+                return true;
+            hash[x] = i;
         }
         return false;
     }

@@ -10,38 +10,43 @@
 #include <stack>
 using namespace::std;
 
-class MinStack {
+class MinStack
+{
 public:
     /** initialize your data structure here. */
-    MinStack() {
+    stack<int> min_stack;
+    stack<int> data_stack;
+    MinStack()
+    {
         
     }
-    
-    void push(int x) {
-        val_stack.push(x);
-        if (!min_stack.empty()) {
-            int min_val = x > min_stack.top() ? min_stack.top() : x;
-            min_stack.push(min_val);
-        } else {
-            min_stack.push(x);
+
+    void push(int x)
+    {
+        data_stack.push(x);
+        int val = x;
+        if (!min_stack.empty() && val > min_stack.top())
+        {
+            val = min_stack.top();
         }
+        min_stack.push(val);
     }
-    
-    void pop() {
-        val_stack.pop();
+
+    void pop()
+    {
+        data_stack.pop();
         min_stack.pop();
     }
-    
-    int top() {
-        return val_stack.top();
+
+    int top()
+    {
+        return data_stack.top();
     }
-    
-    int getMin() {
+
+    int getMin()
+    {
         return min_stack.top();
     }
- private:
-    std::stack<int> val_stack;
-    std::stack<int> min_stack;
 };
 
 /**

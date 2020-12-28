@@ -10,7 +10,7 @@
 #include <unordered_set>
 using namespace std;
 
-class Solution {
+class Solution0 {
 public:
     bool isHappy(int n) {
         unordered_set<int> hash_set;
@@ -33,25 +33,23 @@ public:
 };
 
 // 快慢指针
-class Solution1 {
+class Solution {
 public:
     bool isHappy(int n) {
-        int slow = get_next(n);
-        int fast = get_next(slow);
-        while (slow != fast) {
-            slow = get_next(slow);
-            fast = get_next(get_next(fast));
+        int fast = get(n), slow = n;
+        while(fast != slow) {
+            fast = get(get(fast));
+            slow = get(slow);
         }
-        return slow == 1;
+        return fast == 1;
     }
-    
-    int get_next(int n) {
-        int result = 0;
-        while (n > 0) {
-            int left = n % 10;
-            n /= 10;
-            result += left * left;
+
+    int get(int x) {
+        int res = 0;
+        while(x) {
+            res += (x % 10) * (x % 10);
+            x /= 10;
         }
-        return result;
+        return res;
     }
 };

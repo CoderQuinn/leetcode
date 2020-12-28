@@ -11,30 +11,30 @@
 #include <set>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t) {
-        set<long> BST;
-        for (vector<int>::size_type i = 0; i < nums.size(); ++i) {
-            long val = (long)nums[i];
-            
-            auto it = BST.lower_bound(val - t);
-            if (it != BST.end() && *it <= val &&  val - *it <= t) {
+    bool containsNearbyAlmostDuplicate(vector<int> &nums, int k, int t)
+    {
+        typedef long long LL;
+        multiset<LL> S;
+        S.insert(1e18), S.insert(-1e18);
+
+        for (int i = 0, j = 0; i < nums.size(); i++)
+        {
+            if (i - j > k)
+                S.erase(S.find(nums[j++]));
+            LL x = nums[i];
+            auto it = S.lower_bound(x);
+            if (*it - x <= t)
                 return true;
-            }
-            
-            it = BST.lower_bound(val);
-            if (it != BST.end() && *it - val <= t) {
+
+            --it;
+            if (x - *it <= t)
                 return true;
-            }
-            
-            BST.insert(val);
-            
-            if (BST.size() > k) {
-                BST.erase(nums[i - k]);
-            }
+            S.insert(x);
         }
-        
+
         return false;
     }
 };

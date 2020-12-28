@@ -7,38 +7,31 @@
 //
 
 #include "ListNode.h"
-#include <set>
+#include <unordered_set>
+using namespace std;
 
-class Solution1 {
+class Solution0 {
 public:
     bool hasCycle(ListNode *head) {
-
-        // 方法1思路：若链表存在环，则set中必能查找到环的节点
-        std::set<ListNode *> node_set;
-        while (head) {
-            if (node_set.find(head) != node_set.end()) {
+        unordered_set<ListNode *> hash;
+        for(auto p = head; p; p = p->next) {
+            if(hash.count(p)) {
                 return true;
             }
-            node_set.insert(head);
-            head = head->next;
+            hash.insert(p);
         }
         return false;
-
     }
 };
 
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-
-        // 方法2思路：快慢指针在有环的情况下，必能相遇
-        ListNode *slow = head;
-        ListNode *fast = head;
-        
-        while (fast && slow && fast->next) {
+        auto fast = head, slow = head;
+        while(fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
-            if (fast == slow && fast != nullptr) {
+            if(fast && slow == fast) {
                 return true;
             }
         }
