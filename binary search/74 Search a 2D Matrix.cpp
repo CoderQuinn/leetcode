@@ -12,11 +12,8 @@ using namespace std;
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        auto n = matrix.size();
-        if(!n) return false;
-        auto m = matrix[0].size();
-        if(!m) return false;
-
+        if(matrix.empty() || matrix[0].empty()) return false;
+        int n = matrix.size(), m = matrix[0].size();
         int l = 0, r = n * m - 1;
         while(l < r)
         {

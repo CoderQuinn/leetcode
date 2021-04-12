@@ -12,26 +12,14 @@ using namespace std;
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-       int j = 0;
-       for(int i = 0; i < nums.size(); i++)
-       {
-           if(i == 0 || nums[i] != nums[i - 1]) {
-               nums[j++] = nums[i];
-           }
-       }
-       return j;
-    }
-};
-
-class Solution1 {
-public:
-    int removeDuplicates(vector<int>& nums) {
-        int j = 0;
+        int k = 0;
         for(auto x : nums)
         {
-            if(j == 0 || nums[j - 1] != x)
-                nums[j++] = x;
+            if(k < 1 || nums[k - 1] != x)
+            {
+                nums[k++] = x;
+            }
         }
-        return j;
+        return k;
     }
 };

@@ -13,20 +13,18 @@ using std::vector;
 class Solution {
 public:
     int findMin(vector<int>& nums) {
-        int n = nums.size();
-        int l = 0, r = n - 1;
-        while(l < r && nums[l] == nums[r])
-            r--;
-        if(nums[l] <= nums[r])
-            return nums[l];
+        int n = nums.size() - 1;
+        while(n > 0 && nums[n] == nums[0]) n--;
+        if(nums[0] <= nums[n]) return nums[0];
         
-        while(l < r) {
-            int mid = (l + r) >> 1;
-            if(nums[mid] < nums[0])
-                r = mid;
-            else
-                l = mid + 1;
+        int l = 0, r = n;
+        while(l < r)
+        {
+            int mid = l + r >> 1;
+            if(nums[mid] < nums[0]) r = mid;
+            else l = mid + 1;
         }
+        
         return nums[l];
     }
 };

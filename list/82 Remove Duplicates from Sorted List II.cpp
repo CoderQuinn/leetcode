@@ -16,23 +16,26 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
-    ListNode* deleteDuplicates(ListNode* head) {
+    ListNode *deleteDuplicates(ListNode *head)
+    {
         ListNode *dummy = new ListNode(-1);
         dummy->next = head;
-        auto p = dummy;
-        while(p->next)
+
+        ListNode *p = dummy;
+        while (p->next)
         {
-            auto q = p->next;
-            while(q && p->next->val == q->val)
+            auto q = p->next->next;
+            while (q && p->next->val == q->val)
                 q = q->next;
-            
-            if(p->next->next == q)
+            if (p->next->next == q)
                 p = p->next;
             else
                 p->next = q;
         }
+
         return dummy->next;
     }
 };

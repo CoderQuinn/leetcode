@@ -36,16 +36,20 @@ public:
 };
 
 // lowbit(x)
-class Solution2 {
+class Solution {
 public:
+    uint32_t lowbit(uint32_t x)
+    {
+        return x & -x;
+    }
+    
     int hammingWeight(uint32_t n) {
-        uint32_t res = 0;
-        while(n) {
-            n -= n & -n;
-            res++;
+        int cnt = 0;
+        while(n)
+        {
+            n -= lowbit(n);
+            cnt++;
         }
-        return res;
+        return cnt;
     }
 };
-
-

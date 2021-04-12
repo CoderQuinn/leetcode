@@ -14,7 +14,7 @@
 using namespace::std;
 
 /*
- 思路1：
+ 思路：
  
  已知由于只有加减运算，不用比较运算符号优先级
  思路：定义两个栈：number_stack用于存储数据，op_stack用于存储操作符
@@ -24,68 +24,81 @@ using namespace::std;
  4. 若遇到的是右括号，则从数据栈弹出两个元素，从操作弹出一个操作符进行计算，并将结果加入到数据栈中，直到栈顶为左括号，弹出左括号后，继续扫描
  */
 
-class Solution1 {
+class Solution
+{
 public:
-    void compute (std::stack<int> &number_stack, std::stack<char> &operator_stack) {
-        int num2 = number_stack.top();
-        number_stack.pop();
-        int num1 = number_stack.top();
-        number_stack.pop();
-        
-        int result = 0;
-        if (operator_stack.top() == '+') {
-            result = num1 + num2;
-        } else {
-            result = num1 - num2;
+    void calc(stack<int> &num, stack<char> &op)
+    {
+        int b = num.top();
+        num.pop();
+        int a = 0;
+        if (!num.empty())
+        {
+            a = num.top();
+            num.pop();
         }
-        number_stack.push(result);
-        operator_stack.pop();
+
+        auto c = op.top();
+        op.pop();
+
+        int x = 0;
+        if (c == '+')
+        {
+            x = a + b;
+        }
+        else if (c == '-')
+        {
+            x = a - b;
+        }
+        num.push(x);
     }
-    
-    int calculate(string s) {
-        std::stack<int> number_stack;
-        std::stack<char> operator_stack;
-        int num = 0;
-        
-        for (int i = 0; i < s.length(); ++i) {
-            switch (s[i]) {
-                case '+':
-                case '-':
-                    if (operator_stack.empty() || operator_stack.top() == '(') {
-                    } else {
-                        compute(number_stack, operator_stack);
-                    }
-                    operator_stack.push(s[i]);
-                    break;
-                case '(':
-                    operator_stack.push(s[i]);
-                    break;
-                case ')':
-                    while (operator_stack.top() != '(') {
-                        compute(number_stack, operator_stack);
-                    }
-                    operator_stack.pop();
-                    break;
-                case ' ':
-                    break;
-                default:
-                    if (isdigit(s[i])) {
-                        num = s[i] - '0';
-                        while (i + 1 < s.length() && isdigit(s[i+1])) {
-                            ++i;
-                            num = s[i] - '0' + num * 10;
-                        }
-                        number_stack.push(num);
-                        num = 0;
-                    }
-                    break;
+
+    int calculate(string s)
+    {
+        stack<int> num;
+        stack<char> op;
+        for (int i = 0; i < s.size(); i++)
+        {
+            auto c = s[i];
+            if (c == ' ')
+                continue;
+            else if (isdigit(c))
+            {
+                int x = 0, j = i;
+                while (j < s.size() && isdigit(s[j]))
+                {
+                    x = x * 10 + (s[j++] - '0');
+                }
+                num.push(x);
+                i = j - 1;
+            }
+            else if (c == '(')
+            {
+                op.push(c);
+            }
+            else if (c == ')')
+            {
+                if (!op.empty() && op.top() != '(')
+                {
+                    calc(num, op);
+                }
+                if (!op.empty() && op.top() == '(')
+                    op.pop();
+            }
+            else
+            {
+                while (!op.empty() && op.top() != '(')
+                {
+                    calc(num, op);
+                }
+                op.push(c);
             }
         }
-        if (!operator_stack.empty()) {
-            compute(number_stack, operator_stack);
+        while (!op.empty())
+        {
+            calc(num, op);
         }
-        
-        return number_stack.top();
+        return num.top();
     }
 };
 

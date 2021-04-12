@@ -19,7 +19,7 @@ using namespace::std;
  4. 数组中只有一个重复的数字，但它可能不止重复出现一次。
  */
 // binary serarch, not a good solution
-class Solution {
+class Solution0 {
 public:
     int findDuplicate(vector<int>& nums) {
         int left = 1;
@@ -48,23 +48,25 @@ public:
 };
 
 // graph
-class Solution1 {
+class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int slow = 0;
-        int fast = 0;
-        do {
+        int slow = 0, fast = 0;
+        while(true)
+        {
             slow = nums[slow];
-            fast = nums[fast];
-            fast = nums[fast];
-        } while (slow != fast);
-        
-        slow = 0;
-        while (slow != fast) {
-            slow = nums[slow];
-            fast = nums[fast];
+            fast = nums[nums[fast]];
+            if(slow == fast)
+            {
+                slow = 0;
+                while(slow != fast)
+                {
+                    slow = nums[slow];
+                    fast = nums[fast];
+                }
+                return slow;
+            }
         }
-        
-        return slow;
+        return 0;
     }
 };

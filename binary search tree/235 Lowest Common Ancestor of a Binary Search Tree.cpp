@@ -21,7 +21,7 @@ using namespace std;
  */
 
 // iteration
-class Solution {
+class Solution0 {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 
@@ -41,13 +41,13 @@ public:
 };
 
 // recursion
-class Solution1 {
+class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if (!root) return nullptr;
-        if (p->val > root->val && q->val > root->val) {
+        if(!root) return root;
+        if(p->val > root->val && q->val > root->val) {
             return lowestCommonAncestor(root->right, p, q);
-        } else if (p->val < root->val && q->val < root->val) {
+        } else if(p->val < root->val && q->val < root->val) {
             return lowestCommonAncestor(root->left, p, q);
         } else {
             return root;

@@ -9,7 +9,7 @@
 #include "ListNode.h"
 #include <vector>
 
-class Solution {
+class Solution0 {
 public:
     bool isPalindrome(ListNode* head) {
         // 思路1. 利用数组的特性：时间复杂度O(n)，空间复杂度O(n)
@@ -30,58 +30,59 @@ public:
     
 };
 
-class Solution1 {
+class Solution
+{
 public:
-    bool isPalindrome(ListNode* head) {
+    bool isPalindrome(ListNode *head)
+    {
+        int n = 0;
+        for (auto p = head; p; p = p->next)
+        {
+            n++;
+        }
+        if (n <= 1)
+            return true;
 
-        // 思路2：快慢指针
-        if (!head) return true;
-            
-        ListNode *half_node = halfNodeOfList(head);
-        ListNode *new_list = reverseList(half_node->next);
-        
-        ListNode *p = head;
-        ListNode *q = new_list;
-        bool result = true;
-        while (q) {
-            if (p->val != q->val) {
-                result = false;
+        int half = n / 2;
+        auto a = head;
+        for (int i = 0; i < n - half; i++)
+        {
+            a = a->next;
+        }
+
+        auto b = a->next;
+        for (int i = 0; i < half - 1; i++)
+        {
+            auto tmp = b->next;
+            b->next = a;
+            a = b;
+            b = tmp;
+        }
+
+        auto p = head, q = a;
+        bool success = true;
+        for (int i = 0; i < half; i++)
+        {
+            if (p->val != q->val)
+            {
+                success = false;
                 break;
             }
             p = p->next;
             q = q->next;
         }
-        
-        half_node->next = reverseList(new_list);
-    
-        return result;
-    }
-    
-private:
-    
-    ListNode *reverseList(ListNode* head) {
-        // 使用头插法的思路解决
-        ListNode *prev = nullptr;
-        ListNode *curr = head;
-        while (curr) {
-            ListNode *temp = curr;
-            curr = curr->next;
-            
-            temp->next = prev;
-            prev = temp;
+
+        auto tail = a;
+        b = a->next;
+        for (int i = 0; i < half - 1; i++)
+        {
+            auto tmp = b->next;
+            b->next = a;
+            a = b;
+            b = tmp;
         }
-        return prev;
-    }
-    
-    ListNode *halfNodeOfList(ListNode* head) {
-        ListNode *slow = head;
-        ListNode *fast = head;
-        
-        while (fast->next && fast->next->next) {
-            fast = fast->next->next;
-            slow = slow->next;
-        }
-        
-        return slow;
+        tail->next = nullptr;
+
+        return success;
     }
 };

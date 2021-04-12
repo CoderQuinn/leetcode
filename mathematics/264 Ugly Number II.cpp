@@ -9,21 +9,23 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    int nthUglyNumber(int n) {
-        vector<int> res;
-        res.push_back(1);
-        int i = 0, j = 0, k = 0;
-        while(res.size() < n)
+    int nthUglyNumber(int n)
+    {
+        vector<int> nums(1, 1);
+        for (int i = 0, j = 0, k = 0; nums.size() < n;)
         {
-            int val = min(2 * res[i], min(3 * res[j], 5 * res[k]));
-            res.push_back(val);
-            if(2 * res[i] == val) i++;
-            if(3 * res[j] == val) j++;
-            if(5 * res[k] == val) k++;
+            int t = min(min(2 * nums[i], 3 * nums[j]), 5 * nums[k]);
+            nums.push_back(t);
+            if (t == 2 * nums[i])
+                i++;
+            if (t == 3 * nums[j])
+                j++;
+            if (t == 5 * nums[k])
+                k++;
         }
-
-        return res.back();
+        return nums.back();
     }
 };

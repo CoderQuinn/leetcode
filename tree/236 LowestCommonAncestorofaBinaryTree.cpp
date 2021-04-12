@@ -28,60 +28,87 @@ using namespace::std;
  3. q为祖先，p在其左子树或右子树上
  4. root的左右子树均不包含pq,与题意不符
  */
-// 1.递归
-class Solution0 {
+
+// 存储父节点
+class Solution0
+{
 public:
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if (!root || q == root || p == root) return root;
-        TreeNode *left_result = lowestCommonAncestor(root->left, p, q);
-        TreeNode *right_result = lowestCommonAncestor(root->right, p, q);
-        if (!left_result) { // p,q位于右子树上
-            return right_result;
+    unordered_map<TreeNode *, TreeNode *> fa;
+    unordered_map<TreeNode *, bool> vt;
+
+    TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q)
+    {
+        if (!root)
+            return root;
+        fa[root] = nullptr;
+        dfs(root);
+
+        TreeNode *cur = p;
+        while (cur)
+        {
+            vt[cur] = true;
+            cur = fa[cur];
         }
-        else if (!right_result) { // p,q位于左子树上
-            return left_result;
+
+        cur = q;
+        while (cur)
+        {
+            if (vt[cur])
+                return cur;
+            cur = fa[cur];
         }
+
         return root;
+    }
+
+    void dfs(TreeNode *root)
+    {
+        if (!root)
+            return;
+
+        if (root->left)
+        {
+            fa[root->left] = root;
+            dfs(root->left);
+        }
+
+        if (root->right)
+        {
+            fa[root->right] = root;
+            dfs(root->right);
+        }
     }
 };
 
-// 2.迭代
-class Solution1 {
+// 递归
+class Solution
+{
 public:
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if (!root || q == root || p == root) return root;
-        
-        unordered_map<int, TreeNode*> traversal_map;
-        traversal_map[root->val] = nullptr;
-        DFS(root, traversal_map);
-        
-        unordered_map<TreeNode*, bool> visited_map;
-        TreeNode *curr = p;
-        while (curr) {
-            visited_map[curr] = true;
-            curr = traversal_map[curr->val];
-        }
-        
-        curr = q;
-        while (curr) {
-            if (visited_map[curr]) {
-                return curr;
-            }
-            curr = traversal_map[curr->val];
-        }
-        
-        return root;
+    TreeNode *ans = nullptr;
+    TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q)
+    {
+        dfs(root, p, q);
+        return ans;
     }
-    
-    void DFS(TreeNode* root, unordered_map<int, TreeNode*> &map){
-        if (root->left) {
-            map[root->left->val] = root;
-            DFS(root->left, map);
+
+    int dfs(TreeNode *root, TreeNode *p, TreeNode *q)
+    {
+        if (!root)
+            return 0x00;
+        int state = dfs(root->left, p, q);
+
+        if (p == root)
+            state |= 0x01;
+        else if (q == root)
+            state |= 0x10;
+
+        state |= dfs(root->right, p, q);
+
+        if (state == 0x11 && !ans)
+        {
+            ans = root;
         }
-        
-        if (root->right) {
-            map[root->right->val] = root;
-            DFS(root->right, map);
-        }
+
+        return state;
     }
 };

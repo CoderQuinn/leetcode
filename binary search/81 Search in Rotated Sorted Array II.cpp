@@ -9,40 +9,44 @@
 #include <vector>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool search(vector<int>& nums, int target) {
-        if(nums.empty())
-            return false;
-        int n = nums.size();
-        int j = n - 1;
-        while(j >= 0 && nums[0] == nums[j]) j--;
-        if(j < 0) return nums[0] == target;
-
-        int l = 0, r = j;
-        while(l < r)
-        {
-            int mid = l + r + 1 >> 1;
-            if(nums[mid] >= nums[0]) l = mid;
-            else r = mid - 1;
-        }
-
-        if(target >= nums[0])
-        {
-            l = 0;
-        }
-        else
-        {
-            l = l + 1;
-            r = j;
-        }
-
-        while(l < r)
+    bool check(vector<int> &nums, int l, int r, int target)
+    {
+        while (l < r)
         {
             int mid = l + r >> 1;
-            if(nums[mid] >= target) r = mid;
-            else l = mid + 1;
+            if (nums[mid] >= target)
+                r = mid;
+            else
+                l = mid + 1;
         }
-        return  r < n && nums[r] == target;
+        return target == nums[l];
+    }
+
+    bool search(vector<int> &nums, int target)
+    {
+        if (nums.empty())
+            return false;
+        int n = nums.size() - 1;
+        while (n > 0 && nums[n] == nums[0])
+            n--;
+        if (nums[0] <= nums[n])
+            return check(nums, 0, n, target);
+        int l = 0, r = n;
+        while (l < r)
+        {
+            int mid = l + r >> 1;
+            if (nums[mid] < nums[0])
+                r = mid;
+            else
+                l = mid + 1;
+        }
+
+        if (target >= nums[0])
+            return check(nums, 0, l - 1, target);
+        else
+            return check(nums, l, n, target);
     }
 };

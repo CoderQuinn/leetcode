@@ -25,31 +25,32 @@ public:
     }
 };
 
-class Solution {
+class Solution
+{
 public:
-    ListNode *detectCycle(ListNode *head) {
-        ListNode *ans = nullptr;
+    ListNode *detectCycle(ListNode *head)
+    {
         auto fast = head, slow = head;
-        while(fast && fast->next) {
-            slow = slow->next;
-            fast = fast->next->next;
-            if(fast && slow == fast) {
-                ans = slow;
-                break;
-            }
-        }
-        
-        if(!ans) return nullptr;
-        
-        slow = head;
-        while(slow && fast) {
-            if(slow == fast) {
-                return fast;
-            }
+        while (fast)
+        {
             slow = slow->next;
             fast = fast->next;
+            if (fast)
+                fast = fast->next;
+            else
+                return nullptr;
+
+            if (slow == fast)
+            {
+                slow = head;
+                while (slow != fast)
+                {
+                    slow = slow->next;
+                    fast = fast->next;
+                }
+                return slow;
+            }
         }
-        
         return nullptr;
     }
 };

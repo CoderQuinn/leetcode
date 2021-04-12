@@ -21,23 +21,25 @@
 
 class Solution {
 public:
-    ListNode* reverseBetween(ListNode* head, int m, int n) {
-        ListNode *dummy = new ListNode(-1);
+    ListNode* reverseBetween(ListNode* head, int left, int right)
+    {
+        auto dummy = new ListNode(-1);
         dummy->next = head;
+        auto p = dummy;
         
-        auto a = dummy;
-        for(int i = 1; i < m; i++)
-            a = a->next;
-        auto b = a->next, c = b->next;
-        for(int i = 0; i < n - m; i++)
+        for(int i = 1; i < left; i++) p = p->next;
+        
+        auto a = p->next, b = a->next;
+        for(int i = 0; i < right - left;i++)
         {
-            auto tmp = c ->next;
-            c->next = b;
+            auto c = b->next;
+            b->next = a;
+            a = b;
             b = c;
-            c = tmp;
         }
-        a->next->next = c;
-        a->next = b;
+        p->next->next = b;
+        p->next = a;
+        
         return dummy->next;
     }
 };
